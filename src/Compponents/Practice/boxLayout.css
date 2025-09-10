@@ -1,0 +1,52 @@
+.badge-app {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge-button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.badge-button span {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.uniform {
+    flex-grow: 1;
+    /* max-width: 300px; */
+    text-align: center;
+}
+
+.badge-container {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    background: #000;
+}
+
+.badge-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.badge {
+    margin: 0 2px;
+}

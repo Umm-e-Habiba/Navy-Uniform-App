@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
+    background-color: #c7e2ff;
+}
+
+/* .wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+/* //// */
+.slick-slider {
+    width: 95%;
+}
+.slick-arrow::before {
+    content: none !important;
+}
+.slick-prev,
+.slick-next {
+    z-index: 1;
+    top: 45% !important;
+}
+.slick-next {
+    right: -12px !important;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-color: white !important;
+    color: black !important;
+}
+/* //// */
+.drawer_hover .gender_male #isHover_active {
+    display: none;
+}
+.drawer_hover .gender_male:hover #isHover_active {
+    display: block;
+}
+
+.menu .active {
+    color: black;
+    background-color: white;
+}
+
+.name_model {
+    width: 100%;
+    height: 100%;
+}
+.name_model input {
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.name_model input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.badge_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    flex-wrap: wrap-reverse;
+    width: 8rem;
+    position: absolute;
+    top: 23.45rem;
+    left: 18.2rem;
+}
+
+.badge_grid .badge_item {
+    width: 2rem;
+    height: 0.32rem;
+}
+/* ////////////// */
+/* scrollbar styling */
+/* Global scrollbars styling */
+/* Styling scrollbar globally */
+::-webkit-scrollbar {
+    width: 13px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+/* scrollbar styling */

@@ -1,0 +1,101 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDelete": false,
+  "extensions.autoUpdate": false,
+  "update.enableWindowsBackgroundUpdates": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.letterSpacing": 1,
+  "editor.smoothScrolling": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "php.suggest.basic": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.associations": {
+    "*.js": "javascript",
+    "*.html": "html",
+    "*.css": "css",
+    "*.php": "php"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.validate": [
+    "markdown",
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.svg": "default"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["--command=usr/bin/bash.exe", "-l", "-i"]
+    }
+  },
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.padding.top": 15,
+  "editor.tabCompletion": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false,
+    "**/Thumbs.db": false,
+    "**/node_modules": false
+  },
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
+  "prettier.printWidth": 100,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.lineHeight": 1.6,
+  "files.autoSave": "onWindowChange",
+  "editor.minimap.showSlider": "always",
+  "editor.accessibilitySupport": "off",
+  "path-intellisense.absolutePathToWorkspace": false,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "redhat.telemetry.enabled": true,
+  "editor.linkedEditing": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.tabWidth": 4,
+  "window.zoomLevel": -1
+}

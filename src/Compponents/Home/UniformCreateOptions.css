@@ -1,0 +1,78 @@
+.form_container {
+    position: relative;
+}
+
+.form_container .form_wrapper .form_input_group {
+    position: relative;
+}
+
+.form_container .dropdown {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    background-color: #0B0B45;
+    color: white;
+    top: 3.55rem;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 0rem 0 1rem 1rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 10;
+}
+.form_container .dropdown .dropdown_item {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form_container .dropdown .dropdown_item:hover {
+    background-color: #e6e6e6;
+    color: black;
+}
+.form_container .form_box input:active .dropdown {
+    display: flex;
+}
+.form_box h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+    width: 20%;
+    height: 3.5rem;
+    background-color: #c7e2ff;
+    border-radius: 0.6rem 0 0rem 0.6rem;
+}
+.name_disabled {
+    background-color: #cccccc !important;
+    cursor: not-allowed !important;
+}
+.form_box input {
+    width: 80%;
+    height: 3.5rem;
+    color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    caret-color: white;
+    background-color: white;
+    border: 2px solid #e6e6e6;
+    border-left: none;
+    outline: none;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
+}
+.form_box input:disabled {
+    border: 2px solid #cccccc;
+    border-left: none;
+    outline: none;
+}
+.form_box input:hover,
+.form_box input:active {
+    border: 2px solid white;
+    border-left: none;
+}
+
+.input_icon {
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+}

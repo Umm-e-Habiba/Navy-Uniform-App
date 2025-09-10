@@ -1,0 +1,14 @@
+.badge_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    position: absolute;
+    top: 23.45rem;
+    left: 18.2rem;
+}
+
+.badge_item {
+    width: 0.7rem;
+    height: 0.32rem;
+}
