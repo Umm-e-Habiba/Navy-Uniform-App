@@ -1,0 +1,147 @@
+************ Officers Male Dresses ************
+
+FullWhiteSummerCeremonial                                       DRESS NO. 1 – FULL WHITE (SUMMER CEREMONIAL)
+ServiceDressWhite                                               DRESS NO. 2 – SERVICE DRESS WHITE
+ServiceDressWhiteModifiedSummer                                 DRESS NO. 2A – SERVICE DRESS WHITE MODIFIED (SUMMER)
+ServiceDressBlackModifiedWinter                                 DRESS NO. 2B – SERVICE DRESS BLACK MODIFIED (WINTER)
+WorkingDressWhite                                               DRESS NO. 3 – WORKING DRESS WHITE
+WorkingDressWhiteWinter                                         DRESS NO. 3A – WORKING DRESS WHITE (WINTER)
+DigitalCamouflageDressCombat                                    DRESS NO. 4 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
+MessDressWhiteSummerMessKit                                     DRESS NO. 5 – MESS DRESS WHITE (SUMMER MESS KIT)
+MessDressWhiteWinterMessKit                                     DRESS NO. 6 – MESS DRESS WHITE (WINTER MESS KIT)
+FullBlackWinterCeremonialDress                                  DRESS NO. 7 – FULL BLACK (WINTER CEREMONIAL)
+ServiceBlackDressWinter                                         DRESS NO. 8 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
+WorkingWinterBlackModified                                      DRESS NO. 8A
+
+
+
+
+camoPakMarines_six                                              Pak Marines CEREMONIAL
+camoPakMarinesWorking_eight                                     Pak Marines WORKING
+camoPakMarinesCombat                                            Pak Marines Combat
+
+camoSSGN_seven                                                  SSG CEREMONIAL
+camoSSGNWorking_nine                                            SSG Working
+camoSSGNCombat                                                  SSG Combat
+
+
+********* CPO Male
+
+CeremonialSummerForCPOSANDPOS                                   DRESS NO. 1
+WorkingDressWhiteSummerCPOsPOs                                  Dress no 3
+WorkingDressWhiteWinterCPOsPOs                                  DRESS NO. 3A
+DigitalCamouflageCombatCPOsPOs                                  Dress 4
+WinterCeremonialCPOsPOs                                         Dress 7
+WinterWorkingCPOsPOs                                            Dress 8
+
+SSGNCamouflageCeremonialCPOs                SSG CEREMONIAL
+SSGNCamouflageWorkingCPOs                   SSG Working
+SSGNCamouflageCombatCPOs                    SSG Combat
+
+PakMarineCeremonialCPOs                     CEREMONIAL
+PakMarineWorkingCPOs                        Working
+PakMarineCombatCPOs                         Combat
+
+
+************* PO's Dresses
+
+CeremonialSummerForPOS                      Dress 1
+WorkingDressWhiteWinterPOs                  Dress 3A
+WorkingDressWhiteSummerPOs                  Dress 3
+DigitalCamouflageCombatPOs                  Dress 4
+WinterCeremonialPOs                         Dress 7
+WinterWorkingPOs                            Dress 8
+
+SSGNCamouflageCeremonialPOs
+SSGNCamouflageWorkingPOs
+SSGNCamouflageCombatPOs
+
+PakMarineCeremonialPOs
+PakMarineWorkingPOs
+PakMarineCombatPOs
+
+
+********* LDG & Below
+
+CeremonialSummerForLDGSAndBelow             Dress 1
+WorkingDressWhiteSummerLDGSBelow            Dress 3
+WorkingDressWhiteWinterLDGSBelow            Dress 3A
+DigitalCamouflageCombatLDGSBelow            Dress 4
+WinterCeremonialLDGSBelow                   Dress 7
+WinterWorkingLDGSBelow                      Dress 8
+
+SSGNCamouflageCeremonialLDGSBelow
+SSGNCamouflageWorkingLDGSBelow
+SSGNCamouflageCombatLDGSBelow
+
+PakMarineCeremonialLDGSBelow
+PakMarineWorkingLDGSBelow
+PakMarineCombatLDGSBelow
+
+
+**************** Female Officers Dresses
+
+female_one                                                      Dress 1
+female_three                                                    DRESS 1 – (OPTIONAL)
+femaleFive                                                      Dress 2
+femaleSeven                                                     Dress 2 optional
+femaleWorkingDressWhiteSummer                                   Dress 3
+femaleWorkingDressWhiteSummerOptional                           Dress 3 optional
+femaleWorkingDress3AWinter                                      Dress 3A
+femaleWorkingDress3AWinterOptional                              Dress 3A optional
+female_four                                                     Dress 4
+femaleMessDressSummerMessKit                                    Dress 5
+femaleInformalMessDressRedSeaRig                                Dress 6
+femaleFullBlackWinterCeremonialDress                            Dress 7
+femaleFullBlackWinterCeremonialDressOptional                    Dress 7 Optional
+femaleServiceBlackWinterCeremonialDress                         Dress 8
+femaleServiceBlackWinterCeremonialDressOptional                 Dress 8 Optional
+femaleWorkingDressWinterBlackModified                           Dress 8A
+femaleWorkingDressBlackOptional                                 Dress 8A optional
+femaleMessDressBlackWinterMessKit                               Dress 10
+
+
+
+
+********* AFNS
+
+female_two                                  Dress 1 summer CEREMONIAL
+femaleSix                                   Dress 2
+femaleWorkingDress3WorkingSummer            Dress 3
+femaleWhiteDress3AWorkingWinter             Dress 3A
+female_four_AFNS                            Dress 4
+femaleMessDressSummerMessKitAFNS            Dress 5
+femaleInformalMessDressRedSeaRigAFNS        Dress 6
+femaleFullBlackWinterCeremonialDressAFNS    Dress 7
+femaleServiceDressBlackAFNS                 Dress 8
+femaleServiceDressBlackWithJerseyAFNS       Dress 8 Optional
+femaleMessDressBlackWinterMessKitAFNS       Dress 10
+
+
+************ CPO  
+
+femaleDressNo1FullWhiteSummerCeremonials            Dress 1
+femaleDressNo3WorkingDressWhiteSummer               Dress 3
+femaleDressNo3AWorkingDressSummer                   Dress 3A
+femaleDressNo4DigitalCamouflageCombat               Dress 4
+femaleDressNo7WinterCeremonial                      Dress 7
+femaleDressNo8WinterWorking                         Dress 8
+
+************ POs
+
+POfemaleDressNo1FullWorkingDressWhiteSummer         Dress 1
+POfemaleDressNo3WorkingDressWhiteSummer             Dress 3
+POfemaleDressNo3AWorkingDressSummer                 Dress 3A
+POfemaleDressNo4DigitalCamouflageCombat             Dress 4
+POfemaleDressNo7WinterCeremonial                    Dress 7
+POfemaleDressNo8WinterWorking                       Dress 8
+
+
+*********** LDG & Below
+
+LDGfemaleDressNo1FullWorkingDressWhiteSummer        Dress 1
+LDGfemaleDressNo3WorkingDressWhiteSummer            Dress 3
+LDGfemaleDressNo3AWorkingDressSummer                Dress 3A
+LDGfemaleDressNo4DigitalCamouflageCombat            Dress 4
+LDGfemaleDressNo7WinterCeremonial                   Dress 7
+LDGfemaleDressNo8WinterWorking                      Dress 8

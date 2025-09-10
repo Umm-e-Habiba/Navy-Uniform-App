@@ -462,6 +462,10 @@ import blue_with_logo from "../assets/dress_one/Scrafs/blue.png";
 import blue_plain from "../assets/dress_one/Scrafs/plain-blue.png";
 import white from "../assets/dress_one/Scrafs/white.png";
 
+// Aiguillettes
+import aiguillettes from "../assets/dress_one/Aiguillettes/img1.jpg";
+
+
 ///Male Dresses
 
 export const MaleDresses = [
@@ -16760,6 +16764,31 @@ export const Scrafs = [
             },
         ]
     }   
+];
+
+// code Scrafs
+export const Aiguillettes = [
+    {
+        id: 1,
+        identity: "aiguillettes",
+        keyName:
+            " FullWhiteSummerCeremonial",
+        name: "Aiguillettes",
+        badgeImage: aiguillettes,
+        badgeKey: "Aiguillettes1",
+        
+        positionTitle: "2cm below the shoulder flap seam",
+        positionTitle_two: "2cm below the shoulder flap seam",
+        positionTitle_three: "4cm below the shoulder flap seam",
+        Coordinates: [
+            {
+                keyName: " FullWhiteSummerCeremonial",
+                cord_one: "6.34rem",
+                cord_two: "1rem",
+            },
+        ]
+    }, 
+    
 ];
 
 export const LeftBiceps = [

@@ -4673,3 +4673,21 @@ export const CurrentScraf = (name, array, DressCheck) => {
         
     }
 };
+
+export const CurrentAiguillettes = (name, array, DressCheck) => {
+    if (DressCheck?.dressCode === 0) {
+        return {
+            top: "7.5rem",
+            left: "7.75rem",
+            gap: "0rem",
+        };
+        
+    }
+};
+export const GetAiguillettesCord = (name) => {
+    if (
+        name === "FullWhiteSummerCeremonial" 
+    ) {
+        return { cord_one: "8.5rem", cord_two: "9.45rem" };
+    }
+};

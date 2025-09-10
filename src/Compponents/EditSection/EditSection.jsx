@@ -20,6 +20,7 @@ import {
     RightChest,
     RightPocket,
     Scrafs,
+    Aiguillettes,
     
 } from "../../utils/utils";
 import {
@@ -36,6 +37,7 @@ import {
     GetRightBoxCord,
     GetLeftBicepCord,
     GetScrafCord,
+    GetAiguillettesCord,
     IsBadgeAvailable,
     IsShowPET,
     LimitString,
@@ -68,6 +70,7 @@ import BeltStars from "./BeltStars";
 import NeckMedals from "./NeckMedals";
 import LeftArmContent from "./ArmLeftBiceps";
 import ScrafContent from "./ScrafsContent";
+import AiguillettesContent from "./AiguillettesContent";
 
 const editHeaderMenu = [
     {
@@ -116,6 +119,10 @@ const editHeaderMenu = [
         tabNum: 12,
         tabNam: "Scarf",
     },
+    {
+        tabNum: 13,
+        tabNam: "Aiguillettes",
+    },
     
 ];
 
@@ -142,6 +149,7 @@ const EditSection = () => {
         rightBiceps: [],
         leftBiceps: [],
         scrafs: [],
+        aiguillettes: [],
         leftChest: [],
         Medals: [],
         neckMedals: [],
@@ -172,6 +180,7 @@ const EditSection = () => {
                 rightBiceps: [],
                 leftBiceps: [],
                 scrafs:[],
+                aiguillettes:[],
                 showNameTallyModel: false,
                 NameTally: "",
             });
@@ -229,6 +238,7 @@ const EditSection = () => {
         leftChest: [],
         leftBiceps: [],
         scrafs: [],
+        aiguillettes: [],
         Medals: [],
         pdfs: [],
     });
@@ -287,6 +297,7 @@ const EditSection = () => {
             let updatedRightBiceps = GetCurrentUpdatedData(RightBiceps, currentDresses?.keyName);
             let updatedLeftBiceps  = GetCurrentUpdatedData(LeftBiceps, currentDresses?.keyName);
             let updatedScrafs  = GetCurrentUpdatedData(Scrafs, currentDresses?.keyName);
+            let updatedAiguillettes  = GetCurrentUpdatedData(Aiguillettes, currentDresses?.keyName);
             let updatedMedals = GetCurrentUpdatedData(Medals, currentDresses?.keyName);
             let updatedPdfs = GetCurrentUpdatedData(pdfs, currentDresses?.keyName);
 
@@ -303,6 +314,7 @@ const EditSection = () => {
                 leftBiceps: updatedLeftBiceps,
                 Medals: updatedMedals,
                 scrafs: updatedScrafs,
+                aiguillettes: updatedAiguillettes,
                 pdfs: updatedPdfs,
             };
         });
@@ -575,6 +587,34 @@ const EditSection = () => {
             return {
                 ...prevItems,
                 scrafs: scrafArray,
+            };
+        });
+    };
+    const ToggleAiguillettes = (item) => {
+        console.log("Clicked:", item);
+        setSelectedOptions((prevItems) => {
+            const existingItemIndex = prevItems?.aiguillettes?.findIndex(
+                (i) => i?.badgeKey === item?.badgeKey
+            );
+    
+            let aiguilletteArray = makeDeepCopy(prevItems?.aiguillettes);
+            console.log("Before Toggle:", prevItems.aiguillettes);
+            if (existingItemIndex !== -1) {
+                aiguilletteArray = aiguilletteArray?.filter((i) => i.badgeKey !== item.badgeKey);
+            } else {
+                if (aiguilletteArray?.length >= 2) {
+                    toast.warn("Select 2 Insignias Only");
+                    return prevItems;
+                } else {
+                    aiguilletteArray.push(item);
+                }
+            }
+    
+            aiguilletteArray?.sort((a, b) => a.id - b.id);
+    
+            return {
+                ...prevItems,
+                aiguillettes: aiguilletteArray,
             };
         });
     };
@@ -854,6 +894,8 @@ const EditSection = () => {
             data = currentBadgesState?.leftBiceps;
         } else if (currentTab === 12) {
             data = currentBadgesState?.scrafs;
+        } else if (currentTab === 13) {
+            data = currentBadgesState?.aiguillettes;
         }
         return data;
     };
@@ -947,6 +989,19 @@ const EditSection = () => {
             });
         }
     }, [currentDresses?.keyName,selectedOptions?.scrafs,]);
+
+    useEffect(() => {
+        let AiguillettesCords = GetAiguillettesCord(currentDresses?.keyName);
+
+        if (AiguillettesCords) {
+            setPositions((prev) => {
+                return {
+                    ...prev,
+                    aiguillettesCords: AiguillettesCords,
+                };
+            });
+        }
+    }, [currentDresses?.keyName,selectedOptions?.aiguillettes,]);
 
     useEffect(() => {
         let neckMedalCords = GetNeckMedalsCord(currentDresses?.keyName);
@@ -1613,7 +1668,26 @@ const EditSection = () => {
                                     currentDresses={currentDresses}
                                     />
                                 </Box>
-
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        position: "absolute",
+                                        top: positions?.aiguillettesCords?.cord_one,
+                                        left: positions?.aiguillettesCords?.cord_two,
+                                        width: "1.5rem",
+                                    }}
+                                >
+                                    
+                                    <AiguillettesContent
+                                    handleEnter={handleEnter}
+                                    handleLeave={handleLeave}
+                                    selectedOptions={selectedOptions}
+                                    currentDresses={currentDresses}
+                                    />
+                                </Box>
                                 <Box
                                     className="flex_center"
                                     sx={{
@@ -1823,6 +1897,17 @@ const EditSection = () => {
                                                     item={item}
                                                     key={item?.id}
                                                     ToggleOptions={ToggleScraf} // ✅ Directly call specific toggle function
+                                                    selectedOptions={selectedOptions}
+                                                />
+                                            );
+                                        })}
+                                        {currentTab === 13 &&
+                                        currentItems?.map((item, index) => {
+                                            return (
+                                                <BadgeModel
+                                                    item={item}
+                                                    key={item?.id}
+                                                    ToggleOptions={ToggleAiguillettes} // ✅ Directly call specific toggle function
                                                     selectedOptions={selectedOptions}
                                                 />
                                             );
