@@ -121,31 +121,59 @@ const RightPocketContent = (props) => {
                 );
                 
                 return (
-                    <Box
-                        sx={{
-                            position: "absolute",
-                            top: itemCoordinates?.cord_one,
-                            left: itemCoordinates?.cord_two,
-                            marginTop:"2px",
-                            width: itemCoordinates?.size ? itemCoordinates?.size : ".9rem",
-                            transform: itemCoordinates?.size ? itemCoordinates?.size : "unset",
-                            backgroundColor:
-                                black_background
-                                ? "#373738"
-                                : "rgba(179, 176, 176, 0)",
-                        }}
-                        onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
-                        onMouseLeave={(e) => handleLeave(e)}
-                    >
-                        <img
-                            src={item?.badgeImage}
-                            alt="unifrom-logos"
-                            title={getUpdatedTitle}
-                            width="100%"
-                            height="100%"
-                            style={{ objectFit: "contain" }}
-                        />
-                    </Box>
+                    (item?.badgeKey === "rightPocket_cmcn" || item?.badgeKey === "rightPocket_cmc") ? (
+                        <Box
+                            sx={{
+                                position: "absolute",
+                                top: itemCoordinates?.cord_one,
+                                left: itemCoordinates?.cord_two,
+                                marginTop:"2px",
+                                width: itemCoordinates?.size ? itemCoordinates?.size : ".5rem",
+                                transform: itemCoordinates?.size ? itemCoordinates?.size : "unset",
+                                backgroundColor:
+                                    black_background
+                                    ? "#373738"
+                                    : "rgba(179, 176, 176, 0)",
+                            }}
+                            onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
+                            onMouseLeave={(e) => handleLeave(e)}
+                        >
+                            <img
+                                src={item?.badgeImage}
+                                alt="unifrom-logos"
+                                title={getUpdatedTitle}
+                                width="100%"
+                                height="100%"
+                                style={{ objectFit: "contain" }}
+                            />
+                        </Box>
+                    ) : (
+                        <Box
+                            sx={{
+                                position: "absolute",
+                                top: itemCoordinates?.cord_one,
+                                left: itemCoordinates?.cord_two,
+                                marginTop:"2px",
+                                width: itemCoordinates?.size ? itemCoordinates?.size : ".9rem",
+                                transform: itemCoordinates?.size ? itemCoordinates?.size : "unset",
+                                backgroundColor:
+                                    black_background
+                                    ? "#373738"
+                                    : "rgba(179, 176, 176, 0)",
+                            }}
+                            onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
+                            onMouseLeave={(e) => handleLeave(e)}
+                        >
+                            <img
+                                src={item?.badgeImage}
+                                alt="unifrom-logos"
+                                title={getUpdatedTitle}
+                                width="100%"
+                                height="100%"
+                                style={{ objectFit: "contain" }}
+                            />
+                        </Box>
+                    )
                 );
             });
         }

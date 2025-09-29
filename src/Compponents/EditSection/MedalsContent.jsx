@@ -28,10 +28,10 @@ const MedalsContent = (props) => {
                             sx={{
                                 top: itemCoordinates?.cord_one,
                                 left: itemCoordinates?.cord_two,
-                                width: currentDresses?.smallMedals ? "0.5rem" : ".7rem",
-                                height: currentDresses?.smallMedals ? "1.8rem" : "2.4rem",
+                                width: currentDresses?.smallMedals ? "0.8rem" : ".9rem",
+                                height: currentDresses?.smallMedals ? "2.8rem" : "2.7rem",
                                 marginLeft: "-5px",
-                                zIndex: 19 - item?.seniority + 1,
+                                zIndex: 50 - item?.seniority + 1,
                             }}
                         >
                             <img

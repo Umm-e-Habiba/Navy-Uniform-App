@@ -15,8 +15,12 @@ const AiguillettesContent = (props) => {
         let DressCheck = GetCurrentDressChecks(currentDresses?.keyName);
         if (
             DressCheck?.dressCode === 0 ||
+            DressCheck?.dressCode === 1 ||
             DressCheck?.dressCode === 3 ||
+            DressCheck?.dressCode === 4 ||
+            DressCheck?.dressCode === 5 ||
             DressCheck?.dressCode === 2 ||
+            DressCheck?.dressCode === 6 ||
             DressCheck?.dressCode === 7 
         ) {
             let findStar = selectedOptions?.scrafs?.find(
@@ -72,8 +76,8 @@ const AiguillettesContent = (props) => {
                                             key={index}
                                             sx={{
                                                 position: "relative",
-                                                width: findStar ? "0.35rem" : "6.4rem",
-                                                height: findStar ? "0.35rem" : "5.4rem",
+                                                width: findStar ? "0.35rem" : (item?.width || "6.4rem"),
+                                                height: findStar ? "0.35rem" : (item?.height || "5.4rem"),
                                                 transform:
                                                     findStarItem?.sizeScale || item?.sizeScale
                                                         ? findStarItem?.sizeScale || item?.sizeScale

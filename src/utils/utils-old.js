@@ -2,7 +2,7 @@ import maleUniforms_one from "../assets/dress_one/Uniforms/MALE/d1.png";
 import male_two from "../assets/dress_one/Uniforms/MALE/d1.png";
 import male2B from "../assets/dress_one/Uniforms/MALE/dress2B.png";
 import male2A from "../assets/dress_one/Uniforms/MALE/dress2A.png";
-import maleFour from "../assets/dress_one/Uniforms/MALE/Dress4.png";
+import maleFour from "../assets/dress_one/Uniforms/MALE/11.png";
 import camo_pak_marines from "../assets/dress_one/Uniforms/Male-CPOs-POs-LDGs&Below/Marines Working & Combat.png";
 import camo_ssg_N from "../assets/dress_one/Uniforms/Male-CPOs-POs-LDGs&Below/SSG Working & Combat.png";
 import camo_pak_marines_working from "../assets/dress_one/Uniforms/Male-CPOs-POs-LDGs&Below/Marines Working & Combat.png";
@@ -21,8 +21,8 @@ import WorkingDressWhiteWinterCPOsPOs from "../assets/dress_one/Uniforms/MALE/Dr
 import WorkingDressWhiteWinterLDGSBelow from "../assets/dress_one/Uniforms/MALE/Dress 3 A - Working Dress White (Winter) Ldgs & Below..png";
 import WorkingDressWhiteSummerCPOsPOs from "../assets/dress_one/Uniforms/MALE/Dress 3 Working White (summer)-CPOs & POs..png";
 import WorkingDressWhiteSummerLDGSBelow from "../assets/dress_one/Uniforms/MALE/Dress 3 Working White (summer)-Ldgs & Below..png";
-import DigitalCamouflageCombatCPOsPOs from "../assets/dress_one/Uniforms/MALE/Dress4.png";
-import DigitalCamouflageCombatLDGSBelow from "../assets/dress_one/Uniforms/MALE/Dress4.png";
+import DigitalCamouflageCombatCPOsPOs from "../assets/dress_one/Uniforms/MALE/Dress 4 Digital Camouflage (Combat) CPOs & POs..png";
+import DigitalCamouflageCombatLDGSBelow from "../assets/dress_one/Uniforms/MALE/Dress 4 Digital Camouflage (Combat) Ldgs & Below..png";
 
 import WinterCeremonialCPOsPOs from "../assets/dress_one/Uniforms/MALE/Dress 7 - Winter Ceremonial - CPOs & POs..png";
 import WinterCeremonialLDGSBelow from "../assets/dress_one/Uniforms/MALE/Dress 7 - Winter Ceremonial - Ldgs & Belows..png";
@@ -107,9 +107,9 @@ import ldgAndBelowFemale from "../assets/dress_one/Caps/CPO&LDG/Ldg-&-below--Fem
 import poFemale from "../assets/dress_one/Caps/CPO&LDG/PO--Female.png";
 
 
-import AdmiralsCap from "../assets/dress_one/Caps/AdmiralPeakcap.png";
-import Captian_Commander from "../assets/dress_one/Caps/CaptainPeakcap.png";
-import Commodore from "../assets/dress_one/Caps/CommodorePeakcap.png";
+import AdmiralsCap from "../assets/dress_one/Caps/Admiral, Vice Admiral, Rear Admiral.png";
+import Captian_Commander from "../assets/dress_one/Caps/Captian Commander.png";
+import Commodore from "../assets/dress_one/Caps/Commodore.png";
 import Lieutenant_below from "../assets/dress_one/Caps/Lieutenant Commander & Below till Cadet.png";
 // female
 import Commander_above from "../assets/dress_one/Female_caps/Commander & above.png";
@@ -146,10 +146,10 @@ import LIEUTENANT from "../assets/dress_one/Ranks-v2/LIEUTENANT.v2.jpg";
 import SUB_LIEUTENANT from "../assets/dress_one/Ranks-v2/SUB LIEUTENANT.v2.jpg";
 // v2
 // v3
-import v3_ADMIRAL from "../assets/dress_one/Ranks-v3/ADMIRAL.v3.jpg";
-import v3_REAR_ADMIRAL from "../assets/dress_one/Ranks-v3/REAR ADMIRAL.v3.jpg";
-import v3_VICE_ADMIRAL from "../assets/dress_one/Ranks-v3/VICE ADMIRAL.v3.jpg";
-import v3_Commodor from "../assets/dress_one/Ranks-v3/Commodor.v3.jpg";
+import v3_ADMIRAL from "../assets/dress_one/Ranks-v3/ADMIRAL.v3.webp";
+import v3_REAR_ADMIRAL from "../assets/dress_one/Ranks-v3/REAR ADMIRAL.v3.webp";
+import v3_VICE_ADMIRAL from "../assets/dress_one/Ranks-v3/VICE ADMIRAL.v3.webp";
+import v3_Commodor from "../assets/dress_one/Ranks-v3/Commodor.v3.webp";
 import v3_CAPTAIN from "../assets/dress_one/Ranks-v3/CAPTAIN.v3.jpg";
 import v3_COMMANDER from "../assets/dress_one/Ranks-v3/COMMANDER.v3.jpg";
 import v3_LIEUTENANT_COMMANDER from "../assets/dress_one/Ranks-v3/LIEUTENANT COMMANDER.v3.jpg";
@@ -305,15 +305,6 @@ import ldg_grey_right from "../assets/dress_one/Rank-CPO-PO-LDG/ldg_grey_right.p
 // import REAR_ADMIRAL from "../assets/dress_one/Ranks-v2/";
 // Ranks
 // Medals
-//new 5 medals
-import Britannia_Royal_College from "../assets/dress_one/MEDALS/Britannia Royal College.png";
-import Marka_e_haq from "../assets/dress_one/MEDALS/Marka e haq.png";
-import HIM from "../assets/dress_one/MEDALS/hilal imtiaz-medal.png";
-import Tamgha_e_Jamhoriyat from "../assets/dress_one/MEDALS/Tamgha e Jamhoriyat.png";
-import Tamgha_e_Salgirah_Pakistan from "../assets/dress_one/MEDALS/Tamgha e Salgirah pakistan.png";
-import Nishan_e_Imtiaz from "../assets/dress_one/MEDALS/HIM.png";
-
-
 import UN from "../assets/dress_one/MEDALS/UN MISSION MEDAL.png";
 import sultan from "../assets/dress_one/MEDALS/Sultan Medal-1.png";
 import anniversary_50th from "../assets/dress_one/MEDALS/50th Anniversary Medal-1.png";
@@ -455,13 +446,6 @@ import fiftyEight from "../assets/dress_two/Ribbons/58.svg";
 import sultan_ribbon from "../assets/dress_two/Ribbons/sultan.png";
 import un_ribbon from "../assets/dress_two/Ribbons/UN.png";
 import anniversary_50_ribbon from "../assets/dress_two/Ribbons/50_Anniversary.png";
-//new ribbons
-import Britannia_Royal_College_ribbon from "../assets/dress_two/Ribbons/Britannia Royal College.png";
-import Nishan_e_Imtiaz_ribbon from "../assets/dress_two/Ribbons/Nishan-e-Imtaiz (Military).png";
-import Tamgha_e_Jamhoriyat_ribbon from "../assets/dress_two/Ribbons/Tamgha Jamhuriat.png";
-import Tamgha_e_Salgirah_Pakistan_ribbon from "../assets/dress_two/Ribbons/Tamgha e Salgirah e Pakistan.png";
-import Marka_e_haq_ribbon from "../assets/dress_two/Ribbons/Marka Haq.png";
-
 // Ribbons
 
 //RighBiceps
@@ -479,19 +463,8 @@ import blue_plain from "../assets/dress_one/Scrafs/plain-blue.png";
 import white from "../assets/dress_one/Scrafs/white.png";
 
 // Aiguillettes
-import aiguillettes from "../assets/dress_one/Aiguillettes/Dress1.png";
-import aiguillettes_dress7 from "../assets/dress_one/Aiguillettes/a3.png";
-import aiguillettes_dress5 from "../assets/dress_one/Aiguillettes/Dress5.png";  
-import aiguillettes_dress10 from "../assets/dress_one/Aiguillettes/Dress5.png";  
-import aiguillettes_dress3 from "../assets/dress_one/Aiguillettes/A1.png"; 
-import aiguillettes_dress4 from "../assets/dress_one/Aiguillettes/black1.png";  
+import aiguillettes from "../assets/dress_one/Aiguillettes/img1.jpg";
 
-
-// Stars
-import star from "../assets/dress_one/Ranks-v3/1-star.png";
-import star_two from "../assets/dress_one/Ranks-v3/2-star.png";
-import star_three from "../assets/dress_one/Ranks-v3/3-star.png";
-import star_four from "../assets/dress_one/Ranks-v3/4-star.png";
 
 ///Male Dresses
 
@@ -4202,7 +4175,6 @@ export const Ribbons = [
         badgeImage: thirtyOne,
         badgeGender: "male",
     },
-    
     {
         order: 32,
         id: 32,
@@ -4212,8 +4184,8 @@ export const Ribbons = [
         identity: "ribbon",
         badgeKey: "ribbons32",
         positionTitle: "Right above the top line of pocket",
-        name: "Imtiazi Sanad",
-        badgeImage: thirtyThree,
+        name: "Tamgha-i-Khidmat (Civilian)",
+        badgeImage: thirtyTwo,
         badgeGender: "male",
     },
     {
@@ -4223,10 +4195,10 @@ export const Ribbons = [
         keyName:
             "WorkingDressWhiteWinterCPOsPOs WorkingDressWhiteSummerCPOsPOs WinterWorkingCPOsPOs SSGNCamouflageWorkingCPOs PakMarineWorkingCPOs WorkingDressWhiteWinterPOs WorkingDressWhiteSummerPOs WinterWorkingPOs SSGNCamouflageWorkingPOs PakMarineWorkingPOs WorkingDressWhiteWinterLDGSBelow WorkingDressWhiteSummerLDGSBelow WinterWorkingLDGSBelow SSGNCamouflageWorkingLDGSBelow PakMarineWorkingLDGSBelow femaleDressNo3WorkingDressWhiteSummer femaleDressNo3AWorkingDressSummer femaleDressNo8WinterWorking POfemaleDressNo3WorkingDressWhiteSummer POfemaleDressNo3AWorkingDressSummer POfemaleDressNo8WinterWorking LDGfemaleDressNo3WorkingDressWhiteSummer LDGfemaleDressNo3AWorkingDressSummer LDGfemaleDressNo8WinterWorking femaleServiceDressBlackAFNS femaleServiceDressBlackWithJerseyAFNS femaleServiceBlackWinterCeremonialDress femaleServiceBlackWinterCeremonialDressOptional ServiceBlackDressWinter femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleInformalMessDressRedSeaRigAFNS femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional femaleWorkingDressWhiteSummer femaleWorkingDressWhiteSummerOptional InformalMessDressRedSeaRig WorkingWinterBlackModified WorkingDressWhite WorkingDressWhiteWinter ServiceDressWhite male2B male2A femaleFive femaleSix femaleSeven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         identity: "ribbon",
-        badgeKey: "ribbons322",
+        badgeKey: "ribbons33",
         positionTitle: "Right above the top line of pocket",
-        name: "Marka e Haq",
-        badgeImage: Marka_e_haq_ribbon,
+        name: "Imtiazi Sanad",
+        badgeImage: thirtyThree,
         badgeGender: "male",
     },
     {
@@ -4497,18 +4469,6 @@ export const Ribbons = [
         positionTitle: "Right above the top line of pocket",
         name: "UN Mission",
         badgeImage: un_ribbon,
-        badgeGender: "male",
-    },
-    {
-        id: 62,
-        seniority: 62,
-        keyName:
-            "ServiceDressWhite male2B male2A WorkingDressWhite WorkingDressWhiteWinter InformalMessDressRedSeaRig ServiceBlackDressWinter WorkingWinterBlackModified camoPakMarinesWorking_eight camoSSGNWorking_nine femaleWorkingDressBlackOptional femaleWorkingDressWinterBlackModified femaleServiceBlackWinterCeremonialDressOptional femaleServiceBlackWinterCeremonialDress femaleInformalMessDressRedSeaRig femaleFive femaleSeven femaleWorkingDressWhiteSummer femaleWorkingDressWhiteSummerOptional femaleWorkingDress3AWinterOptional Officer female femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleInformalMessDressRedSeaRigAFNS femaleServiceDressBlackAFNS femaleServiceDressBlackWithJerseyAFNS WorkingDressWhiteWinterCPOsPOs WorkingDressWhiteSummerCPOsPOs WinterWorkingCPOsPOs SSGNCamouflageWorkingCPOs PakMarineWorkingCPOs WorkingDressWhiteWinterPOs WorkingDressWhiteSummerPOs WinterWorkingPOs SSGNCamouflageWorkingPOs PakMarineWorkingPOs WorkingDressWhiteWinterLDGSBelow WorkingDressWhiteSummerLDGSBelow WinterWorkingLDGSBelow SSGNCamouflageWorkingLDGSBelow PakMarineWorkingLDGSBelow femaleDressNo3WorkingDressWhiteSummer femaleDressNo3AWorkingDressSummer femaleDressNo8WinterWorking POfemaleDressNo3WorkingDressWhiteSummer POfemaleDressNo3AWorkingDressSummer POfemaleDressNo8WinterWorking LDGfemaleDressNo3WorkingDressWhiteSummer LDGfemaleDressNo3AWorkingDressSummer LDGfemaleDressNo8WinterWorking",
-        identity: "ribbon",
-        badgeKey: "ribbons62",
-        positionTitle: "Right above the top line of pocket",
-        name: "Britannia Royal College",
-        badgeImage: Britannia_Royal_College_ribbon,
         badgeGender: "male",
     },
 ];
@@ -10801,56 +10761,34 @@ export const Ranks = [
         name: "ADMIRAL",
         badgeImage: v3_ADMIRAL,
         badgeKey: "rank11",
-        starImage: star_four,
-        showStar: true,
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                
-                // First Star coordinates (positioned near the v3_ADMIRAL image)
-                star_cord_one: "6.4rem",
-                star_cord_two: "7.2rem",
-                star_width: "1.2rem",
-                star_height: "2.1rem",
-                star_rotate: "15deg",
-
-                // Second Star coordinates (positioned near the v3_ADMIRAL image)
-                star_cord_two_one: "6.4rem",
-                star_cord_two_two: "11.5rem",
-                star_width_two: "1.2rem",
-                star_height_two: "2.1rem",
-                star_rotate_two: "-15deg",
-               
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                
-                // First Star coordinates (positioned near the v3_ADMIRAL image)
-                star_cord_one: "7.5rem",
-                star_cord_two: "7.4rem",
-                star_width: "1.2rem",
-                star_height: "2.1rem",
-                star_rotate: "15deg",
-
-                // Second Star coordinates (positioned near the v3_ADMIRAL image)
-                star_cord_two_one: "7.5rem",
-                star_cord_two_two: "11.6rem",
-                star_width_two: "1.2rem",
-                star_height_two: "2.1rem",
-                star_rotate_two: "-15deg",
-               
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
+                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
     },
@@ -10864,56 +10802,35 @@ export const Ranks = [
         name: "VICE ADMIRAL",
         badgeImage: v3_VICE_ADMIRAL,
         badgeKey: "rank13",
-        starImage: star_three,
-        showStar: true,
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
-                
-                // First Star coordinates
-                star_cord_one: "6.7rem",
-                star_cord_two: "7.3rem",
-                star_width: "1.2rem",
-                star_height: "1.6rem",
-                star_rotate: "15deg",
- 
-                // Second Star coordinates
-                star_cord_two_one: "6.7rem",
-                star_cord_two_two: "11.5rem",
-                star_width_two: "1.2rem",
-                star_height_two: "1.6rem",
-                star_rotate_two: "-15deg",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                
-                // First Star coordinates (positioned near the v3_VICE_ADMIRAL image)
-                star_cord_one: "8.0rem",
-                star_cord_two: "7.4rem",
-                star_width: "1.2rem",
-                star_height: "1.6rem",
-                star_rotate: "15deg",
-
-                // Second Star coordinates (positioned near the v3_VICE_ADMIRAL image)
-                star_cord_two_one: "8.0rem",
-                star_cord_two_two: "11.6rem",
-                star_width_two: "1.2rem",
-                star_height_two: "1.6rem",
-                star_rotate_two: "-15deg",
-               
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
+                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
     },
@@ -10926,51 +10843,35 @@ export const Ranks = [
         name: "REAR ADMIRAL",
         badgeImage: v3_REAR_ADMIRAL,
         badgeKey: "rank12",
-        starImage: star_two,
-        showStar: true,
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
-               // First Star coordinates
-               star_cord_one: "7.2rem",
-               star_cord_two: "7.2rem",
-               star_width: "1.2rem",
-               star_height: "1.2rem",
-
-               // Second Star coordinates
-               star_cord_two_one: "7.2rem",
-               star_cord_two_two: "11.6rem",
-               star_width_two: "1.2rem",
-               star_height_two: "1.2rem",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                
-                // First Star coordinates (positioned near the v3_REAR_ADMIRAL image)
-                star_cord_one: "8.3rem",
-                star_cord_two: "7.2rem",
-                star_width: "1.2rem",
-                star_height: "1.2rem",
-
-                // Second Star coordinates (positioned near the v3_REAR_ADMIRAL image)
-                star_cord_two_one: "8.3rem",
-                star_cord_two_two: "11.6rem",
-                star_width_two: "1.2rem",
-                star_height_two: "1.2rem",
-               
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
+                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
     },
@@ -10983,53 +10884,35 @@ export const Ranks = [
         name: "COMMODORE",
         badgeImage: v3_Commodor,
         badgeKey: "rank14",
-        starImage: star,
-        showStar: true,
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
-                
-                // First Star coordinates
-                star_cord_one: "7.5rem",
-                star_cord_two: "7.2rem",
-                star_width: "1.2rem",
-                star_height: "1.2rem",
- 
-                // Second Star coordinates
-                star_cord_two_one: "7.5rem",
-                star_cord_two_two: "11.6rem",
-                star_width_two: "1.2rem",
-                star_height_two: "1.2rem",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                
-                // First Star coordinates (positioned near the v3_COMMODORE image)
-                star_cord_one: "8.5rem",
-                star_cord_two: "7.2rem",
-                star_width: "1.2rem",
-                star_height: "1.2rem",
- 
-                // Second Star coordinates (positioned near the v3_COMMODORE image)
-                star_cord_two_one: "8.5rem",
-                star_cord_two_two: "11.6rem",
-                star_width_two: "1.2rem",
-                star_height_two: "1.2rem",
-               
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
+                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
     },
@@ -11045,22 +10928,30 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11077,23 +10968,31 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11110,23 +11009,31 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11143,23 +11050,31 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11176,23 +11091,31 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "maleFour",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                width: "3rem",
+                height: "auto",
+                left_cord_one: "6.25rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.4rem",
+                right_cord_two: "4.35rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
             {
                 keyName: "female_four",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                width: "2.6rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.6rem",
+                right_cord_one: "7.74rem",
+                right_cord_two: "4.65rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -12994,21 +12917,31 @@ export const Ranks = [
            
             {
                 keyName: "DigitalCamouflageCombatCPOsPOs",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "6.0rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.0rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
             // Dress 4 Female
             {
                 keyName: "femaleDressNo4DigitalCamouflageCombat",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.65rem",
+                right_cord_one: "7.8rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-30deg",
+                left_transform: "rotateX(54deg) rotateY(-29deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(149deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
 
@@ -13317,21 +13250,31 @@ export const Ranks = [
            
             {
                 keyName: "DigitalCamouflageCombatCPOsPOs",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "6.0rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.0rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
             // Dress 4 Female
             {
                 keyName: "femaleDressNo4DigitalCamouflageCombat",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.65rem",
+                right_cord_one: "7.8rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-30deg",
+                left_transform: "rotateX(54deg) rotateY(-29deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(149deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
 
@@ -13640,21 +13583,31 @@ export const Ranks = [
            
             {
                 keyName: "DigitalCamouflageCombatCPOsPOs",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "9.25rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "6.0rem",
+                left_cord_two: "12.8rem",
+                right_cord_one: "6.0rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
             // Dress 4 Female
             {
                 keyName: "femaleDressNo4DigitalCamouflageCombat",
-                width: "1.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "9.3rem",
+                width: "3.2rem",
+                height: "auto",
+                left_cord_one: "7.7rem",
+                left_cord_two: "12.65rem",
+                right_cord_one: "7.8rem",
+                right_cord_two: "4.1rem",
+                left_rotate: "196deg",
+                right_rotate: "-30deg",
+                left_transform: "rotateX(54deg) rotateY(-29deg) scale(1.2)",
+                right_transform: "rotateX(-130deg) rotateY(149deg) scale(1.2)",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
 
@@ -14144,22 +14097,31 @@ export const Ranks = [
            
             {
                 keyName: "DigitalCamouflageCombatPOs",
-                width: "3.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "8.25rem",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "3.2rem",
+                height: "3.2rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "14.5rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "14.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
             // Dress 4 Female
             {
                 keyName: "POfemaleDressNo4DigitalCamouflageCombat",
-                width: "3.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "8.3rem",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "3.2rem",
+                height: "3.2rem",
+                left_cord_one: "11.5rem",
+                left_cord_two: "14.5rem",
+                right_cord_one: "11.5rem",
+                right_cord_two: "14.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
             },
 
         ],
@@ -14732,22 +14694,31 @@ export const Ranks = [
            
             {
                 keyName: "DigitalCamouflageCombatLDGSBelow",
-                width: "3.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "11.4rem",
-                right_cord_two: "8.25rem",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "3.2rem",
+                height: "3.2rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "14.5rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "14.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
             // Dress 4 Female
             {
                 keyName: "LDGfemaleDressNo4DigitalCamouflageCombat",
-                width: "3.5rem",
-                height: "1.5rem",
-                
-                right_cord_one: "12.7rem",
-                right_cord_two: "8.3rem",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "3.2rem",
+                height: "3.2rem",
+                left_cord_one: "11.5rem",
+                left_cord_two: "14.5rem",
+                right_cord_one: "11.5rem",
+                right_cord_two: "14.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
             },
 
         ],
@@ -15101,27 +15072,27 @@ export const RightPocket = [
             },
             {
                 keyName: "CeremonialSummerForCPOSANDPOS",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "CeremonialSummerForPOS",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "CeremonialSummerForLDGSAndBelow",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "WorkingDressWhiteSummerCPOsPOs",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "WorkingDressWhiteWinterPOs",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
         ],
@@ -15276,22 +15247,22 @@ export const RightPocket = [
             },
             {
                 keyName: "CeremonialSummerForPOS",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "CeremonialSummerForLDGSAndBelow",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "CeremonialSummerForCPOSANDPOS",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
             {
                 keyName: "WorkingDressWhiteSummerCPOsPOs",
-                cord_one: "10.3rem",
+                cord_one: "10.4rem",
                 cord_two: "6.5rem",
             },
         ],
@@ -16801,12 +16772,10 @@ export const Aiguillettes = [
         id: 1,
         identity: "aiguillettes",
         keyName:
-            " FullWhiteSummerCeremonial ServiceDressWhite ",
+            " FullWhiteSummerCeremonial",
         name: "Aiguillettes",
         badgeImage: aiguillettes,
         badgeKey: "Aiguillettes1",
-        width: "10.4rem",
-        height: "8.4rem",
         
         positionTitle: "2cm below the shoulder flap seam",
         positionTitle_two: "2cm below the shoulder flap seam",
@@ -16817,124 +16786,8 @@ export const Aiguillettes = [
                 cord_one: "6.34rem",
                 cord_two: "1rem",
             },
-            
-        ],
-    },
-    {
-        id: 2,
-        identity: "aiguillettes",
-        keyName:
-            " FullBlackWinterCeremonialDress ",
-        name: "Aiguillettes",
-        badgeImage: aiguillettes_dress7,
-        badgeKey: "Aiguillettes2",
-        width: "9.4rem",
-        height: "9.4rem",
-        
-        positionTitle: "2cm below the shoulder flap seam",
-        positionTitle_two: "2cm below the shoulder flap seam",
-        positionTitle_three: "4cm below the shoulder flap seam",
-        Coordinates: [
-            {
-                keyName: " FullBlackWinterCeremonialDress",
-                cord_one: "6.34rem",
-                cord_two: "1rem",
-            },
-            
         ]
     }, 
-    {
-        id: 3,
-        identity: "aiguillettes",
-        keyName:
-            " MessDressWhiteSummerMessKit ",
-        name: "Aiguillettes",
-        badgeImage: aiguillettes_dress5,
-        badgeKey: "Aiguillettes3",
-        width: "9.4rem",
-        height: "9.4rem",
-        
-        positionTitle: "2cm below the shoulder flap seam",
-        positionTitle_two: "2cm below the shoulder flap seam",
-        positionTitle_three: "4cm below the shoulder flap seam",
-        Coordinates: [
-            {
-                keyName: " MessDressWhiteSummerMessKit",
-                cord_one: "6.34rem",
-                cord_two: "1rem",
-            },
-            
-        ]
-    }, 
-    {
-        id: 4,
-        identity: "aiguillettes",
-        keyName:
-            "MessDressBlackWinterMessKit",
-        name: "Aiguillettes",
-        badgeImage: aiguillettes_dress10,
-        badgeKey: "Aiguillettes4",
-        width: "9.4rem",
-        height: "9.4rem",
-        
-        positionTitle: "2cm below the shoulder flap seam",
-        positionTitle_two: "2cm below the shoulder flap seam",
-        positionTitle_three: "4cm below the shoulder flap seam",
-        Coordinates: [
-            {
-                keyName: " MessDressWhiteSummerMessKit",
-                cord_one: "6.34rem",
-                cord_two: "1rem",
-            },
-            
-        ]
-    }, 
-    {
-        id: 5,
-        identity: "aiguillettes",
-        keyName:
-            "WorkingDressWhite WorkingDressWhiteWinter WorkingWinterBlackModified ServiceBlackDressWinter",
-        name: "Aiguillettes",
-        badgeImage: aiguillettes_dress3,
-        badgeKey: "Aiguillettes5",
-        width: "9.4rem",
-        height: "9.4rem",
-        
-        positionTitle: "2cm below the shoulder flap seam",
-        positionTitle_two: "2cm below the shoulder flap seam",
-        positionTitle_three: "4cm below the shoulder flap seam",
-        Coordinates: [
-            {
-                keyName: " WorkingDressWhite",
-                cord_one: "6.34rem",
-                cord_two: "1rem",
-            },
-            
-        ]
-    },
-    {
-        id: 6,
-        identity: "aiguillettes",
-        keyName:
-            "maleFour",
-        name: "Aiguillettes",
-        badgeImage: aiguillettes_dress4,
-        badgeKey: "Aiguillettes6",
-        width: "2.4rem",
-        height: "8.4rem",
-        
-        positionTitle: "2cm below the shoulder flap seam",
-        positionTitle_two: "2cm below the shoulder flap seam",
-        positionTitle_three: "4cm below the shoulder flap seam",
-        Coordinates: [
-            {
-                keyName: " maleFour",
-                cord_one: "6.34rem",
-                cord_two: "1rem",
-            },
-            
-        ]
-    },
     
 ];
 
@@ -20128,23 +19981,10 @@ export const RibbonsCoordinates = [
 
 //  code Medals
 export const Medals = [
-    {
-        id: 22,
-        seniority: 2,
-        identity: "Medals",
-        keyName:
-            " FullWhiteSummerCeremonial female_one female_three femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional FullBlackWinterCeremonialDress",
-        name: "Nishan-e-Imtiaz (Military)",
-        badgeImage: Nishan_e_Imtiaz,
-        badgeKey: "Medals1",
-        neckMedal:true,
-        width: "1.8rem",
-        positionTitle: "5.5cm above Left Pocket",
-    },
     
     {
         id: 18,
-        seniority: 4,
+        seniority: 2,
         identity: "Medals",
         keyName:
             " FullWhiteSummerCeremonial female_one female_three femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional FullBlackWinterCeremonialDress",
@@ -20156,8 +19996,30 @@ export const Medals = [
         positionTitle: "5.5cm above Left Pocket",
     },
     {
+        id: 9,
+        seniority: 19,
+        identity: "Medals",
+        keyName:
+            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
+        name: "75 years platinum jubilee",
+        badgeImage: seventyFiveYears,
+        badgeKey: "Medals9",
+        positionTitle: "5.5cm above Left Pocket",
+    },
+    {
+        id: 10,
+        seniority: 3,
+        identity: "Medals",
+        keyName:
+            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
+        name: "Sitara-i-Juraat",
+        badgeImage: sitara_e_Jurrat,
+        badgeKey: "Medals10",
+        positionTitle: "5.5cm above Left Pocket",
+    },
+    {
         id: 11,
-        seniority: 7,
+        seniority: 4,
         identity: "Medals",
         keyName:
             "femaleFullBlackWinterCeremonialDress FullWhiteSummerCeremonial female_one female_three femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional FullBlackWinterCeremonialDress",
@@ -20169,86 +20031,8 @@ export const Medals = [
         positionTitle: "is below neck collars",
     },
     {
-        id: 9,
-        seniority: 37,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "75 years platinum jubilee",
-        badgeImage: seventyFiveYears,
-        badgeKey: "Medals9",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 29,
-        seniority: 4.5,
-        identity: "Medals",
-        keyName:
-            " FullWhiteSummerCeremonial female_one female_three femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional FullBlackWinterCeremonialDress",
-        name: "Hilal-i-Imtiaz (Military) Medal",
-        badgeImage: HIM,
-        badgeKey: "Medals6",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 23,
-        seniority: 42,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "Britannia Royal College",
-        badgeImage: Britannia_Royal_College,
-        badgeKey: "Medals23",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 24,
-        seniority: 34,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "Tamgha e Jamhoriyat",
-        badgeImage: Tamgha_e_Jamhoriyat,
-        badgeKey: "Medals24",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 25,
-        seniority: 36,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "Tamgha e Salgirah e Pakistan",
-        badgeImage: Tamgha_e_Salgirah_Pakistan,
-        badgeKey: "Medals25",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 26,
-        seniority: 13,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "Marka e haq",
-        badgeImage: Marka_e_haq,
-        badgeKey: "Medals13",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    {
-        id: 10,
-        seniority: 5,
-        identity: "Medals",
-        keyName:
-            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
-        name: "Sitara-i-Juraat",
-        badgeImage: sitara_e_Jurrat,
-        badgeKey: "Medals10",
-        positionTitle: "5.5cm above Left Pocket",
-    },
-    
-    {
         id: 12,
-        seniority: 8,
+        seniority: 5,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20259,7 +20043,7 @@ export const Medals = [
     },
     {
         id: 13,
-        seniority: 9,
+        seniority: 6,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20270,7 +20054,7 @@ export const Medals = [
     },
     {
         id: 14,
-        seniority: 16,
+        seniority: 7,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20281,7 +20065,7 @@ export const Medals = [
     },
     {
         id: 15,
-        seniority: 11,
+        seniority: 8,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20292,7 +20076,7 @@ export const Medals = [
     },
     {
         id: 1,
-        seniority: 14,
+        seniority: 9,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20303,7 +20087,7 @@ export const Medals = [
     },
     {
         id: 2,
-        seniority: 15,
+        seniority: 10,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20315,7 +20099,7 @@ export const Medals = [
     
     {
         id: 20,
-        seniority: 39,
+        seniority: 20.5,
         identity: "Medals",
         keyName: "FullWhiteSummerCeremonial MessDressWhiteSummerMessKit FullBlackWinterCeremonialDress MessDressBlackWinterMessKit camoPakMarines_six camoSSGN_seven female_one female_three femaleMessDressSummerMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleMessDressBlackWinterMessKit female_two femaleMessDressSummerMessKitAFNS femaleFullBlackWinterCeremonialDressAFNS femaleMessDressBlackWinterMessKitAFNS CeremonialSummerForCPOSANDPOS WinterCeremonialCPOsPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs CeremonialSummerForPOS WinterCeremonialPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs CeremonialSummerForLDGSAndBelow WinterCeremonialLDGSBelow SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial",
         name: "Oman (Change Of Sultan Medal)",
@@ -20326,7 +20110,7 @@ export const Medals = [
     
     {
         id: 3,
-        seniority: 26,
+        seniority: 11,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20337,7 +20121,7 @@ export const Medals = [
     },
     {
         id: 16,
-        seniority: 17,
+        seniority: 12,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20348,7 +20132,7 @@ export const Medals = [
     },
     {
         id: 17,
-        seniority: 18,
+        seniority: 13,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20359,7 +20143,7 @@ export const Medals = [
     },
     {
         id: 4,
-        seniority: 28,
+        seniority: 14,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20370,7 +20154,7 @@ export const Medals = [
     },
     {
         id: 5,
-        seniority: 29,
+        seniority: 15,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20381,7 +20165,7 @@ export const Medals = [
     },
     {
         id: 6,
-        seniority: 30,
+        seniority: 16,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven",
@@ -20392,7 +20176,7 @@ export const Medals = [
     },
     {
         id: 7,
-        seniority: 31,
+        seniority: 17,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three camoPakMarines_six camoSSGN_seven ",
@@ -20403,7 +20187,7 @@ export const Medals = [
     },
     {
         id: 8,
-        seniority: 32,
+        seniority: 18,
         identity: "Medals",
         keyName:
             "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial CeremonialSummerForPOS femaleDressNo1FullWhiteSummerCeremonials  femaleDressNo7WinterCeremonial  POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial  LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial WinterCeremonialLDGSBelow CeremonialSummerForLDGSAndBelow WinterCeremonialPOs CeremonialSummerForPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow PakMarineCeremonialCPOs SSGNCamouflageCeremonialCPOs  CeremonialSummerForCPOSANDPOS femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS FullBlackWinterCeremonialDress femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit FullWhiteSummerCeremonial female_one female_two female_three  camoPakMarines_six camoSSGN_seven",
@@ -20414,7 +20198,7 @@ export const Medals = [
     },
     {
         id: 21,
-        seniority: 40,
+        seniority: 20,
         identity: "Medals",
         keyName: "FullWhiteSummerCeremonial MessDressWhiteSummerMessKit FullBlackWinterCeremonialDress MessDressBlackWinterMessKit camoPakMarines_six camoSSGN_seven female_one female_three femaleMessDressSummerMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleMessDressBlackWinterMessKit female_two femaleMessDressSummerMessKitAFNS femaleFullBlackWinterCeremonialDressAFNS femaleMessDressBlackWinterMessKitAFNS CeremonialSummerForCPOSANDPOS WinterCeremonialCPOsPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs CeremonialSummerForPOS WinterCeremonialPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs CeremonialSummerForLDGSAndBelow WinterCeremonialLDGSBelow SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial",
         name: "Oman (50th Anniversary)",
@@ -20424,7 +20208,7 @@ export const Medals = [
     },
     {
         id: 19,
-        seniority: 41,
+        seniority: 19,
         identity: "Medals",
         keyName: "FullWhiteSummerCeremonial MessDressWhiteSummerMessKit FullBlackWinterCeremonialDress MessDressBlackWinterMessKit camoPakMarines_six camoSSGN_seven female_one female_three femaleMessDressSummerMessKit femaleFullBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleMessDressBlackWinterMessKit female_two femaleMessDressSummerMessKitAFNS femaleFullBlackWinterCeremonialDressAFNS femaleMessDressBlackWinterMessKitAFNS CeremonialSummerForCPOSANDPOS WinterCeremonialCPOsPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs CeremonialSummerForPOS WinterCeremonialPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs CeremonialSummerForLDGSAndBelow WinterCeremonialLDGSBelow SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow femaleDressNo1FullWhiteSummerCeremonials femaleDressNo7WinterCeremonial POfemaleDressNo1FullWorkingDressWhiteSummer POfemaleDressNo7WinterCeremonial LDGfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo7WinterCeremonial",
         name: "UN Mission",

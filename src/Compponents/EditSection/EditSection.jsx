@@ -23,6 +23,10 @@ import {
     Aiguillettes,
     
 } from "../../utils/utils";
+import star from "../../assets/dress_one/Ranks-v3/1-star.png";
+import star_two from "../../assets/dress_one/Ranks-v3/2-star.png";
+import star_three from "../../assets/dress_one/Ranks-v3/3-star.png";
+import star_four from "../../assets/dress_one/Ranks-v3/4-star.png";
 import {
     CurrentBoxPosition,
     GetBadgesLength,
@@ -1195,7 +1199,10 @@ const EditSection = () => {
                                             right: "-3rem",
                                             width: "7rem",
                                             height: "7rem",
-                                            background: "black",
+                                            background: (sizeModel?.sizeImage_one === star || 
+                                                        sizeModel?.sizeImage_one === star_two || 
+                                                        sizeModel?.sizeImage_one === star_three || 
+                                                        sizeModel?.sizeImage_one === star_four) ? "white" : "black",
                                             borderRadius: "1rem",
                                         }}
                                     >
@@ -1503,9 +1510,18 @@ const EditSection = () => {
                                     ? (findHoverData?.gbc ? `${findHoverData?.gbc}` : item?.name)
                                     : item?.name;
 
+                                    // Check if this is any admiral rank on maleFour or female_four dress
+                                    const isAdmiralOnMaleFour = (item?.badgeKey === "rank11" || // ADMIRAL
+                                                              item?.badgeKey === "rank13" || // VICE ADMIRAL  
+                                                              item?.badgeKey === "rank12" || // REAR ADMIRAL
+                                                              item?.badgeKey === "rank14") && // COMMODORE
+                                                              (currentDresses?.keyName === "maleFour" || 
+                                                               currentDresses?.keyName === "female_four") && 
+                                                              item?.showStar;
                                     
                                     return (
-                                        <Box>
+                                        <Box key={item?.badgeKey}>
+                                            {/* Main rank image */}
                                             <Box
                                                 sx={{
                                                     position: "absolute",
@@ -1538,44 +1554,109 @@ const EditSection = () => {
                                                     }}
                                                 />
                                             </Box>
-                                            <Box
-                                                onMouseEnter={(e) =>
-                                                    handleEnter(e, item?.badgeImage)
-                                                }
-                                                onMouseLeave={(e) => handleLeave(e)}
-                                                sx={{
-                                                    position: "absolute",
-                                                    top: itemCoordinates?.left_cord_one,
-                                                    left: itemCoordinates?.left_cord_two,
-                                                    transform: itemCoordinates?.right_transform,
 
-                                                    rotate: itemCoordinates?.left_rotate,
-                                                    width: itemCoordinates?.width
-                                                        ? itemCoordinates?.width
-                                                        : "3rem",
-                                                    height: itemCoordinates?.height
-                                                        ? itemCoordinates?.height
-                                                        : "auto",
-                                                }}
-                                            >
-                                                <img
-                                                    src={
-                                                        item?.afns
-                                                            ? item?.badgeImage_two
-                                                            : item?.badgeImage
+                                            {/* Star images for admiral ranks on maleFour/female_four */}
+                                            {isAdmiralOnMaleFour && (
+                                                <>
+                                                    {/* First Star */}
+                                                    <Box
+                                                        sx={{
+                                                            position: "absolute",
+                                                            top: itemCoordinates?.star_cord_one,
+                                                            left: itemCoordinates?.star_cord_two,
+                                                            width: itemCoordinates?.star_width || "0.8rem",
+                                                            height: itemCoordinates?.star_height || "0.8rem",
+                                                            rotate: itemCoordinates?.star_rotate || "0deg",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            onMouseEnter={(e) =>
+                                                                handleEnter(e, item?.starImage)
+                                                            }
+                                                            onMouseLeave={(e) => handleLeave(e)}
+                                                            src={item?.starImage}
+                                                            alt="admiral-star-1"
+                                                            title="Admiral Star 1"
+                                                            width={"100%"}
+                                                            height={"100%"}
+                                                            style={{
+                                                                objectFit: "contain",
+                                                                boxShadow: itemCoordinates?.boxShadow,
+                                                            }}
+                                                        />
+                                                    </Box>
+                                                    
+                                                    {/* Second Star */}
+                                                    <Box
+                                                        sx={{
+                                                            position: "absolute",
+                                                            top: itemCoordinates?.star_cord_two_one,
+                                                            left: itemCoordinates?.star_cord_two_two,
+                                                            width: itemCoordinates?.star_width_two || "0.8rem",
+                                                            height: itemCoordinates?.star_height_two || "0.8rem",
+                                                            rotate: itemCoordinates?.star_rotate_two || "0deg",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            onMouseEnter={(e) =>
+                                                                handleEnter(e, item?.starImage)
+                                                            }
+                                                            onMouseLeave={(e) => handleLeave(e)}
+                                                            src={item?.starImage}
+                                                            alt="admiral-star-2"
+                                                            title="Admiral Star 2"
+                                                            width={"100%"}
+                                                            height={"100%"}
+                                                            style={{
+                                                                objectFit: "contain",
+                                                                boxShadow: itemCoordinates?.boxShadow,
+                                                            }}
+                                                        />
+                                                    </Box>
+                                                </>
+                                            )}
+
+                                            {/* Left side image (for other ranks) */}
+                                            {itemCoordinates?.left_cord_one && (
+                                                <Box
+                                                    onMouseEnter={(e) =>
+                                                        handleEnter(e, item?.badgeImage)
                                                     }
-                                                    alt="unifrom-logos"
-                                                    title={title_r}
-                                                    width={"100%"}
-                                                    height={"100%"}
-                                                    style={{
-                                                        objectFit: "contain",
-                                                        boxShadow: item?.afns
-                                                            ? itemCoordinates?.boxShadow_two
-                                                            : itemCoordinates?.boxShadow,
+                                                    onMouseLeave={(e) => handleLeave(e)}
+                                                    sx={{
+                                                        position: "absolute",
+                                                        top: itemCoordinates?.left_cord_one,
+                                                        left: itemCoordinates?.left_cord_two,
+                                                        transform: itemCoordinates?.right_transform,
+
+                                                        rotate: itemCoordinates?.left_rotate,
+                                                        width: itemCoordinates?.width
+                                                            ? itemCoordinates?.width
+                                                            : "3rem",
+                                                        height: itemCoordinates?.height
+                                                            ? itemCoordinates?.height
+                                                            : "auto",
                                                     }}
-                                                />
-                                            </Box>
+                                                >
+                                                    <img
+                                                        src={
+                                                            item?.afns
+                                                                ? item?.badgeImage_two
+                                                                : item?.badgeImage
+                                                        }
+                                                        alt="unifrom-logos"
+                                                        title={title_r}
+                                                        width={"100%"}
+                                                        height={"100%"}
+                                                        style={{
+                                                            objectFit: "contain",
+                                                            boxShadow: item?.afns
+                                                                ? itemCoordinates?.boxShadow_two
+                                                                : itemCoordinates?.boxShadow,
+                                                        }}
+                                                    />
+                                                </Box>
+                                            )}
                                         </Box>
                                     );
                                 })}

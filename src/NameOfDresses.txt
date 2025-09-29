@@ -2,17 +2,17 @@
 
 FullWhiteSummerCeremonial                                       DRESS NO. 1 – FULL WHITE (SUMMER CEREMONIAL)
 ServiceDressWhite                                               DRESS NO. 2 – SERVICE DRESS WHITE
-ServiceDressWhiteModifiedSummer                                 DRESS NO. 2A – SERVICE DRESS WHITE MODIFIED (SUMMER)
-ServiceDressBlackModifiedWinter                                 DRESS NO. 2B – SERVICE DRESS BLACK MODIFIED (WINTER)
+male2A                                                          DRESS NO. 2A – SERVICE DRESS WHITE MODIFIED (SUMMER)
+male2B                                                          DRESS NO. 2B – SERVICE DRESS BLACK MODIFIED (WINTER)
 WorkingDressWhite                                               DRESS NO. 3 – WORKING DRESS WHITE
 WorkingDressWhiteWinter                                         DRESS NO. 3A – WORKING DRESS WHITE (WINTER)
-DigitalCamouflageDressCombat                                    DRESS NO. 4 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
+maleFour                                                        DRESS NO. 4 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
 MessDressWhiteSummerMessKit                                     DRESS NO. 5 – MESS DRESS WHITE (SUMMER MESS KIT)
 MessDressWhiteWinterMessKit                                     DRESS NO. 6 – MESS DRESS WHITE (WINTER MESS KIT)
 FullBlackWinterCeremonialDress                                  DRESS NO. 7 – FULL BLACK (WINTER CEREMONIAL)
 ServiceBlackDressWinter                                         DRESS NO. 8 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
 WorkingWinterBlackModified                                      DRESS NO. 8A
-
+MessDressBlackWinterMessKit                               Dreess 10
 
 
 

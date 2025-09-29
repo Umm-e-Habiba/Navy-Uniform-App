@@ -1193,6 +1193,7 @@ let CurrentDressChecks = [
     },
     {
         dressString: "maleFour female_four camoSSGNCombat camoPakMarinesCombat",
+        dressCode: 5,
     },
     {
         dressString:
@@ -1862,17 +1863,17 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
          if (medals?.length === 1) {
             return "12.5rem";
         } else if (medals?.length === 2) {
-            return "12.3rem";
-        } else if (medals?.length === 3) {
             return "12.1rem";
+        } else if (medals?.length === 3) {
+            return "11.8rem";
         } else if (medals?.length === 4) {
-            return "11.9rem";
-        } else if (medals?.length === 5) {
-            return "11.7rem";
-        } else if (medals?.length === 6) {
             return "11.5rem";
+        } else if (medals?.length === 5) {
+            return "11.1rem";
+        } else if (medals?.length === 6) {
+            return "10.9rem";
         } else {
-            return "11.3rem";
+            return "10.7rem";
         }
     } else if (DressCheck?.dressCode === 6) {
         if (currentDresses?.dressGender === "female") {
@@ -1912,22 +1913,43 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
                     return "11.45rem";
                 }
             }
-        } else {
-            if (medals?.length === 7) {
-                return "11.8rem";
-            } else if (medals?.length === 2) {
-                return "12.35rem";
-            } else if (medals?.length === 3) {
-                return "12.2rem";
-            } else if (medals?.length === 4) {
-                return "12.1rem";
-            } else if (medals?.length === 5) {
-                return "12rem";
-            } else if (medals?.length === 6) {
-                return "11.9rem";
-            } else {
-                return "12.45rem";
+        }
+        else {
+            if(currentDresses?.keyName === "MessDressBlackWinterMessKit"){
+                if (medals?.length === 7) {
+                    return "11.8rem";
+                } else if (medals?.length === 2) {
+                    return "12.35rem";
+                } else if (medals?.length === 3) {
+                    return "12.2rem";
+                } else if (medals?.length === 4) {
+                    return "12.1rem";
+                } else if (medals?.length === 5) {
+                    return "12rem";
+                } else if (medals?.length === 6) {
+                    return "11.9rem";
+                } else {
+                    return "12.45rem";
+                }
             }
+            else{
+                if (medals?.length === 7) {
+                    return "11.8rem";
+                } else if (medals?.length === 2) {
+                    return "12.35rem";
+                } else if (medals?.length === 3) {
+                    return "12.2rem";
+                } else if (medals?.length === 4) {
+                    return "12.1rem";
+                } else if (medals?.length === 5) {
+                    return "12rem";
+                } else if (medals?.length === 6) {
+                    return "11.9rem";
+                } else {
+                    return "12.45rem";
+                }
+            }
+            
         }
     } else if (DressCheck?.dressCode === 7) {
         if (currentDresses?.dressGender === "female") {
@@ -4675,7 +4697,7 @@ export const CurrentScraf = (name, array, DressCheck) => {
 };
 
 export const CurrentAiguillettes = (name, array, DressCheck) => {
-    if (DressCheck?.dressCode === 0) {
+    if (DressCheck?.dressCode === 0 || DressCheck?.dressCode === 1 ) {
         return {
             top: "7.5rem",
             left: "7.75rem",
@@ -4685,9 +4707,40 @@ export const CurrentAiguillettes = (name, array, DressCheck) => {
     }
 };
 export const GetAiguillettesCord = (name) => {
-    if (
-        name === "FullWhiteSummerCeremonial" 
-    ) {
+    if ( name === "FullWhiteSummerCeremonial" ) {
+        return { cord_one: "12.2rem", cord_two: "12rem" };
+    }
+    else if ( name === "ServiceDressWhite" ) {
+        return { cord_one: "12.2rem", cord_two: "12rem" };
+    }
+    else if ( name === "male2A" ) {
         return { cord_one: "8.5rem", cord_two: "9.45rem" };
+    }
+    else if ( name === "male2B" ) {
+        return { cord_one: "8.5rem", cord_two: "9.45rem" };
+    }
+    else if ( name === "FullBlackWinterCeremonialDress" ) {
+        return { cord_one: "11.8rem", cord_two: "13.45rem" };
+    }
+    else if ( name === "MessDressWhiteSummerMessKit" ) {
+        return { cord_one: "12.8rem", cord_two: "13.45rem" };
+    }
+    else if ( name === "MessDressBlackWinterMessKit" ) {
+        return { cord_one: "12.8rem", cord_two: "13.45rem" };
+    }
+    else if ( name === "WorkingDressWhite" ) {
+        return { cord_one: "11.5rem", cord_two: "14.2rem" };
+    }
+    else if ( name === "WorkingDressWhiteWinter" ) {
+        return { cord_one: "11.5rem", cord_two: "14.5rem" };
+    }
+    else if ( name === "WorkingWinterBlackModified" ) {
+        return { cord_one: "11.5rem", cord_two: "14.5rem" };
+    }
+    else if ( name === "ServiceBlackDressWinter" ) {
+        return { cord_one: "12rem", cord_two: "14.3rem" };
+    }
+    else if ( name === "maleFour" ) {
+        return { cord_one: "11.5rem", cord_two: "14.5rem" };
     }
 };
