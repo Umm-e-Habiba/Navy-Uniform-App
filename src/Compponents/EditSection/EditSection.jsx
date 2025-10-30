@@ -36,6 +36,7 @@ import {
     GetCurrentUpdatedData,
     GetLeftChestCord,
     GetNeckMedalsCord,
+    GetPocketMedalCoordinates,
     getResponsiveLength,
     GetRibbonsBox,
     GetRightBoxCord,
@@ -72,6 +73,7 @@ import MedalsContent from "./MedalsContent";
 import GoldButtons from "./GoldButtons";
 import BeltStars from "./BeltStars";
 import NeckMedals from "./NeckMedals";
+import PocketMedals from "./PocketMedals";
 import LeftArmContent from "./ArmLeftBiceps";
 import ScrafContent from "./ScrafsContent";
 import AiguillettesContent from "./AiguillettesContent";
@@ -251,6 +253,7 @@ const EditSection = () => {
         leftChest: {},
         ribbonsChest: {},
         neckMedalCords: {},
+        pocketMedalCords: {},
         leftbicepCords: {},
         scrafCords: {},
 
@@ -930,7 +933,7 @@ const EditSection = () => {
         let rightCords = GetRightBoxCord(currentDresses, selectedOptions);
         let leftChest = GetLeftChestCord(
             currentDresses,
-            selectedOptions?.Medals,
+            selectedOptions?.Medals?.filter((m) => !m?.pocketMedal),
             currentBadgesState?.Medals
         );
         
@@ -1019,6 +1022,16 @@ const EditSection = () => {
             });
         }
     }, [currentDresses?.keyName]);
+
+    useEffect(() => {
+        const cords = GetPocketMedalCoordinates(currentDresses?.keyName);
+        if (cords) {
+            setPositions((prev) => ({
+                ...prev,
+                pocketMedalCords: cords,
+            }));
+        }
+    }, [currentDresses?.keyName, selectedOptions?.Medals]);
 
     const handleEnter = (e, image, imgae_two) => {
         e.preventDefault();
@@ -1516,7 +1529,8 @@ const EditSection = () => {
                                                               item?.badgeKey === "rank12" || // REAR ADMIRAL
                                                               item?.badgeKey === "rank14") && // COMMODORE
                                                               (currentDresses?.keyName === "maleFour" || 
-                                                               currentDresses?.keyName === "female_four") && 
+                                                               currentDresses?.keyName === "female_four" ||
+                                                               currentDresses?.keyName === "female_four_AFNS") && 
                                                               item?.showStar;
                                     
                                     return (
@@ -1708,6 +1722,25 @@ const EditSection = () => {
                                             // title={"Worn 1cm above name tally"}
                                         />
                                     )}
+                                </Box>
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        position: "absolute",
+                                        top: positions?.pocketMedalCords?.cord_one,
+                                        left: positions?.pocketMedalCords?.cord_two,
+                                        width: "1.5rem",
+                                    }}
+                                >
+                                    <PocketMedals
+                                        handleEnter={handleEnter}
+                                        handleLeave={handleLeave}
+                                        selectedOptions={selectedOptions}
+                                        currentDresses={currentDresses}
+                                    />
                                 </Box>
                                 <Box
                                     sx={{

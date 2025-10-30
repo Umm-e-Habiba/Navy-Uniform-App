@@ -306,12 +306,12 @@ import ldg_grey_right from "../assets/dress_one/Rank-CPO-PO-LDG/ldg_grey_right.p
 // Ranks
 // Medals
 //new 5 medals
-import Britannia_Royal_College from "../assets/dress_one/MEDALS/Britannia Royal College.png";
+import Britannia_Royal_College from "../assets/dress_one/MEDALS/Britaniya Royal College.png";
 import Marka_e_haq from "../assets/dress_one/MEDALS/Marka e haq.png";
 import HIM from "../assets/dress_one/MEDALS/hilal imtiaz-medal.png";
 import Tamgha_e_Jamhoriyat from "../assets/dress_one/MEDALS/Tamgha e Jamhoriyat.png";
 import Tamgha_e_Salgirah_Pakistan from "../assets/dress_one/MEDALS/Tamgha e Salgirah pakistan.png";
-import Nishan_e_Imtiaz from "../assets/dress_one/MEDALS/HIM.png";
+import Nishan_e_Imtiaz from "../assets/dress_one/MEDALS/Nishan e Imtiaz.png";
 
 
 import UN from "../assets/dress_one/MEDALS/UN MISSION MEDAL.png";
@@ -4394,7 +4394,7 @@ export const Ribbons = [
         identity: "ribbon",
         badgeKey: "ribbons54",
         positionTitle: "Right above the top line of pocket",
-        name: "Jamhuriat Tamgha",
+        name: "Tamgha e Jamhoriyat",
         badgeImage: fiftyFour,
         badgeGender: "male",
     },
@@ -4507,7 +4507,7 @@ export const Ribbons = [
         identity: "ribbon",
         badgeKey: "ribbons62",
         positionTitle: "Right above the top line of pocket",
-        name: "Britannia Royal College",
+        name: "Britaniya Royal College",
         badgeImage: Britannia_Royal_College_ribbon,
         badgeGender: "male",
     },
@@ -10979,7 +10979,7 @@ export const Ranks = [
         identity: "rank",
         availableCaps: "caps7",
         rotate: false,
-        keyName: "maleFour female_four",
+        keyName: "maleFour female_four ",
         name: "COMMODORE",
         badgeImage: v3_Commodor,
         badgeKey: "rank14",
@@ -11204,26 +11204,37 @@ export const Ranks = [
         identity: "rank",
         availableCaps: "caps7",
         rotate: false,
-        afns: true,
+        
+        starImage: star,
+        showStar: true,
         keyName: "female_four_AFNS",
         name: "COMMODORE",
         badgeImage: v3_Commodor_AFNS,
-        badgeImage_two: v3_Commodor_Right_AFNS,
+       
         badgeKey: "rank14",
         Coordinates: [
             {
                 keyName: "female_four_AFNS",
-                width: "2.6rem",
-                height: "auto",
-                left_cord_one: "7.7rem",
-                left_cord_two: "12.6rem",
-                right_cord_one: "7.74rem",
-                right_cord_two: "4.65rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(10deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(-192deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "8rem",
+                star_cord_two: "7.4rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "15deg",
+                // Second Star coordinates
+                star_cord_two_one: "8rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "15deg",
+               
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
     },
@@ -11231,8 +11242,8 @@ export const Ranks = [
         id: 5,
         identity: "rank",
         availableCaps: "caps8",
-        rotate: true,
-        afns: true,
+        rotate: false,
+        
         keyName: "female_four_AFNS",
         name: "CAPTAIN",
         badgeImage: v3_CAPTAIN_AFNS,
@@ -11242,15 +11253,10 @@ export const Ranks = [
             {
                 keyName: "female_four_AFNS",
                 width: "1.5rem",
-                height: "auto",
-                left_cord_one: "6.6rem",
-                left_cord_two: "13.4rem",
-                right_cord_one: "6.6rem",
-                right_cord_two: "5.1rem",
-                left_rotate: "-65deg",
-                right_rotate: "65deg",
-                left_transform: "rotateX(0deg) rotateY(54deg)",
-                right_transform: "rotateX(0deg) rotateY(-305deg)",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11259,8 +11265,7 @@ export const Ranks = [
         id: 6,
         identity: "rank",
         availableCaps: "caps8",
-        rotate: true,
-        afns: true,
+        rotate: false,
         keyName: "female_four_AFNS",
         name: "COMMANDER",
         badgeImage: v3_COMMANDER_AFNS,
@@ -11270,15 +11275,10 @@ export const Ranks = [
             {
                 keyName: "female_four_AFNS",
                 width: "1.5rem",
-                height: "auto",
-                left_cord_one: "6.6rem",
-                left_cord_two: "13.4rem",
-                right_cord_one: "6.6rem",
-                right_cord_two: "5.1rem",
-                left_rotate: "-65deg",
-                right_rotate: "65deg",
-                left_transform: "rotateX(0deg) rotateY(54deg)",
-                right_transform: "rotateX(0deg) rotateY(-305deg)",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11287,8 +11287,7 @@ export const Ranks = [
         id: 7,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
-        afns: true,
+        rotate: false,
         keyName: "female_four_AFNS",
         name: "LIEUTENANT COMMANDER",
         badgeImage: v3_LIEUTENANT_COMMANDER_AFNS,
@@ -11298,15 +11297,10 @@ export const Ranks = [
             {
                 keyName: "female_four_AFNS",
                 width: "1.5rem",
-                height: "auto",
-                left_cord_one: "6.6rem",
-                left_cord_two: "13.4rem",
-                right_cord_one: "6.6rem",
-                right_cord_two: "5.1rem",
-                left_rotate: "-65deg",
-                right_rotate: "65deg",
-                left_transform: "rotateX(0deg) rotateY(54deg)",
-                right_transform: "rotateX(0deg) rotateY(-305deg)",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11315,8 +11309,7 @@ export const Ranks = [
         id: 8,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
-        afns: true,
+        rotate: false,
         keyName: "female_four_AFNS",
         name: "LIEUTENANT",
         badgeImage: v3_LIEUTENANT_AFNS,
@@ -11326,15 +11319,10 @@ export const Ranks = [
             {
                 keyName: "female_four_AFNS",
                 width: "1.5rem",
-                height: "auto",
-                left_cord_one: "6.6rem",
-                left_cord_two: "13.4rem",
-                right_cord_one: "6.6rem",
-                right_cord_two: "5.1rem",
-                left_rotate: "-65deg",
-                right_rotate: "65deg",
-                left_transform: "rotateX(0deg) rotateY(54deg)",
-                right_transform: "rotateX(0deg) rotateY(-305deg)",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11343,8 +11331,7 @@ export const Ranks = [
         id: 9,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
-        afns: true,
+        rotate: false,
         keyName: "female_four_AFNS",
         name: "SUB LIEUTENANT",
         badgeImage: v3_SUB_LIEUTENANT_AFNS,
@@ -11354,15 +11341,10 @@ export const Ranks = [
             {
                 keyName: "female_four_AFNS",
                 width: "1.5rem",
-                height: "auto",
-                left_cord_one: "6.6rem",
-                left_cord_two: "13.4rem",
-                right_cord_one: "6.6rem",
-                right_cord_two: "5.1rem",
-                left_rotate: "-65deg",
-                right_rotate: "65deg",
-                left_transform: "rotateX(0deg) rotateY(54deg)",
-                right_transform: "rotateX(0deg) rotateY(-305deg)",
+                height: "1.5rem",
+                
+                right_cord_one: "12.7rem",
+                right_cord_two: "9.3rem",
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -20137,7 +20119,7 @@ export const Medals = [
         name: "Nishan-e-Imtiaz (Military)",
         badgeImage: Nishan_e_Imtiaz,
         badgeKey: "Medals1",
-        neckMedal:true,
+        pocketMedal:true,
         width: "1.8rem",
         positionTitle: "5.5cm above Left Pocket",
     },
@@ -21431,6 +21413,11 @@ export const pdfs = [
         keyName:" ",
         name: "Band Dress",
         url: "/Pdfs/Band Dress/Band Dress.pdf",
+    },
+    {
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat ",
+        name: "Specification of Chest Ranks for Camouflage Dresses",
+        url: "/Pdfs/Specification of Chest Ranks for Camouflage Dresses.pdf",
     },
     {
         keyName:"LDGfemaleDressNo3WorkingDressWhiteSummer WorkingDressWhiteSummerLDGSBelow POfemaleDressNo3AWorkingDressSummer WorkingDressWhiteWinterPOs femaleDressNo3AWorkingDressSummer WorkingDressWhiteWinterCPOsPOs    MessDressBlackWinterMessKit      ",

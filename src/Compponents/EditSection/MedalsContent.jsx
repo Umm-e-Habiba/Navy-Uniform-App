@@ -5,6 +5,7 @@ import {
     GetCurrentBadge,
     GetCurrentDressChecks,
     leftSortItems,
+    GetPocketMedalCoordinates,
 } from "../../utils/logics";
 import { LeftChestStars } from "../../utils/utils";
 
@@ -14,7 +15,7 @@ const MedalsContent = (props) => {
     const GetCurrentContent = () => {
         return (
             <>
-                {selectedOptions?.Medals?.map((item, index) => {
+                {selectedOptions?.Medals?.filter((m) => !m?.pocketMedal)?.map((item, index) => {
                     let itemCoordinates = GetCurrentBadge(
                         item?.Coordinates,
                         currentDresses?.keyName

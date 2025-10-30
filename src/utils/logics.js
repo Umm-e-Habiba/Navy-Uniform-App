@@ -255,6 +255,11 @@ export const GetCurrentCaps = (item, dressKeyName) => {
     return item?.keyName?.split(" ")?.includes(dressKeyName);
 };
 
+export const GetPocketMedalCoordinates = (dressKeyName) => {
+	// Placeholder coordinates for pocket medals; adjust per dress as needed
+	return { cord_one: "14.5rem", cord_two: "12.5rem" };
+};
+
 export const Badge = ({ badgeImage, positionTitle, order }) => {
     return (
         <div className="badge_item" style={{ order }}>
