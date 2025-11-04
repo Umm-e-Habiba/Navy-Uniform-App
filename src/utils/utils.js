@@ -10817,14 +10817,14 @@ export const Ranks = [
                 star_cord_two: "7.2rem",
                 star_width: "1.2rem",
                 star_height: "2.1rem",
-                star_rotate: "15deg",
+                star_rotate: "rotate(15deg)",
 
                 // Second Star coordinates (positioned near the v3_ADMIRAL image)
                 star_cord_two_one: "6.4rem",
                 star_cord_two_two: "11.5rem",
                 star_width_two: "1.2rem",
                 star_height_two: "2.1rem",
-                star_rotate_two: "-15deg",
+                star_rotate_two: "rotate(-15deg)",
                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
@@ -10841,14 +10841,14 @@ export const Ranks = [
                 star_cord_two: "7.4rem",
                 star_width: "1.2rem",
                 star_height: "2.1rem",
-                star_rotate: "15deg",
+                star_rotate: "rotate(15deg)",
 
                 // Second Star coordinates (positioned near the v3_ADMIRAL image)
                 star_cord_two_one: "7.5rem",
                 star_cord_two_two: "11.6rem",
                 star_width_two: "1.2rem",
                 star_height_two: "2.1rem",
-                star_rotate_two: "-15deg",
+                star_rotate_two: "rotate(-15deg)",
                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
@@ -10881,14 +10881,14 @@ export const Ranks = [
                 star_cord_two: "7.3rem",
                 star_width: "1.2rem",
                 star_height: "1.6rem",
-                star_rotate: "15deg",
+                star_rotate: "rotate(15deg)",
  
                 // Second Star coordinates
                 star_cord_two_one: "6.7rem",
                 star_cord_two_two: "11.5rem",
                 star_width_two: "1.2rem",
                 star_height_two: "1.6rem",
-                star_rotate_two: "-15deg",
+                star_rotate_two: "rotate(-15deg)",
             },
 
             {
@@ -10904,14 +10904,14 @@ export const Ranks = [
                 star_cord_two: "7.4rem",
                 star_width: "1.2rem",
                 star_height: "1.6rem",
-                star_rotate: "15deg",
+                star_rotate: "rotate(15deg)",
 
                 // Second Star coordinates (positioned near the v3_VICE_ADMIRAL image)
                 star_cord_two_one: "8.0rem",
                 star_cord_two_two: "11.6rem",
                 star_width_two: "1.2rem",
                 star_height_two: "1.6rem",
-                star_rotate_two: "-15deg",
+                star_rotate_two: "rotate(-15deg)",
                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
@@ -10942,12 +10942,14 @@ export const Ranks = [
                star_cord_two: "7.2rem",
                star_width: "1.2rem",
                star_height: "1.2rem",
+               star_rotate:"rotate(15deg)",
 
                // Second Star coordinates
                star_cord_two_one: "7.2rem",
                star_cord_two_two: "11.6rem",
                star_width_two: "1.2rem",
                star_height_two: "1.2rem",
+               star_rotate_two:"rotate(-15deg)"
             },
 
             {
@@ -10963,12 +10965,14 @@ export const Ranks = [
                 star_cord_two: "7.2rem",
                 star_width: "1.2rem",
                 star_height: "1.2rem",
+                star_rotate:"rotate(15deg)",
 
                 // Second Star coordinates (positioned near the v3_REAR_ADMIRAL image)
                 star_cord_two_one: "8.3rem",
                 star_cord_two_two: "11.6rem",
                 star_width_two: "1.2rem",
                 star_height_two: "1.2rem",
+                star_rotate_two:"rotate(-15deg)",
                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
@@ -11037,7 +11041,7 @@ export const Ranks = [
         id: 5,
         identity: "rank",
         availableCaps: "caps8",
-        rotate: true,
+        rotate: false,
         keyName: "maleFour female_four",
         name: "CAPTAIN",
         badgeImage: v3_CAPTAIN,
@@ -11050,7 +11054,7 @@ export const Ranks = [
                 
                 right_cord_one: "11.4rem",
                 right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             {
@@ -11060,7 +11064,7 @@ export const Ranks = [
                 
                 right_cord_one: "12.7rem",
                 right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11069,7 +11073,7 @@ export const Ranks = [
         id: 6,
         identity: "rank",
         availableCaps: "caps8",
-        rotate: true,
+        rotate: false,
         keyName: "maleFour female_four",
         name: "COMMANDER",
         badgeImage: v3_COMMANDER,
@@ -11082,7 +11086,7 @@ export const Ranks = [
                 
                 right_cord_one: "11.4rem",
                 right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
@@ -11093,7 +11097,7 @@ export const Ranks = [
                 
                 right_cord_one: "12.7rem",
                 right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11102,7 +11106,7 @@ export const Ranks = [
         id: 7,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
+        rotate: false,
         keyName: "maleFour female_four",
         name: "LIEUTENANT COMMANDER",
         badgeImage: v3_LIEUTENANT_COMMANDER,
@@ -11115,7 +11119,7 @@ export const Ranks = [
                 
                 right_cord_one: "11.4rem",
                 right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
@@ -11126,7 +11130,7 @@ export const Ranks = [
                 
                 right_cord_one: "12.7rem",
                 right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11135,7 +11139,7 @@ export const Ranks = [
         id: 8,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
+        rotate: false,
         keyName: "maleFour female_four",
         name: "LIEUTENANT",
         badgeImage: v3_LIEUTENANT,
@@ -11148,7 +11152,7 @@ export const Ranks = [
                 
                 right_cord_one: "11.4rem",
                 right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
@@ -11159,7 +11163,7 @@ export const Ranks = [
                 
                 right_cord_one: "12.7rem",
                 right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11168,7 +11172,7 @@ export const Ranks = [
         id: 9,
         identity: "rank",
         availableCaps: "caps9",
-        rotate: true,
+        rotate: false,
         keyName: "maleFour female_four",
         name: "SUB LIEUTENANT",
         badgeImage: v3_SUB_LIEUTENANT,
@@ -11181,7 +11185,7 @@ export const Ranks = [
                 
                 right_cord_one: "11.4rem",
                 right_cord_two: "9.25rem",
-                right_rotate: "-90deg",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
 
@@ -11192,7 +11196,7 @@ export const Ranks = [
                 
                 right_cord_one: "12.7rem",
                 right_cord_two: "9.3rem",
-                right_rotate: "-90deg",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
             },
         ],
@@ -11363,19 +11367,30 @@ export const Ranks = [
         name: "ADMIRAL",
         badgeImage: v4_ADMIRAL,
         badgeKey: "rank11",
+        starImage:star_four,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.4rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.4rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11390,19 +11405,30 @@ export const Ranks = [
         name: "VICE ADMIRAL",
         badgeImage: v4_VICE_ADMIRAL,
         badgeKey: "rank13",
+        starImage:star_three,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.4rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.4rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11416,19 +11442,30 @@ export const Ranks = [
         name: "REAR ADMIRAL",
         badgeImage: v4_REAR_ADMIRAL,
         badgeKey: "rank12",
+        starImage:star_two,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.6rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.5rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11442,19 +11479,30 @@ export const Ranks = [
         name: "COMMODORE",
         badgeImage: v4_Commodor,
         badgeKey: "rank14",
+        starImage:star,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "7.2rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "7rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11471,16 +11519,12 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11497,16 +11541,12 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11523,16 +11563,12 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11549,16 +11585,12 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11575,16 +11607,12 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoSSGNCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11601,19 +11629,30 @@ export const Ranks = [
         name: "ADMIRAL",
         badgeImage: v5_ADMIRAL,
         badgeKey: "rank11",
+        starImage: star_four,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.4rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.4rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11628,19 +11667,30 @@ export const Ranks = [
         name: "VICE ADMIRAL",
         badgeImage: v5_VICE_ADMIRAL,
         badgeKey: "rank13",
+        starImage:star_three,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.4rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.4rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11654,19 +11704,30 @@ export const Ranks = [
         name: "REAR ADMIRAL",
         badgeImage: v5_REAR_ADMIRAL,
         badgeKey: "rank12",
+        starImage:star_two,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "6.6rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "6.4rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11680,19 +11741,30 @@ export const Ranks = [
         name: "COMMODORE",
         badgeImage: v5_Commodor,
         badgeKey: "rank14",
+        starImage:star,
+        showStar:true,
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                // First Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_one: "7.2rem",
+                star_cord_two: "7.2rem",
+                star_width: "1.2rem",
+                star_height: "2.1rem",
+                star_rotate: "rotate(15deg)",
+
+                // Second Star coordinates (positioned near the v3_ADMIRAL image)
+                star_cord_two_one: "7rem",
+                star_cord_two_two: "11.5rem",
+                star_width_two: "1.2rem",
+                star_height_two: "2.1rem",
+                star_rotate_two: "rotate(-15deg)",
+               
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11709,16 +11781,11 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11735,16 +11802,11 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11761,16 +11823,11 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11787,16 +11844,11 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -11813,16 +11865,11 @@ export const Ranks = [
         Coordinates: [
             {
                 keyName: "camoPakMarinesCombat",
-                width: "3rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.4rem",
-                right_cord_two: "4.35rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
-                right_transform: "rotateX(-130deg) rotateY(155deg) scale(1.3)",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
         ],
@@ -13012,17 +13059,13 @@ export const Ranks = [
            
             {
                 keyName: "SSGNCamouflageCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -13045,17 +13088,12 @@ export const Ranks = [
            
             {
                 keyName: "PakMarineCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -13335,17 +13373,13 @@ export const Ranks = [
            
             {
                 keyName: "SSGNCamouflageCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -13368,17 +13402,12 @@ export const Ranks = [
            
             {
                 keyName: "PakMarineCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -13658,17 +13687,13 @@ export const Ranks = [
            
             {
                 keyName: "SSGNCamouflageCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+               
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -13691,17 +13716,12 @@ export const Ranks = [
            
             {
                 keyName: "PakMarineCombatCPOs",
-                width: "3.2rem",
-                height: "auto",
-                left_cord_one: "6.25rem",
-                left_cord_two: "12.8rem",
-                right_cord_one: "6.3rem",
-                right_cord_two: "4.1rem",
-                left_rotate: "196deg",
-                right_rotate: "-32deg",
-                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.2)",
-                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.2)",
-                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+                width: "1.5rem",
+                height: "1.5rem",
+                right_cord_one: "11.7rem",
+                right_cord_two: "9.25rem",
+                
+                boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 7px 1px",
             },
             
             
@@ -21415,7 +21435,7 @@ export const pdfs = [
         url: "/Pdfs/Band Dress/Band Dress.pdf",
     },
     {
-        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat ",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat camoPakMarinesCombat camoSSGNCombat SSGNCamouflageCombatCPOs PakMarineCombatCPOs SSGNCamouflageCombatPOs PakMarineCombatPOs SSGNCamouflageCombatLDGSBelow PakMarineCombatLDGSBelow ",
         name: "Specification of Chest Ranks for Camouflage Dresses",
         url: "/Pdfs/Specification of Chest Ranks for Camouflage Dresses.pdf",
     },

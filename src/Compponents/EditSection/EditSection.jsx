@@ -1530,7 +1530,9 @@ const EditSection = () => {
                                                               item?.badgeKey === "rank14") && // COMMODORE
                                                               (currentDresses?.keyName === "maleFour" || 
                                                                currentDresses?.keyName === "female_four" ||
-                                                               currentDresses?.keyName === "female_four_AFNS") && 
+                                                               currentDresses?.keyName === "female_four_AFNS"||
+                                                               currentDresses?.keyName=== "camoPakMarinesCombat" ||
+                                                               currentDresses?.keyName==="camoSSGNCombat") && 
                                                               item?.showStar;
                                     
                                     return (
@@ -1580,7 +1582,7 @@ const EditSection = () => {
                                                             left: itemCoordinates?.star_cord_two,
                                                             width: itemCoordinates?.star_width || "0.8rem",
                                                             height: itemCoordinates?.star_height || "0.8rem",
-                                                            rotate: itemCoordinates?.star_rotate || "0deg",
+                                                            transform: itemCoordinates?.star_rotate || "0deg",
                                                         }}
                                                     >
                                                         <img
@@ -1608,7 +1610,7 @@ const EditSection = () => {
                                                             left: itemCoordinates?.star_cord_two_two,
                                                             width: itemCoordinates?.star_width_two || "0.8rem",
                                                             height: itemCoordinates?.star_height_two || "0.8rem",
-                                                            rotate: itemCoordinates?.star_rotate_two || "0deg",
+                                                            transform: itemCoordinates?.star_rotate_two || "0deg",
                                                         }}
                                                     >
                                                         <img
