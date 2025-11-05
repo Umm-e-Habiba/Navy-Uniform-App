@@ -125,10 +125,10 @@ const editHeaderMenu = [
         tabNum: 12,
         tabNam: "Scarf",
     },
-    {
-        tabNum: 13,
-        tabNam: "Aiguillettes",
-    },
+    //{
+       // tabNum: 13,
+       // tabNam: "Aiguillettes",
+    //},
     
 ];
 
