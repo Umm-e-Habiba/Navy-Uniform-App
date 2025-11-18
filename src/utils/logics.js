@@ -1709,7 +1709,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
             }
         }
     } else if (DressCheck?.dressCode === 5) {
-        if (currentDresses?.keyName === "female_four") {
+        if (currentDresses?.keyName === "female_four" || currentDresses?.keyName === "female_four_AFNS" || currentDresses?.keyName === "femaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "POfemaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "LDGfemaleDressNo4DigitalCamouflageCombat") {
             return { cord_one: "10.9rem", cord_two: "7.2rem" };
         } else if (currentDresses?.keyName === "camoSSGNCombat") {
             return { cord_one: "10rem", cord_two: "7.3rem" };
@@ -2259,15 +2259,28 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
     if (DressCheck?.dressCode === 5) {
         // maleFour / female_four / combat dresses
         if (selectedOptions?.leftPocketInsignia?.length === 1) {
+            if(name === "female_four" || name === "female_four_AFNS" || name === "femaleDressNo4DigitalCamouflageCombat" || name === "POfemaleDressNo4DigitalCamouflageCombat" || name === "LDGfemaleDressNo4DigitalCamouflageCombat"){
+                return {
+                    cord_one: "10.8rem",
+                    cord_two: "11.7rem",
+                };
+            }else{
             return {
                 cord_one: "9.7rem",
                 cord_two: "11.7rem",
-            };
+             };
+            }
         } else if (selectedOptions?.leftPocketInsignia?.length > 1) {
+            if(name === "female_four" || name === "female_four_AFNS" || name === "femaleDressNo4DigitalCamouflageCombat" || name === "POfemaleDressNo4DigitalCamouflageCombat" || name === "LDGfemaleDressNo4DigitalCamouflageCombat"){
+                return {
+                    cord_one: "10rem",
+                    cord_two: "11.7rem",
+                };
+            }else{
             return {
                 cord_one: "8.8rem",
                 cord_two: "11.7rem",
-            };
+            };}
         } else {
             return {
                 cord_one: "10.6rem",
