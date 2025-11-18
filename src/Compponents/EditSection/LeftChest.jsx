@@ -17,7 +17,8 @@ const LeftChestContent = (props) => {
         if (
             DressCheck?.dressCode === 1 ||
             DressCheck?.dressCode === 3 ||
-            DressCheck?.dressCode === 4
+            DressCheck?.dressCode === 4 ||
+            DressCheck?.dressCode === 5
         ) {
             let findStar = selectedOptions?.leftChest?.find(
                 (starItem) => starItem?.badgeKey === "leftChest11"

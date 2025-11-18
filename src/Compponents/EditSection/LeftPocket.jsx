@@ -34,7 +34,8 @@ const LeftPocketContent = (props) => {
             DressCheck?.dressCode === 1 ||
             DressCheck?.dressCode === 2 ||
             DressCheck?.dressCode === 3 ||
-            DressCheck?.dressCode === 4
+            DressCheck?.dressCode === 4 ||
+            DressCheck?.dressCode === 5
         ) {
             let count = 0;
             let itemtitle;

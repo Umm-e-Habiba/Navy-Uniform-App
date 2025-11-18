@@ -311,7 +311,7 @@ export const IsShowPET = (arr) => {
 };
 
 export const leftSortItems = (code, items) => {
-    if (code === 1 || code === 3 || code === 4) {
+    if (code === 1 || code === 3 || code === 4 || code === 5) {
         let updatedItems = items?.filter((filteerd) => filteerd?.badgeKey !== "leftChest16");
         items?.filter((filteerd) => filteerd?.badgeKey !== "leftChest16");
         console.log("Updated Items check", updatedItems);
@@ -684,6 +684,12 @@ export const CurrentLeftPocket = (name, array, star, DressCheck) => {
                 };
             }
         }  
+    } else if(DressCheck?.dressCode === 5){
+        return {
+            top: "0.52rem",
+            left: "0.75rem",
+            gap: "0rem",
+        };
     }
     else {
         return {
@@ -1197,7 +1203,7 @@ let CurrentDressChecks = [
         dressCode: 4,
     },
     {
-        dressString: "maleFour female_four camoSSGNCombat camoPakMarinesCombat",
+        dressString: "maleFour female_four camoSSGNCombat camoPakMarinesCombat DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat female_four_AFNS PakMarineCombatLDGSBelow SSGNCamouflageCombatLDGSBelow PakMarineCombatPOs SSGNCamouflageCombatPOs PakMarineCombatCPOs SSGNCamouflageCombatCPOs",
         dressCode: 5,
     },
     {
@@ -1709,7 +1715,10 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
             return { cord_one: "10rem", cord_two: "7.3rem" };
         } else if (currentDresses?.keyName === "camoPakMarinesCombat") {
             return { cord_one: "10rem", cord_two: "7.3rem" };
-        } else {
+        } else if (currentDresses?.keyName === "maleFour") {
+            return { cord_one: "9.6rem", cord_two: "7.2rem" };
+        } 
+        else {
             return { cord_one: "9.6rem", cord_two: "7.2rem" };
         }
     } else if (DressCheck?.dressCode === 6) {
@@ -2197,7 +2206,13 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
             cord_one: "10.6rem",
             cord_two: updated_cord ? updated_cord : "11.65rem",
         };
-    } else {
+    }else if(currentDresses?.keyName === "maleFour"){
+        return {
+            cord_one: "10.6rem",
+            cord_two: updated_cord ? updated_cord : "11.65rem",
+        };
+    } 
+    else {
         if (currentDresses?.dressGender === "female") {
             if(currentDresses.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" ){
                 return {
@@ -2241,7 +2256,25 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
 export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBadgesState) => {
     let ribbonsLength = selectedOptions?.ribbon?.length;
     let ribbonsData = currentBadgesState?.ribbon?.length;
-    if (DressCheck?.dressCode === 2) {
+    if (DressCheck?.dressCode === 5) {
+        // maleFour / female_four / combat dresses
+        if (selectedOptions?.leftPocketInsignia?.length === 1) {
+            return {
+                cord_one: "9.7rem",
+                cord_two: "11.7rem",
+            };
+        } else if (selectedOptions?.leftPocketInsignia?.length > 1) {
+            return {
+                cord_one: "8.8rem",
+                cord_two: "11.7rem",
+            };
+        } else {
+            return {
+                cord_one: "10.6rem",
+                cord_two: "11.7rem",
+            };
+        }
+    } else if (DressCheck?.dressCode === 2) {
         if (
             selectedOptions?.leftPocketInsignia?.length === 1 &&
             selectedOptions?.rightChest?.length === 0

@@ -428,7 +428,8 @@ const EditSection = () => {
             DressCheck?.dressCode === 1 ||
             DressCheck?.dressCode === 2 ||
             DressCheck?.dressCode === 3 ||
-            DressCheck?.dressCode === 4
+            DressCheck?.dressCode === 4 ||
+            DressCheck?.dressCode === 5
         ) {
             setSelectedOptions((prev) => {
                 let update = makeDeepCopy(prev?.leftPocketInsignia);
@@ -479,7 +480,8 @@ const EditSection = () => {
         if (
             DressCheck?.dressCode === 1 ||
             DressCheck?.dressCode === 3 ||
-            DressCheck?.dressCode === 4
+            DressCheck?.dressCode === 4 ||
+            DressCheck?.dressCode === 5
         ) {
             setSelectedOptions((prevItems) => {
                 let leftChestArray = makeDeepCopy(prevItems?.leftChest);
@@ -1334,6 +1336,12 @@ const EditSection = () => {
                                         }}
                                         onMouseEnter={(e) => handleEnter(e, pakFlag)}
                                         onMouseLeave={(e) => handleLeave(e)}
+                                        style={{
+                                            objectFit: "contain",
+                                            display: currentDresses?.tallyFlagRemove
+                                                ? "none"
+                                                : "block",
+                                        }}
                                     >
                                         <img
                                             src={pakFlag}

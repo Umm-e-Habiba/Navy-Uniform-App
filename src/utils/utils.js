@@ -493,6 +493,23 @@ import star_two from "../assets/dress_one/Ranks-v3/2-star.png";
 import star_three from "../assets/dress_one/Ranks-v3/3-star.png";
 import star_four from "../assets/dress_one/Ranks-v3/4-star.png";
 
+// Dress 4 Insignias
+import img1 from "../assets/dress_one/Dress4-Insignia/1x/Asset 2.png";
+import img2 from "../assets/dress_one/Dress4-Insignia/1x/Asset 3.png";
+import img3 from "../assets/dress_one/Dress4-Insignia/1x/Asset 4.png";
+import img4 from "../assets/dress_one/Dress4-Insignia/1x/Asset 5.png";
+import img5 from "../assets/dress_one/Dress4-Insignia/1x/Asset 6.png";
+import img6 from "../assets/dress_one/Dress4-Insignia/1x/Asset 7.png";
+import img7 from "../assets/dress_one/Dress4-Insignia/1x/Asset 8.png";
+import img8 from "../assets/dress_one/Dress4-Insignia/1x/Asset 9.png";
+import img9 from "../assets/dress_one/Dress4-Insignia/1x/Asset 10.png";
+import img10 from "../assets/dress_one/Dress4-Insignia/1x/Asset 11.png";
+import img11 from "../assets/dress_one/Dress4-Insignia/1x/Asset 12.png";
+import img12 from "../assets/dress_one/Dress4-Insignia/1x/Asset 13.png";
+import img13 from "../assets/dress_one/Dress4-Insignia/1x/Asset 14.png";
+import img14 from "../assets/dress_one/Dress4-Insignia/1x/Asset 15.png";
+
+
 ///Male Dresses
 
 export const MaleDresses = [
@@ -17305,6 +17322,244 @@ export const LeftChestStars = [
 ];
 //  code LeftChest
 export const LeftChest = [
+    {
+       
+        
+        id: 28,
+        seniority: 13,
+        identity: "leftPocketInsignia",
+        keyName:"camoSSGNCombat SSGNCamouflageCombatCPOs  SSGNCamouflageCombatPOs  SSGNCamouflageCombatLDGSBelow ",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Navy Seal Insignia (Olive Green)",
+        badgeImage: img14,
+        badgeKey: "leftPocket128",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 27,
+        seniority: 12,
+        identity: "leftPocketInsignia",
+        keyName:" camoPakMarinesCombat   PakMarineCombatCPOs  PakMarineCombatPOs  PakMarineCombatLDGSBelow",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Navy Seal Insignia(Khaki)",
+        badgeImage: img13,
+        badgeKey: "leftPocket127",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 26,
+        seniority: 11,
+        identity: "leftPocketInsignia",
+        keyName:"camoPakMarinesCombat PakMarineCombatCPOs  PakMarineCombatPOs  PakMarineCombatLDGSBelow",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Pak Marines Insignia (Khaki)",
+        badgeImage: img12,
+        badgeKey: "leftPocket126",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 25,
+        seniority: 10,
+        identity: "leftPocketInsignia",
+        keyName:"camoSSGNCombat SSGNCamouflageCombatCPOs  SSGNCamouflageCombatPOs  SSGNCamouflageCombatLDGSBelow",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Pak Marines Insignia (Olive Green)",
+        badgeImage: img11,
+        badgeKey: "leftPocket125",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 24,
+        seniority: 9,
+        identity: "leftPocketInsignia",
+        keyName:"camoSSGNCombat SSGNCamouflageCombatCPOs  SSGNCamouflageCombatPOs  SSGNCamouflageCombatLDGSBelow",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "SSG (N) Insignia (Olive Green)",
+        badgeImage: img10,
+        badgeKey: "leftPocket124",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 23,
+        seniority: 8,
+        identity: "leftPocketInsignia",
+        keyName:"camoPakMarinesCombat   PakMarineCombatCPOs  PakMarineCombatPOs  PakMarineCombatLDGSBelow",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "SSG Insignia (Khaki)",
+        badgeImage: img9,
+        badgeKey: "leftPocket123",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 22,
+        seniority: 7,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "SSG Insignia (Grey)",
+        badgeImage: img8,
+        badgeKey: "leftPocket122",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 21,
+        seniority: 8,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Pak Marines Insignia (Grey)",
+        badgeImage: img7,
+        badgeKey: "leftPocket121",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 20,
+        seniority: 7,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Navy Seal Insignia (Grey)",
+        badgeImage: img6,
+        badgeKey: "leftPocket120",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 19,
+        seniority: 6,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "MidgetSWATS Insignia",
+        badgeImage: img5,
+        badgeKey: "leftPocket119",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 18,
+        seniority: 5,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Aviation Wing Insignia",
+        badgeImage: img4,
+        badgeKey: "leftPocket118",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 17,
+        seniority: 4,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Aviation Wing (Pilot)",
+        badgeImage: img3,
+        badgeKey: "leftPocket117",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 15,
+        seniority: 3,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Aviation Wing Tactical Coordinator",
+        badgeImage: img1,
+        badgeKey: "leftPocket115",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
+        id: 16,
+        seniority: 2,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "UAV Pilot Insignia – 14b",
+        badgeImage: img2,
+        badgeKey: "leftPocket116",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+       
+
+        
+    },
     {
        
         
