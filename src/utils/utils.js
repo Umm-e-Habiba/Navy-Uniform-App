@@ -508,6 +508,7 @@ import img11 from "../assets/dress_one/Dress4-Insignia/1x/Asset 12.png";
 import img12 from "../assets/dress_one/Dress4-Insignia/1x/Asset 13.png";
 import img13 from "../assets/dress_one/Dress4-Insignia/1x/Asset 14.png";
 import img14 from "../assets/dress_one/Dress4-Insignia/1x/Asset 15.png";
+import img15 from "../assets/dress_one/Dress4-Insignia/1x/Asset 1.png";
 
 
 ///Male Dresses
@@ -17325,6 +17326,23 @@ export const LeftChest = [
     {
        
         
+        id: 29,
+        seniority: 14,
+        identity: "leftPocketInsignia",
+        keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat ",
+           // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
+        name: "Sub Surface Insignia",
+        badgeImage: img15,
+        badgeKey: "leftPocket128",
+        positionTitle: "Worn 1cm below name tally",
+        sizeScale: "scale(1.2)",
+        
+
+        
+    },
+    {
+       
+        
         id: 28,
         seniority: 13,
         identity: "leftPocketInsignia",
@@ -17466,7 +17484,7 @@ export const LeftChest = [
         identity: "leftPocketInsignia",
         keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
            // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
-        name: "Navy Seal Insignia (Grey)",
+        name: "Surface Warfare Insignia(Grey)",
         badgeImage: img6,
         badgeKey: "leftPocket120",
         positionTitle: "Worn 1cm below name tally",
@@ -17500,7 +17518,7 @@ export const LeftChest = [
         identity: "leftPocketInsignia",
         keyName:"maleFour DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow  female_four female_four_AFNS femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat",
            // "SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs SSGNCamouflageCeremonialCPOs PakMarineCeremonialCPOs SSGNCamouflageCeremonialPOs PakMarineCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialLDGSBelow ",
-        name: "Aviation Wing Insignia",
+        name: "Aviation Technical Insignia",
         badgeImage: img4,
         badgeKey: "leftPocket118",
         positionTitle: "Worn 1cm below name tally",
