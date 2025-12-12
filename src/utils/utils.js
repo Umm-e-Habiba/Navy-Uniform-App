@@ -18143,7 +18143,7 @@ export const LeftChest = [
         title_two: "is 1cm from below",
         title_three: "is 1cm above name tally",
         name: "Midget/SWATS Insignia",
-        imageRotate: "180deg",
+        
         badgeImage: MidgetSWATS_Insignia,
         Coordinates: [
             {
