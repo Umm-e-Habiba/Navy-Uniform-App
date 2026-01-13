@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import softPak from "../../assets/dress_one/LeftBiceps/pak-flag-soft.webp";
+import softPak from "../../assets/dress_one/LeftBiceps/pak-flag-soft.png";
 import { CurrentBoxPosition } from "../../utils/logics";
 import { BoxPositions } from "../../utils/utils";
 

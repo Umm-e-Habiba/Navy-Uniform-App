@@ -132,6 +132,9 @@ const editHeaderMenu = [
     
 ];
 
+// Dresses with larger right chest insignia gap (2px)
+const LARGE_GAP_DRESSES = ["MessDressBlackWinterMessKit","FullWhiteSummerCeremonial"];
+
 const EditSection = () => {
     const [currentTab, setCurrentTab] = useState(1);
     const [sizeModel, setSizeModel] = useState({
@@ -1321,7 +1324,9 @@ const EditSection = () => {
                                         left: positions?.rightBox?.cord_two,
                                         flexDirection: "column",
                                         alignItems: "center",
-                                        gap: "1px",
+                                        gap: currentDresses?.keyName === "WorkingDressWhiteWinter" || currentDresses?.keyName === "WorkingWinterBlackModified"
+                                            ? "0px" 
+                                            : (LARGE_GAP_DRESSES.includes(currentDresses?.keyName) ? "2px" : "3px"),
                                     }}
                                 >
                                     {/* {!currentDresses?.tally && ( */}

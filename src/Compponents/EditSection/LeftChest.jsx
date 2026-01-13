@@ -12,6 +12,50 @@ import { LeftChestStars } from "../../utils/utils";
 const LeftChestContent = (props) => {
     const { selectedOptions, currentDresses, handleEnter, handleLeave } = props;
 
+    // Check if current dress needs black background for left chest insignia
+    let needsBlackBackground = false;
+    if( currentDresses.keyName === "DigitalCamouflageCombatCPOsPOs" || 
+        currentDresses.keyName === "SSGNCamouflageCeremonialCPOs"  ||
+        currentDresses.keyName === "SSGNCamouflageWorkingCPOs"  ||
+        currentDresses.keyName === "SSGNCamouflageCombatCPOs"  ||
+        currentDresses.keyName === "PakMarineCeremonialCPOs"  ||
+        currentDresses.keyName === "PakMarineWorkingCPOs"  ||
+        currentDresses.keyName === "PakMarineCombatCPOs"  ||
+
+        currentDresses.keyName === "DigitalCamouflageCombatPOs" || 
+        currentDresses.keyName === "SSGNCamouflageCeremonialPOs"  ||
+        currentDresses.keyName === "SSGNCamouflageWorkingPOs"  ||
+        currentDresses.keyName === "SSGNCamouflageCombatPOs"  ||
+        currentDresses.keyName === "PakMarineCeremonialPOs"  ||
+        currentDresses.keyName === "PakMarineWorkingPOs"  ||
+        currentDresses.keyName === "PakMarineCombatPOs"  ||
+
+        currentDresses.keyName === "DigitalCamouflageCombatLDGSBelow" || 
+        currentDresses.keyName === "SSGNCamouflageCeremonialLDGSBelow"  ||
+        currentDresses.keyName === "SSGNCamouflageWorkingLDGSBelow"  ||
+        currentDresses.keyName === "SSGNCamouflageCombatLDGSBelow"  ||
+        currentDresses.keyName === "PakMarineCeremonialLDGSBelow"  ||
+        currentDresses.keyName === "PakMarineWorkingLDGSBelow"  ||
+        currentDresses.keyName === "PakMarineCombatLDGSBelow"  ||
+
+        currentDresses.keyName === "femaleDressNo4DigitalCamouflageCombat"  ||
+        currentDresses.keyName === "POfemaleDressNo4DigitalCamouflageCombat"  ||
+        currentDresses.keyName === "LDGfemaleDressNo4DigitalCamouflageCombat"  ||
+
+        currentDresses.keyName === "maleFour" || 
+        currentDresses.keyName === "camoPakMarines_six"  ||
+        currentDresses.keyName === "camoPakMarinesWorking_eight"  ||
+        currentDresses.keyName === "camoPakMarinesCombat"  ||
+        currentDresses.keyName === "camoSSGN_seven"  ||
+        currentDresses.keyName === "camoSSGNWorking_nine"  ||
+        currentDresses.keyName === "camoSSGNCombat"  ||
+
+        currentDresses.keyName === "female_four"  ||
+        currentDresses.keyName === "female_four_AFNS"  
+    ){
+        needsBlackBackground = true;
+    }
+
     const GetCurrentContent = () => {
         let DressCheck = GetCurrentDressChecks(currentDresses?.keyName);
         if (
@@ -67,18 +111,41 @@ const LeftChestContent = (props) => {
                                     "leftChest"
                                 );
 
+                                // Append black background message to title if needed
+                                if (needsBlackBackground) {
+                                    getUpdatedTitle += " Insignias shown on black background to enhance visibility.";
+                                }
+
+                                // Check if current item is one of the larger insignias that needs size adjustment
+                                const isLargerInsignia = 
+                                    item?.name === "Foreign War College Insignia" ||
+                                    item?.name === "Foreign NDU Insignia" ||
+                                    item?.name === "Army 100 Rifles Insignia" ||
+                                    item?.name === "Foreign Navy Seal SSG (N) Insignia";
+
+                                // Check if current item is Army 100 Rifles Insignia that needs custom width
+                                const isArmy100RiflesSilver = item?.name === "Army 100 Rifles Insignia";
+
                                 return (
                                     <>
                                         <Box
                                             key={index}
                                             sx={{
                                                 position: "relative",
-                                                width: findStar ? "0.35rem" : ".4rem",
-                                                height: findStar ? "0.35rem" : ".4rem",
+                                                width: findStar 
+                                                    ? "0.35rem" 
+                                                    : (isArmy100RiflesSilver ? "0.6rem" : ".5rem"),
+                                                height: findStar 
+                                                    ? "0.35rem" 
+                                                    : (isLargerInsignia ? "0.6rem" : ".9rem"),
                                                 transform:
                                                     findStarItem?.sizeScale || item?.sizeScale
                                                         ? findStarItem?.sizeScale || item?.sizeScale
                                                         : "unset",
+                                                backgroundColor: needsBlackBackground ? "black" : "rgba(0,0,0,0)",
+                                                marginTop: isLargerInsignia 
+                                                    ? "10px" 
+                                                    : (needsBlackBackground ? "4px" : "0px"),
                                             }}
                                             onMouseEnter={(e) =>
                                                 handleEnter(
@@ -102,6 +169,7 @@ const LeftChestContent = (props) => {
                                                 height="100%"
                                                 style={{
                                                     objectFit: "contain",
+                                                    marginBottom: isLargerInsignia ? "6px" : "0px",
                                                 }}
                                             />
                                         </Box>

@@ -13,6 +13,11 @@ const MedalsContent = (props) => {
     const { selectedOptions, currentDresses, handleEnter, handleLeave } = props;
 
     const GetCurrentContent = () => {
+        // Check if current dress is one of the two mess dresses that need miniature medals
+        const isMessDressMiniature = 
+            currentDresses?.keyName === "MessDressBlackWinterMessKit" || 
+            currentDresses?.keyName === "MessDressWhiteSummerMessKit";
+
         return (
             <>
                 {selectedOptions?.Medals?.filter((m) => !m?.pocketMedal)?.map((item, index) => {
@@ -29,8 +34,8 @@ const MedalsContent = (props) => {
                             sx={{
                                 top: itemCoordinates?.cord_one,
                                 left: itemCoordinates?.cord_two,
-                                width: currentDresses?.smallMedals ? "0.8rem" : ".9rem",
-                                height: currentDresses?.smallMedals ? "2.8rem" : "2.7rem",
+                                width: isMessDressMiniature ? "0.8rem" : ".9rem",
+                                height: isMessDressMiniature ? "2.2rem" : "2.7rem",
                                 marginLeft: "-5px",
                                 zIndex: 50 - item?.seniority + 1,
                             }}

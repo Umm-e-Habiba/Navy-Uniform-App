@@ -135,10 +135,10 @@ import camo_pak_marines_Cdr_below from "../assets/dress_one/Caps/PAK Marines/Lt 
 // Caps
 // Ranks
 // v2
-import ADMIRAL from "../assets/dress_one/Ranks-v2/ADMIRAL.v2.webp";
-import REAR_ADMIRAL from "../assets/dress_one/Ranks-v2/REAR ADMIRAL.v2.webp";
-import VICE_ADMIRAL from "../assets/dress_one/Ranks-v2/VICE ADMIRAL.v2.webp";
-import Commodor from "../assets/dress_one/Ranks-v2/Commodor.v2.webp";
+import ADMIRAL from "../assets/dress_one/Ranks-v2/ADMIRAL.v2.png";
+import REAR_ADMIRAL from "../assets/dress_one/Ranks-v2/REAR ADMIRAL.v2.png";
+import VICE_ADMIRAL from "../assets/dress_one/Ranks-v2/VICE ADMIRAL.v2.png";
+import Commodor from "../assets/dress_one/Ranks-v2/Commodor.v2.png";
 import CAPTAIN from "../assets/dress_one/Ranks-v2/CAPTAIN.v2.jpg";
 import COMMANDER from "../assets/dress_one/Ranks-v2/COMMANDER.v2.jpg";
 import LIEUTENANT_COMMANDER from "../assets/dress_one/Ranks-v2/LIEUTENANT COMMANDER.v2.jpg";
@@ -289,7 +289,8 @@ import po_left_d4 from "../assets/dress_one/Rank-CPO-PO-LDG/PO_left_d4.png";
 import po_right_d4 from "../assets/dress_one/Rank-CPO-PO-LDG/PO_right_d4.png";
 import po_marines from "../assets/dress_one/Rank-CPO-PO-LDG/po_marines.png";
 import ldg_marines from "../assets/dress_one/Rank-CPO-PO-LDG/ldg_marines.png"
-import po_ssg from "../assets/dress_one/Rank-CPO-PO-LDG/PO_ssg.png";
+import po_ssg from "../assets/dress_one/Rank-CPO-PO-LDG/PO-SSG-left.png";  
+import ldg_ssg from "../assets/dress_one/Rank-CPO-PO-LDG/LDG-combat.png";
 //LDGs Ranks
 import ldg_blue_left from "../assets/dress_one/Rank-CPO-PO-LDG/LDG_left_blue.png";
 import ldg_blue_gbc from "../assets/dress_one/Rank-CPO-PO-LDG/LDG_left_blue_gbc.png";
@@ -339,6 +340,9 @@ import six_big from "../assets/dress_one/MEDALS/6b.png";
 import seven_big from "../assets/dress_one/MEDALS/7b.png";
 import eight_big from "../assets/dress_one/MEDALS/8b.png";
 import Miniature_Star from "../assets/dress_one/LeftChest/Miniature Star 23.png";
+
+
+
 import NDU_Insignia from "../assets/dress_one/LeftChest/NDU Insignia 32.png";
 import NDU_Insignia_Star from "../assets/dress_one/LeftChest/star added.png";
 import War_College_Insignia from "../assets/dress_one/LeftChest/War College Insignia 31.png";
@@ -471,7 +475,7 @@ import sniper from "../assets/dress_one/RightBicep/Sniper Badge.png";
 
 //Left Biceps
 import Emblem from "../assets/dress_one/LeftBiceps/SSG(N) Unit Emblem.png";
-import softPak from "../assets/dress_one/LeftBiceps/pak-flag-soft.webp";
+import softPak from "../assets/dress_one/LeftBiceps/pak-flag-soft.png";
 
 // Scrafs
 import blue_with_logo from "../assets/dress_one/Scrafs/blue.png";
@@ -1097,7 +1101,7 @@ export const MaleDresses = [
         dressName: "DRESS NO. 10 - MESS DRESS BLACK (WINTER MESS KIT)",
         category: "OFFICERS",
         tally: "mess",
-        smallMedals: true,
+        smallMedals: false,
         dressGender: "male",
         hoverData: [
             {
@@ -5981,7 +5985,7 @@ export const Ranks = [
         availableCaps: "caps1 caps5 caps10 caps13",
         rotate: false,
         keyName:
-            "femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine ",
+            "femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine ",
         name: "ADMIRAL",
         badgeImage: ADMIRAL,
         badgeKey: "rank1",
@@ -6094,7 +6098,7 @@ export const Ranks = [
         availableCaps: "caps1 caps5 caps10 caps13",
         rotate: false,
         keyName:
-            "femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            "femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "VICE ADMIRAL",
         badgeImage: VICE_ADMIRAL,
         badgeKey: "rank3",
@@ -6208,7 +6212,7 @@ export const Ranks = [
         availableCaps: "caps1 caps5 caps10 caps13",
         rotate: false,
         keyName:
-            "femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            "femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "REAR ADMIRAL",
         badgeImage: REAR_ADMIRAL,
         badgeKey: "rank2",
@@ -6322,7 +6326,7 @@ export const Ranks = [
         availableCaps: "caps2 caps5 caps10 caps13",
         rotate: false,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "COMMODORE",
         badgeImage: Commodor,
         badgeKey: "rank4",
@@ -6435,7 +6439,7 @@ export const Ranks = [
         availableCaps: "caps3 caps5 caps11 caps14",
         rotate: true,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "CAPTAIN",
         badgeImage: CAPTAIN,
         badgeKey: "rank5",
@@ -6548,7 +6552,7 @@ export const Ranks = [
         availableCaps: "caps3 caps5 caps11 caps14",
         rotate: true,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "COMMANDER",
         badgeImage: COMMANDER,
         badgeKey: "rank6",
@@ -6661,7 +6665,7 @@ export const Ranks = [
         availableCaps: "caps4 caps6 caps12 caps15",
         rotate: true,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "LIEUTENANT COMMANDER",
         badgeImage: LIEUTENANT_COMMANDER,
         badgeKey: "rank7",
@@ -6774,7 +6778,7 @@ export const Ranks = [
         availableCaps: "caps4 caps6 caps12 caps15",
         rotate: true,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "LIEUTENANT",
         badgeImage: LIEUTENANT,
         badgeKey: "rank8",
@@ -6887,7 +6891,7 @@ export const Ranks = [
         availableCaps: "caps4 caps6 caps12 caps15",
         rotate: true,
         keyName:
-            " femaleWorkingDress3AWinterOptional WorkingDressWhiteWinter WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
+            " femaleWorkingDress3AWinterOptional  WorkingWinterBlackModified camoPakMarines_six camoSSGN_seven camoPakMarinesWorking_eight camoSSGNWorking_nine",
         name: "SUB LIEUTENANT",
         badgeImage: SUB_LIEUTENANT,
         badgeKey: "rank9",
@@ -8115,12 +8119,26 @@ export const Ranks = [
         availableCaps: "caps2 caps5 caps7 caps10 caps13",
         rotate: false,
         keyName:
-            " MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleWorkingDress3AWinter FullWhiteSummerCeremonial ServiceDressWhite female_one female_three femaleFive femaleSeven femaleWorkingDressWhiteSummer femaleWorkingDressWhiteSummerOptional InformalMessDressRedSeaRig male2B male2A WorkingDressWhite",
+            "WorkingDressWhiteWinter MessDressWhiteSummerMessKit MessDressBlackWinterMessKit femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleWorkingDress3AWinter FullWhiteSummerCeremonial ServiceDressWhite female_one female_three femaleFive femaleSeven femaleWorkingDressWhiteSummer femaleWorkingDressWhiteSummerOptional InformalMessDressRedSeaRig male2B male2A WorkingDressWhite",
         name: "COMMODORE",
         badgeImage: v1_Commodor,
         badgeKey: "rank4",
         beltStar: 1,
         Coordinates: [
+            {
+                keyName: "WorkingDressWhiteWinter",
+                width: "2.95em",
+                height: "auto",
+                left_cord_one: "6.5rem",
+                left_cord_two: "12.5rem",
+                right_cord_one: "6.5rem",
+                right_cord_two: "4.6rem",
+                left_rotate: "196deg",
+                right_rotate: "-32deg",
+                left_transform: "rotateX(54deg) rotateY(-22deg) scale(1.3)",
+                right_transform: "rotateX(-130deg) rotateY(150deg) scale(1.3)",
+                boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
             
             {
                 keyName: "MessDressWhiteSummerMessKit",
@@ -14290,6 +14308,124 @@ export const Ranks = [
 
         ],
     },
+    {
+        id: 18,
+        identity: "rank",
+        availableCaps: "caps32",
+        rotate: false,
+        keyName:
+            "SSGNCamouflageCeremonialPOs SSGNCamouflageWorkingPOs SSGNCamouflageCombatPOs ",
+
+        name: "Left Arm Badge",
+        left_arm:true,
+        badgeImage: po_ssg,
+        badgeKey: "rankpo_ssg",
+        Coordinates: [
+            
+            {
+                keyName: "SSGNCamouflageCeremonialPOs",
+                width: "9.2rem",
+                height: "3.5rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "11.5rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "11.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+            {
+                keyName: "SSGNCamouflageWorkingPOs",
+                width: "9.2rem",
+                height: "3.5rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "11.5rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "11.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+            {
+                keyName: "SSGNCamouflageCombatPOs",
+                width: "9.2rem",
+                height: "3.5rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "11.5rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "11.5rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+
+        ],
+    },
+    {
+        id: 18,
+        identity: "rank",
+        availableCaps: "caps32",
+        rotate: false,
+        keyName:
+            "SSGNCamouflageCeremonialLDGSBelow SSGNCamouflageWorkingLDGSBelow SSGNCamouflageCombatLDGSBelow ",
+
+        name: "Left Arm Badge",
+        left_arm:true,
+        badgeImage: ldg_ssg,
+        badgeKey: "rankldg_ssg",
+        Coordinates: [
+            
+            {
+                keyName: "SSGNCamouflageCeremonialLDGSBelow",
+                width: "6.2rem",
+                height: "3.2rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "13.2rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "13.2rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+            {
+                keyName: "SSGNCamouflageWorkingLDGSBelow",
+                width: "6.2rem",
+                height: "3.2rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "13.2rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "13.2rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+            {
+                keyName: "SSGNCamouflageCombatLDGSBelow",
+                width: "6.2rem",
+                height: "3.2rem",
+                left_cord_one: "10.0rem",
+                left_cord_two: "13.2rem",
+                right_cord_one: "10.0rem",
+                right_cord_two: "13.2rem",
+                left_rotate: "0deg",
+                right_rotate: "0deg",
+                left_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                right_transform: "rotateX(54deg) rotateY(0deg) scale(1.2)",
+                //boxShadow: "rgba(0, 0, 0, 0.25) -1px 9px 8px -5px",
+            },
+
+        ],
+    },
 // Rank for Pak Marines POs
     {
         id: 8,
@@ -14883,7 +15019,7 @@ export const RightPocket = [
             },
             {
                 keyName: "femaleMessDressSummerMessKitAFNS",
-                cord_one: "12.5rem",
+                cord_one: "12.7rem",
                 cord_two: "7.1rem",
             },
             {
@@ -14924,13 +15060,13 @@ export const RightPocket = [
             {
                 keyName: "male2A",
                 size: "0.5rem",
-                cord_one: "11.1rem",
+                cord_one: "10.95rem",
                 cord_two: "7.1rem",
             },
             {
                 keyName: "male2B",
                 size: "0.5rem",
-                cord_one: "11.1rem",
+                cord_one: "11rem",
                 cord_two: "7.1rem",
             },
             {
@@ -14955,7 +15091,7 @@ export const RightPocket = [
             },
             {
                 keyName: "femaleSix",
-                cord_one: "12.8rem",
+                cord_one: "13.2rem",
                 cord_two: "7rem",
             },
             {
@@ -15071,33 +15207,33 @@ export const RightPocket = [
             },
             {
                 keyName: "femaleDressNo7WinterCeremonial",
-                cord_one: "13rem",
-                cord_two: "6.8rem",
+                cord_one: "12.85rem",
+                cord_two: "6.9rem",
             },
             {
                 keyName: "POfemaleDressNo7WinterCeremonial",
-                cord_one: "13rem",
-                cord_two: "6.8rem",
+                cord_one: "12.85rem",
+                cord_two: "6.9rem",
             },
             {
                 keyName: "LDGfemaleDressNo7WinterCeremonial",
-                cord_one: "13rem",
-                cord_two: "6.8rem",
+                cord_one: "12.85rem",
+                cord_two: "6.9rem",
             },
             {
                 keyName: "WinterCeremonialCPOsPOs",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "WinterCeremonialPOs",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "WinterCeremonialLDGSBelow",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "WinterWorkingCPOsPOs",
@@ -15251,18 +15387,18 @@ export const RightPocket = [
             },
             {
                 keyName: "WinterCeremonialCPOsPOs",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "WinterCeremonialPOs",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "WinterCeremonialLDGSBelow",
-                cord_one: "11.3rem",
-                cord_two: "7rem",
+                cord_one: "11.1rem",
+                cord_two: "7.1rem",
             },
             {
                 keyName: "femaleDressNo7WinterCeremonial",
@@ -17075,7 +17211,7 @@ export const LeftPocket = [
         id: 12,
         seniority: 10,
         identity: "leftChest",
-        keyName: "male2B male2A camoSSGNWorking_nine camoPakMarinesWorking_eight ",
+        keyName:"camoSSGNWorking_nine camoPakMarinesWorking_eight ",
         name: "Diving Medical Officers DMOS Insignia",
         badgeImage: Diving_Medical_Officer_DMOS_Insignia,
         badgeKey: "leftChest12",
@@ -17616,7 +17752,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -17697,8 +17833,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -17707,7 +17843,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -17898,7 +18034,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -17968,8 +18104,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -17978,7 +18114,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18153,7 +18289,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -18223,8 +18359,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.0rem",
+                cord_two: "11.4rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18233,7 +18369,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18410,7 +18546,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -18480,8 +18616,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18490,7 +18626,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18572,7 +18708,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.95rem",
             },
             {
@@ -18642,8 +18778,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "12.1rem",
+                cord_one: "8.25rem",
+                cord_two: "12rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18829,7 +18965,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -18899,8 +19035,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -18909,7 +19045,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19067,7 +19203,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -19137,8 +19273,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19147,7 +19283,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19230,7 +19366,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -19300,8 +19436,8 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19310,7 +19446,7 @@ export const LeftChest = [
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19410,7 +19546,7 @@ export const LeftChest = [
             },
             {
                 keyName: "femaleServiceDressBlackWithJerseyAFNS",
-                cord_one: "10.85rem",
+                cord_one: "11.6rem",
                 cord_two: "11.7rem",
             },
             {
@@ -19480,14 +19616,14 @@ export const LeftChest = [
             },
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "11.9rem",
+                cord_one: "8.25rem",
+                cord_two: "11.2rem",
             },
 
             {
                 keyName: "ServiceDressWhite",
                 cord_one: "9.35rem",
-                cord_two: "11.9rem",
+                cord_two: "11.5rem",
                 cord_top_one: "10rem",
                 cord_top_two: "9.8rem",
                 cord_top_three: "9.5rem",
@@ -19608,7 +19744,7 @@ export const LeftChest = [
     {
         id: 10,
         keyName:
-            "femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleInformalMessDressRedSeaRigAFNS femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional FullWhiteSummerCeremonial female_one female_two female_three ServiceDressWhite male2A male2B femaleFive femaleSix femaleSeven",
+            "femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleInformalMessDressRedSeaRigAFNS femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional  female_one female_two female_three   femaleFive femaleSix femaleSeven",
         identity: "leftPocketInsignia",
         badgeKey: "leftPocket10",
         title_medal: "is 1cm above medals",
@@ -19621,8 +19757,8 @@ export const LeftChest = [
         Coordinates: [
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "12rem",
+                cord_one: "7.9rem",
+                cord_two: "11.4rem",
             },
             {
                 keyName: "ServiceDressWhite",
@@ -19692,7 +19828,7 @@ export const LeftChest = [
     {
         id: 11,
         keyName:
-            "femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleInformalMessDressRedSeaRigAFNS femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional FullWhiteSummerCeremonial female_one female_two female_three ServiceDressWhite male2A male2B femaleFive femaleSix femaleSeven",
+            "femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleInformalMessDressRedSeaRigAFNS femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional FullWhiteSummerCeremonial female_one female_two female_three ServiceDressWhite femaleFive femaleSix femaleSeven",
         identity: "leftPocketInsignia",
         badgeKey: "leftPocket11",
         title_medal: "is 1cm above medals",
@@ -19704,16 +19840,16 @@ export const LeftChest = [
         Coordinates: [
             {
                 keyName: "FullWhiteSummerCeremonial",
-                cord_one: "8.35rem",
-                cord_two: "12rem",
+                cord_one: "7.5rem",
+                cord_two: "11.3rem",
             },
             {
                 keyName: "ServiceDressWhite",
-                cord_one: "9.1rem",
-                cord_two: "12rem",
-                cord_top_one: "9.85rem",
-                cord_top_two: "9.6rem",
-                cord_top_three: "9.35rem",
+                cord_one: "8.6rem",
+                cord_two: "11.6rem",
+                cord_top_one: "9.2rem",
+                cord_top_two: "8.9rem",
+                cord_top_three: "8.6rem",
             },
             {
                 keyName: "male2A",

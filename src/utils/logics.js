@@ -799,19 +799,19 @@ export const RightPocketBox = (DressCheck, name, length) => {
         if (name === "WorkingDressWhite" || name === "InformalMessDressRedSeaRig" || name === "WorkingDressWhiteSummerCPOsPOs" || name === "WorkingDressWhiteSummerPOs" || name === "WorkingDressWhiteSummerLDGSBelow" ) {
             if (length === 1) {
                 return {
-                    top: "10.5rem",
+                    top: "10.4rem",
                     left: "6.5rem",
                     gap: "0rem",
                 };
             } else if (length === 2) {
                 return {
-                    top: "10.5rem",
+                    top: "10.4rem",
                     left: "5.7rem",
                     gap: "1.2rem",
                 };
             } else if (length === 3) {
                 return {
-                    top: "10.5rem",
+                    top: "10.4rem",
                     left: "5.6rem",
                     gap: ".4rem",
                 };
@@ -822,22 +822,22 @@ export const RightPocketBox = (DressCheck, name, length) => {
                     gap: "0rem",
                 };
             }
-        } else if (name === "WorkingDressWhiteWinter" || name === "WorkingWinterBlackModified" || name === "WorkingDressWhiteWinterCPOsPOs" || name === "WinterWorkingPOs" || name === "WorkingDressWhiteWinterLDGSBelow" || name === "WinterWorkingLDGSBelow" || name === "WinterWorkingCPOsPOs" || name === "WorkingDressWhiteSummerCPOsPOs" || name === "WorkingDressWhiteWinterPOs") {
+        } else if (name === "WorkingDressWhiteWinter" || name === "WorkingWinterBlackModified" || name === "WorkingDressWhiteWinterCPOsPOs" || name === "WinterWorkingPOs" || name === "WorkingDressWhiteWinterLDGSBelow" || name === "WinterWorkingLDGSBelow" || name === "WinterWorkingCPOsPOs" || name === "WorkingDressWhiteSummerCPOsPOs" || name === "WorkingDressWhiteWinterPOs" ) {
             if (length === 1) {
                 return {
-                    top: "11.3rem",
+                    top: "11.2rem",
                     left: "7.15rem",
                     gap: "0rem",
                 };
             } else if (length === 2) {
                 return {
-                    top: "11.3rem",
+                    top: "11.2rem",
                     left: "6.3rem",
                     gap: "1.2rem",
                 };
             } else if (length === 3) {
                 return {
-                    top: "11.3rem",
+                    top: "11.2rem",
                     left: "6.2rem",
                     gap: ".4rem",
                 };
@@ -1042,19 +1042,19 @@ export const RightPocketBox = (DressCheck, name, length) => {
             if (length === 1) {
                 return {
                     top: "12.7rem",
-                    left: "7.7rem",
+                    left: "7rem",
                     gap: "0rem",
                 };
             } else if (length === 2) {
                 return {
                     top: "12.7rem",
-                    left: "7rem",
+                    left: "6.5rem",
                     gap: "1rem",
                 };
             } else if (length === 3) {
                 return {
                     top: "12.7rem",
-                    left: "6.8rem",
+                    left: "6.6rem",
                     gap: ".3rem",
                 };
             } else {
@@ -1222,642 +1222,50 @@ export const GetCurrentDressChecks = (name) => {
     return CurrentDressChecks?.find((item) => item?.dressString?.split(" ")?.includes(name));
 };
 
-// Set Right Chest Coordinates
-export const GetRightBoxCord = (currentDresses, selectedOptions) => {
-    let DressCheck = GetCurrentDressChecks(currentDresses?.keyName);
-    if (DressCheck?.dressCode === 1) {
-        if (
-            selectedOptions?.leftPocketInsignia?.length === 3 &&
-            selectedOptions?.rightChest?.length !== 0
-        ) {
-            return { cord_one: "8.65rem", cord_two: "6.15rem" };
-        } else if (
-            (selectedOptions?.leftPocketInsignia?.length === 3 &&
-                selectedOptions?.rightChest?.length === 0) ||
-            selectedOptions?.rightChest?.length === 1
-        ) {
-            return { cord_one: "9.4rem", cord_two: "6.15rem" };
-        } else {
-            return { cord_one: "10.15rem", cord_two: "6.15rem" };
-        }
-    } else if (DressCheck?.dressCode === 2 || DressCheck?.dressCode === 3) {
-        if (
-            (selectedOptions?.rightChest?.length === 0 &&
-                selectedOptions?.leftPocketInsignia?.length === 3) ||
-            (selectedOptions?.rightChest?.length === 1 &&
-                selectedOptions?.leftPocketInsignia?.length === 0) ||
-            (selectedOptions?.rightChest?.length === 1 &&
-                selectedOptions?.leftPocketInsignia?.length === 2) ||
-            (selectedOptions?.rightChest?.length === 2 &&
-                selectedOptions?.leftPocketInsignia?.length === 1)
-        ) {
-            if (
-                currentDresses?.keyName === "camoSSGN_seven" ||
-                currentDresses?.keyName === "camoSSGNWorking_nine"
-            ) {
-                return { cord_one: "9.45rem", cord_two: "7.15rem" };
-            } else {
-                return { cord_one: "9.6rem", cord_two: "7.15rem" };
-            }
-        } else if (
-            (selectedOptions?.rightChest?.length > 1 &&
-                selectedOptions?.leftPocketInsignia?.length < 2) ||
-            (selectedOptions?.rightChest?.length === 1 &&
-                selectedOptions?.leftPocketInsignia?.length === 3) ||
-            (selectedOptions?.rightChest?.length > 1 &&
-                selectedOptions?.leftPocketInsignia?.length === 3) ||
-            (selectedOptions?.rightChest?.length > 1 &&
-                selectedOptions?.leftPocketInsignia?.length === 2)
-        ) {
-            if (
-                currentDresses?.keyName === "camoSSGN_seven" ||
-                currentDresses?.keyName === "camoSSGNWorking_nine"
-            ) {
-                return { cord_one: "8.65rem", cord_two: "7.15rem" };
-            } else {
-                return { cord_one: "8.8rem", cord_two: "7.15rem" };
-            }
-        } else {
-            return { cord_one: "10.3rem", cord_two: "7.15rem" };
-        }
-    } else if (DressCheck?.dressCode === 4) {
-        if (
-            currentDresses?.keyName === "WorkingDressWhite" || 
-            currentDresses?.keyName === "InformalMessDressRedSeaRig"   || currentDresses?.keyName === "SSGNCamouflageWorkingCPOs" || currentDresses?.keyName === "PakMarineWorkingCPOs" || currentDresses?.keyName === "SSGNCamouflageWorkingPOs" || currentDresses?.keyName === "PakMarineWorkingPOs" || currentDresses?.keyName === "SSGNCamouflageWorkingLDGSBelow" || currentDresses?.keyName === "PakMarineWorkingLDGSBelow"   
-        ) {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.6rem", cord_two: "5.6rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "7.9rem", cord_two: "5.6rem" };
-            } else {
-                
-                return { cord_one: "9.4rem", cord_two: "5.6rem" };
-            }
-        } else if (
-            currentDresses?.keyName === "WorkingDressWhiteWinter" ||
-            currentDresses?.keyName === "WorkingWinterBlackModified"
-        ) {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.4rem", cord_two: "6.15rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.65rem", cord_two: "6.15rem" };
-            } else {
-                return { cord_one: "10.1rem", cord_two: "6.15rem" };
-            }
-        }else if (
-            currentDresses?.keyName === "WorkingDressWhiteWinterCPOsPOs" ||
-            currentDresses?.keyName === "WorkingDressWhiteWinterPOs" ||
-            currentDresses?.keyName === "WorkingDressWhiteWinterLDGSBelow" 
-        ) {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.4rem", cord_two: "6.15rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.65rem", cord_two: "6.15rem" };
-            } else {
-                return { cord_one: "10.1rem", cord_two: "6.15rem" };
-            }
-        }
-        else if (
-            currentDresses?.keyName === "WinterWorkingCPOsPOs" || 
-            currentDresses?.keyName === "WinterWorkingPOs" ||
-            currentDresses?.keyName === "WinterWorkingLDGSBelow"
-        ) {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.4rem", cord_two: "6.15rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.65rem", cord_two: "6.15rem" };
-            } else {
-                return { cord_one: "10.2rem", cord_two: "6.15rem" };
-            }
-        }
-        
-        else if (
-            currentDresses?.keyName === "femaleDressNo3WorkingDressWhiteSummer" ||
-            currentDresses?.keyName === "POfemaleDressNo3WorkingDressWhiteSummer" ||
-            currentDresses?.keyName === "LDGfemaleDressNo3WorkingDressWhiteSummer" 
-        ){
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.7rem", cord_two: "6.4rem" };
-            }
-                
-            else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10rem", cord_two: "6.4rem" };
-            } else {
-                return { cord_one: "11.5rem", cord_two: "6.4rem" };
-            }
-        }else if (
-             currentDresses?.keyName === "femaleDressNo3AWorkingDressSummer" 
-        ){
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "11.35rem", cord_two: "6.4rem" };
-            }
-                
-            else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.55rem", cord_two: "6.4rem" };
-            } else {
-                return { cord_one: "12.1rem", cord_two: "6.4rem" };
-            }
-        }else if (
-            currentDresses?.keyName === "POfemaleDressNo3AWorkingDressSummer"  ||
-            currentDresses?.keyName === "LDGfemaleDressNo3AWorkingDressSummer"  
-       ){
-           if (
-               (selectedOptions?.rightChest?.length === 1 &&
-                   selectedOptions?.leftPocketInsignia?.length === 0) ||
-               (selectedOptions?.rightChest?.length === 1 &&
-                   selectedOptions?.leftPocketInsignia?.length < 3) ||
-               (selectedOptions?.rightChest?.length === 0 &&
-                   selectedOptions?.leftPocketInsignia?.length === 3)
-           ) {
-               return { cord_one: "11.3rem", cord_two: "6.4rem" };
-           }
-               
-           else if (
-               (selectedOptions?.rightChest?.length > 1 &&
-                   selectedOptions?.leftPocketInsignia?.length === 0) ||
-               (selectedOptions?.rightChest?.length > 1 &&
-                   selectedOptions?.leftPocketInsignia?.length < 3) ||
-               (selectedOptions?.rightChest?.length === 1 &&
-                   selectedOptions?.leftPocketInsignia?.length === 3) ||
-               (selectedOptions?.rightChest?.length > 1 &&
-                   selectedOptions?.leftPocketInsignia?.length === 3)
-           ) {
-               return { cord_one: "10.5rem", cord_two: "6.4rem" };
-           } else {
-               return { cord_one: "12.1rem", cord_two: "6.4rem" };
-           }
-       }
-       else if (
-            currentDresses?.keyName === "femaleDressNo8WinterWorking" ||
-            currentDresses?.keyName === "POfemaleDressNo8WinterWorking"  ||
-            currentDresses?.keyName === "LDGfemaleDressNo8WinterWorking"
-        ){
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "11.1rem", cord_two: "6.1rem" };
-            }
-                
-            else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.4rem", cord_two: "6.1rem" };
-            } else {
-                return { cord_one: "11.9rem", cord_two: "6.1rem" };
-            }
-        }
-        else if (currentDresses?.keyName === "WorkingDressWhiteSummerCPOsPOs" || currentDresses?.keyName === "WorkingDressWhiteSummerPOs" || currentDresses?.keyName === "WorkingDressWhiteSummerLDGSBelow") {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.65rem", cord_two: "5.7rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "7.87rem", cord_two: "5.7rem" };
-            } else {
-                return { cord_one: "9.4rem", cord_two: "5.7rem" };
-            }
-        }  else if (currentDresses?.keyName === "femaleWorkingDressWhiteSummer") {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.6rem", cord_two: "6.4rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.85rem", cord_two: "6.4rem" };
-            } else {
-                return { cord_one: "11.3rem", cord_two: "6.4rem" };
-            }
-        } else if (currentDresses?.keyName === "femaleWorkingDressWhiteSummerOptional") {
-            // dress
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.34rem", cord_two: "6.45rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.55rem", cord_two: "6.45rem" };
-            } else {
-                return { cord_one: "10.05rem", cord_two: "6.45rem" };
-            }
-        } else if (
-            currentDresses?.keyName === "femaleWorkingDress3AWinter" ||
-            currentDresses?.keyName === "femaleWorkingDressWinterBlackModified"
-        ) {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "11rem", cord_two: "6.7rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.3rem", cord_two: "6.7rem" };
-            } else {
-                return { cord_one: "11.8rem", cord_two: "6.7rem" };
-            }
-        } else if (
-            currentDresses?.keyName === "femaleWorkingDress3AWinterOptional" ||
-            currentDresses?.keyName === "femaleInformalMessDressRedSeaRig" ||
-            currentDresses?.keyName === "femaleInformalMessDressRedSeaRigAFNS" ||
-            currentDresses?.keyName === "femaleWorkingDressBlackOptional"
-        ) {
-            let isTrue =
-                currentDresses?.keyName === "femaleInformalMessDressRedSeaRig" ||
-                currentDresses?.keyName === "femaleInformalMessDressRedSeaRigAFNS" ||
-                currentDresses?.keyName === "femaleWorkingDressBlackOptional";
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return {
-                    cord_one: isTrue ? "9.46rem" : "9.49rem",
-                    cord_two: "6.45rem",
-                };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "8.7rem", cord_two: "6.45rem" };
-            } else {
-                return {
-                    cord_one: isTrue ? "10.15rem" : "10.2rem",
-                    cord_two: "6.45rem",
-                };
-            }
-        } else if (currentDresses?.keyName === "femaleWorkingDress3WorkingSummer") {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.3rem", cord_two: "6rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "9.6rem", cord_two: "6rem" };
-            } else {
-                return {
-                    cord_one: "11.1rem",
-                    cord_two: "6rem",
-                };
-            }
-        } else if (currentDresses?.keyName === "femaleWhiteDress3AWorkingWinter") {
-            if (
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 0 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "11.05rem", cord_two: "6.45rem" };
-            } else if (
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 0) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length < 3) ||
-                (selectedOptions?.rightChest?.length === 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3) ||
-                (selectedOptions?.rightChest?.length > 1 &&
-                    selectedOptions?.leftPocketInsignia?.length === 3)
-            ) {
-                return { cord_one: "10.3rem", cord_two: "6.45rem" };
-            } else {
-                return {
-                    cord_one: "11.8rem",
-                    cord_two: "6.45rem",
-                };
-            }
-        }
-    } else if (DressCheck?.dressCode === 5) {
-        if (currentDresses?.keyName === "female_four" || currentDresses?.keyName === "female_four_AFNS" || currentDresses?.keyName === "femaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "POfemaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "LDGfemaleDressNo4DigitalCamouflageCombat") {
-            return { cord_one: "10.9rem", cord_two: "7.2rem" };
-        } else if (currentDresses?.keyName === "camoSSGNCombat") {
-            return { cord_one: "10rem", cord_two: "7.3rem" };
-        } else if (currentDresses?.keyName === "camoPakMarinesCombat") {
-            return { cord_one: "10rem", cord_two: "7.3rem" };
-        } else if (currentDresses?.keyName === "maleFour") {
-            return { cord_one: "9.6rem", cord_two: "7.2rem" };
-        } 
-        else {
-            return { cord_one: "9.6rem", cord_two: "7.2rem" };
-        }
-    } else if (DressCheck?.dressCode === 6) {
-        if (
-            currentDresses?.keyName === "femaleMessDressSummerMessKit" ||
-            currentDresses?.keyName === "femaleMessDressSummerMessKitAFNS"
-        ) {
-            return { cord_one: "11.3rem", cord_two: "6.75rem" };
-        } else if (
-            currentDresses?.keyName === "femaleMessDressBlackWinterMessKit" ||
-            currentDresses?.keyName === "femaleMessDressBlackWinterMessKitAFNS"
-        ) {
-            return { cord_one: "10.4rem", cord_two: "6.95rem" };
-        } else {
-            return { cord_one: "9.13rem", cord_two: "6.9rem" };
-        }
-    } else if (DressCheck?.dressCode === 7) {
-        if (currentDresses?.dressGender === "female") {
-            if (currentDresses?.keyName === "femaleServiceDressBlackAFNS") {
-                return { cord_one: "11rem", cord_two: "6.1rem" };
-            } else if (currentDresses?.keyName === "femaleServiceDressBlackWithJerseyAFNS") {
-                return { cord_one: "11.8rem", cord_two: "6.6rem" };
-            } else if (
-                currentDresses?.keyName === "femaleFullBlackWinterCeremonialDressOptional" ||
-                currentDresses?.keyName === "femaleServiceBlackWinterCeremonialDressOptional" ||
-                currentDresses?.keyName === "femaleFullBlackWinterCeremonialDressAFNS"
-            ) {
-                return { cord_one: "8.7rem", cord_two: "5rem" };
-            }else if(
-                currentDresses?.keyName === "femaleDressNo7WinterCeremonial" ||
-                currentDresses?.keyName === "POfemaleDressNo7WinterCeremonial" ||
-                currentDresses?.keyName === "LDGfemaleDressNo7WinterCeremonial"
-            ){
-                return { cord_one: "12rem", cord_two: "6.1rem" };
-            }
-             else {
-                return { cord_one: "9.1rem", cord_two: "4.9rem" };
-            }
-        } else {
-            if (
-                currentDresses?.keyName === "WinterCeremonialCPOsPOs" ||
-                currentDresses?.keyName === "WinterCeremonialPOs" ||
-                currentDresses?.keyName === "WinterCeremonialLDGSBelow"
-            ) {
-                return { cord_one: "10.2rem", cord_two: "6.1rem" };
-            }
-            return { cord_one: "7.8rem", cord_two: "4.4rem" };
-        }
-    } else if (DressCheck?.dressCode === 0) {
-        if (selectedOptions?.rightChest?.length === 0) {
-            if (currentDresses?.dressGender === "female") {
-                if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" || currentDresses?.keyName === "LDGfemaleDressNo1FullWorkingDressWhiteSummer"){
-                    return { cord_one: "11.5rem", cord_two: "6.2rem" };
-                }
-                return { cord_one: "10.5rem", cord_two: "6.15rem" };
-            } else {
-                if(currentDresses?.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
-                    return { cord_one: "9.3rem", cord_two: "5.5rem" };
-                }
-                return { cord_one: "10.13rem", cord_two: "6.2rem" };
-            }
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-            if (currentDresses?.dressGender === "female") {
-                if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" || currentDresses?.keyName === "LDGfemaleDressNo1FullWorkingDressWhiteSummer"){
-                    return { cord_one: "10.7rem", cord_two: "6.2rem" };
-                }
-                return { cord_one: "9.75rem", cord_two: "6.15rem" };
-            } else {
-                if(currentDresses?.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
-                    return { cord_one: "8.55rem", cord_two: "5.5rem" };
-                }
-                return { cord_one: "9.35rem", cord_two: "6.2rem" };
-            }
-        } else {
-            return { cord_one: "9.8rem", cord_two: "6.2rem" };
-        }
-    } else if (currentDresses.keyName === "female_one" || currentDresses.keyName === "female_three"){
-        if (selectedOptions?.rightChest?.length === 0) {
-            return { cord_one: "11.2rem", cord_two: "6.2rem" };
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-           return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        } else {
-            return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        }
-    } else if (currentDresses.keyName === "femaleFive" || currentDresses.keyName === "femaleSeven"){
-        if (selectedOptions?.rightChest?.length === 0) {
-            return { cord_one: "11.3rem", cord_two: "6.2rem" };
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-           return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        } else {
-            return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        }
-    }  else if (currentDresses.keyName === "femaleMessDressSummerMessKit" || currentDresses.keyName === "femaleInformalMessDressRedSeaRig"){
-        if (selectedOptions?.rightChest?.length === 0) {
-            return { cord_one: "11.3rem", cord_two: "6.2rem" };
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-           return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        } else {
-            return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        }
-    } else if (currentDresses.keyName === "female_two" ){
-        if (selectedOptions?.rightChest?.length === 0) {
-            return { cord_one: "11.3rem", cord_two: "6.2rem" };
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-           return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        } else {
-            return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        }
-    } else if (currentDresses.keyName === "femaleSix" ){
-        if (selectedOptions?.rightChest?.length === 0) {
-            return { cord_one: "11.6rem", cord_two: "6.2rem" };
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-           return { cord_one: "10.7rem", cord_two: "6.2rem" };
-        } else {
-            return { cord_one: "10.5rem", cord_two: "6.2rem" };
-        }
-    }
-    else {
-        if (selectedOptions?.rightChest?.length === 0) {
-            if (currentDresses?.dressGender === "female") {
-                return { cord_one: "11.5rem", cord_two: "6.15rem" };// change position of name tally and Flag for CPOs etc
-            } else {
-                return { cord_one: "9.13rem", cord_two: "5.6rem" };// change position of name tally and Flag for CPOs etc
-            }
-        } else if (selectedOptions?.rightChest?.length !== 0) {
-            if (currentDresses?.dressGender === "female") {
-                return { cord_one: "9.75rem", cord_two: "6.15rem" };
-            } else {
-                return { cord_one: "9.35rem", cord_two: "6.2rem" };
-            }
-        } else {
-            return { cord_one: "9.8rem", cord_two: "6.2rem" };
-        }
-    }
-};
+
 
 export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => {
     if (DressCheck?.dressCode === 2 || DressCheck?.dressCode === 3) {
-        if (medals?.length === 1) {
+        if(currentDresses?.keyName === "camoSSGN_seven"){
+            if (medals?.length === 1) {
+                return "12.2rem";
+            } else if (medals?.length === 2) {
+                return "11.8rem";
+            } else if (medals?.length === 3) {
+                return "11.6rem";
+            } else if (medals?.length === 4) {
+                return "11.2rem";
+            } else if (medals?.length === 5) {
+                return "11rem";
+            } else if (medals?.length === 6) {
+                return "10.9rem";
+            } else {
+                return "10.7srem";
+            }
+        }else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs" || 
+            currentDresses.keyName === "PakMarineCeremonialCPOs" ||
+            currentDresses.keyName === "SSGNCamouflageCeremonialPOs" ||
+            currentDresses.keyName === "SSGNCamouflageCeremonialLDGSBelow" ||
+            currentDresses.keyName === "PakMarineCeremonialPOs" ||
+            currentDresses.keyName === "PakMarineCeremonialLDGSBelow"
+        ){
+            if (medals?.length === 1) {
+                return "12.2rem";
+            } else if (medals?.length === 2) {
+                return "12rem";
+            } else if (medals?.length === 3) {
+                return "11.6rem";
+            } else if (medals?.length === 4) {
+                return "11.2rem";
+            } else if (medals?.length === 5) {
+                return "10.9rem";
+            } else if (medals?.length === 6) {
+                return "10.6rem";
+            } else {
+                return "10.3rem";
+            }
+        }
+        else{ if (medals?.length === 1) {
             return "12.2rem";
         } else if (medals?.length === 2) {
             return "12rem";
@@ -1871,7 +1279,8 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
             return "11.2rem";
         } else {
             return "11rem";
-        }
+        }}
+       
 
     }else if(currentDresses?.keyName === "FullWhiteSummerCeremonial"){
          if (medals?.length === 1) {
@@ -1974,17 +1383,17 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
                 if (medals?.length === 1) {
                     return "13rem";
                 } else if (medals?.length === 2) {
-                    return "12.8rem";
-                } else if (medals?.length === 3) {
                     return "12.6rem";
-                } else if (medals?.length === 4) {
-                    return "12.4rem";
-                } else if (medals?.length === 5) {
+                } else if (medals?.length === 3) {
                     return "12.2rem";
+                } else if (medals?.length === 4) {
+                    return "11.9rem";
+                } else if (medals?.length === 5) {
+                    return "11.7rem";
                 } else if (medals?.length === 6) {
-                    return "12rem";
+                    return "11.5rem";
                 } else {
-                    return "11.8rem";
+                    return "11.3rem";
                 }    
             }
             if (medals?.length === 1) {
@@ -2007,17 +1416,17 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
                 if (medals?.length === 1) {
                     return "12.5rem";
                 } else if (medals?.length === 2) {
-                    return "12.3rem";
+                    return "12.2rem";
                 } else if (medals?.length === 3) {
-                    return "12.1rem";
+                    return "11.8rem";
                 } else if (medals?.length === 4) {
-                    return "11.9rem";
-                } else if (medals?.length === 5) {
-                    return "11.7rem";
-                } else if (medals?.length === 6) {
                     return "11.5rem";
+                } else if (medals?.length === 5) {
+                    return "11.2rem";
+                } else if (medals?.length === 6) {
+                    return "10.9rem";
                 } else {
-                    return "11.3rem";
+                    return "10.7rem";
                 }
             }
             if (medals?.length === 1) {
@@ -2061,15 +1470,15 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
             } else if (medals?.length === 2) {
                 return "12.6rem";
             } else if (medals?.length === 3) {
-                return "12.4rem";
-            } else if (medals?.length === 4) {
                 return "12.2rem";
+            } else if (medals?.length === 4) {
+                return "11.9rem";
             } else if (medals?.length === 5) {
-                return "12rem";
-            } else if (medals?.length === 6) {
-                return "11.8rem";
-            } else {
                 return "11.6rem";
+            } else if (medals?.length === 6) {
+                return "11.2rem";
+            } else {
+                return "11rem";
             }
         }else if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" || currentDresses?.keyName === "LDGfemaleDressNo1FullWorkingDressWhiteSummer"){
             if (medals?.length === 1) {
@@ -2135,10 +1544,19 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
     }
 
     if (DressCheck?.dressCode === 2 || DressCheck?.dressCode === 3) {
-        return {
-            cord_one: "10.9rem",
-            cord_two: updated_cord ? updated_cord : "11rem",
-        };
+        
+            if(currentDresses?.keyName === "camoPakMarinesWorking_eight" || currentDresses?.keyName === "camoSSGNWorking_nine"){
+                return {
+                    cord_one: "11.1rem",
+                    cord_two: updated_cord ? updated_cord : "10.85rem",
+                };
+            }
+            else{
+                return { 
+                    cord_one: "10.9rem",
+                    cord_two: updated_cord ? updated_cord : "11rem",
+                }
+            }
     } else if (DressCheck?.dressCode === 6) {
         if (currentDresses?.dressGender === "female") {
             if (
@@ -2149,7 +1567,8 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
                     cord_one: "10.85rem",
                     cord_two: updated_cord ? updated_cord : "11.85rem",
                 };
-            } else {
+            } 
+            else {
                 return {
                     cord_one: "10.8rem",
                     cord_two: updated_cord ? updated_cord : "11.5rem",
@@ -2245,7 +1664,14 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
                     cord_two: updated_cord ? updated_cord : "12.2rem",
                 };
             }
+            if(currentDresses.keyName === "WinterWorkingCPOsPOs"){
+                return {
+                    cord_one: "10.3rem",
+                    cord_two: updated_cord ? updated_cord : "10.9rem",
+                };
+            }
             return {
+
                 cord_one: "9.5rem",
                 cord_two: updated_cord ? updated_cord : "11.4rem",
             };
@@ -2264,7 +1690,14 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     cord_one: "10.8rem",
                     cord_two: "11.7rem",
                 };
-            }else{
+            }if(name === "PakMarineCombatPOs" || name === "SSGNCamouflageCombatLDGSBelow" || name === "PakMarineCombatLDGSBelow"){
+                return {
+                    cord_one: "10.5rem",
+                    cord_two: "11.7rem",
+                };
+            }
+            
+            else{
             return {
                 cord_one: "9.7rem",
                 cord_two: "11.7rem",
@@ -2276,7 +1709,14 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     cord_one: "10rem",
                     cord_two: "11.7rem",
                 };
-            }else{
+            }
+            if(name === "PakMarineCombatPOs" || name === "SSGNCamouflageCombatLDGSBelow" || name === "PakMarineCombatLDGSBelow"){
+                return {
+                    cord_one: "9rem",
+                    cord_two: "11.7rem",
+                };
+            }
+            else{
             return {
                 cord_one: "8.8rem",
                 cord_two: "11.7rem",
@@ -2427,7 +1867,7 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     selectedOptions?.rightChest?.length === 0
                 ) {
                     return {
-                        cord_one: "9.75rem",
+                        cord_one: "10rem",
                         cord_two: "11.6rem",
                     };
                 } else if (
@@ -2435,7 +1875,7 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     selectedOptions?.rightChest?.length !== 0
                 ) {
                     return {
-                        cord_one: "8.8rem",
+                        cord_one: "9rem",
                         cord_two: "11.6rem",
                     };
                 } else if (
@@ -2445,7 +1885,7 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     selectedOptions?.leftPocketInsignia?.length === 2
                 ) {
                     return {
-                        cord_one: "8.8rem",
+                        cord_one: "9rem",
                         cord_two: "11.6rem",
                     };
                 } else {
@@ -2455,6 +1895,79 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
                     };
                 }
             }
+            if(name === "SSGNCamouflageWorkingPOs" || 
+                name === "SSGNCamouflageWorkingCPOs" ||
+                name === "SSGNCamouflageWorkingLDGSBelow" 
+                
+            ){
+                if (
+                    selectedOptions?.leftPocketInsignia?.length === 1 &&
+                    selectedOptions?.rightChest?.length === 0
+                ) {
+                    return {
+                        cord_one: "10.4rem",
+                        cord_two: "11.6rem",
+                    };
+                } else if (
+                    selectedOptions?.leftPocketInsignia?.length === 1 &&
+                    selectedOptions?.rightChest?.length !== 0
+                ) {
+                    return {
+                        cord_one: "9.4rem",
+                        cord_two: "11.6rem",
+                    };
+                } else if (
+                    (selectedOptions?.leftPocketInsignia?.length === 2 &&
+                        selectedOptions?.rightChest?.length !== 0) ||
+                    selectedOptions?.leftPocketInsignia?.length === 3 ||
+                    selectedOptions?.leftPocketInsignia?.length === 2
+                ) {
+                    return {
+                        cord_one: "9.6rem",
+                        cord_two: "11.6rem",
+                    };
+                } else {
+                    return {
+                        cord_one: "9.8rem",
+                        cord_two: "11.7rem",
+                    };
+                }
+            }
+            if(name === "PakMarineWorkingPOs"){
+                if (
+                    selectedOptions?.leftPocketInsignia?.length === 1 &&
+                    selectedOptions?.rightChest?.length === 0
+                ) {
+                    return {
+                        cord_one: "10.7rem",
+                        cord_two: "11.6rem",
+                    };
+                } else if (
+                    selectedOptions?.leftPocketInsignia?.length === 1 &&
+                    selectedOptions?.rightChest?.length !== 0
+                ) {
+                    return {
+                        cord_one: "9.4rem",
+                        cord_two: "11.6rem",
+                    };
+                } else if (
+                    (selectedOptions?.leftPocketInsignia?.length === 2 &&
+                        selectedOptions?.rightChest?.length !== 0) ||
+                    selectedOptions?.leftPocketInsignia?.length === 3 ||
+                    selectedOptions?.leftPocketInsignia?.length === 2
+                ) {
+                    return {
+                        cord_one: "9.6rem",
+                        cord_two: "11.6rem",
+                    };
+                } else {
+                    return {
+                        cord_one: "9.8rem",
+                        cord_two: "11.7rem",
+                    };
+                }
+            }
+            
             if (
                 selectedOptions?.leftPocketInsignia?.length === 1 &&
                 selectedOptions?.rightChest?.length === 0
@@ -3770,8 +3283,724 @@ export const LeftPocketPositions = (name, DressCheck, selectedOptions, currentBa
             }
         }
     } else if (DressCheck?.dressCode === 7){
+        
         if(name === "WinterCeremonialCPOsPOs" || name === "WinterCeremonialPOs" || name === "WinterCeremonialLDGSBelow"){
 
+        }
+    }
+};
+
+// Set Right Chest Coordinates
+export const GetRightBoxCord = (currentDresses, selectedOptions) => {
+    let DressCheck = GetCurrentDressChecks(currentDresses?.keyName);
+    if (DressCheck?.dressCode === 1) {
+        if (
+            selectedOptions?.leftPocketInsignia?.length === 3 &&
+            selectedOptions?.rightChest?.length !== 0
+        ) {
+            if(currentDresses?.keyName === "male2A"){
+                return { cord_one: "7.8rem", cord_two: "6.15rem" };
+            }
+            if(currentDresses?.keyName === "male2B"){
+                return { cord_one: "7.8rem", cord_two: "6.15rem" };
+            }
+            return { cord_one: "8.65rem", cord_two: "6.15rem" };
+        } else if (
+            (selectedOptions?.leftPocketInsignia?.length === 3 &&
+                selectedOptions?.rightChest?.length === 0) ||
+            selectedOptions?.rightChest?.length === 1
+        ) {
+            if(currentDresses?.keyName === "male2B"){
+                return { cord_one: "8.9rem", cord_two: "6.15rem" };
+            }else if(currentDresses?.keyName === "male2A"){
+                return { cord_one: "8.8rem", cord_two: "6.15rem" };
+            }
+
+             else {
+                return { cord_one: "9.4rem", cord_two: "6.15rem" };
+            }
+            
+        } else {
+            if(currentDresses?.keyName === "male2B" || currentDresses?.keyName === "male2A"){
+                return { cord_one: "9.95rem", cord_two: "6.15rem" };
+            }
+            return { cord_one: "10.15rem", cord_two: "6.15rem" };
+        }
+    } else if (DressCheck?.dressCode === 2 || DressCheck?.dressCode === 3) {
+        if (
+            (selectedOptions?.rightChest?.length === 0 &&
+                selectedOptions?.leftPocketInsignia?.length === 3) ||
+            (selectedOptions?.rightChest?.length === 1 &&
+                selectedOptions?.leftPocketInsignia?.length === 0) ||
+            (selectedOptions?.rightChest?.length === 1 &&
+                selectedOptions?.leftPocketInsignia?.length === 2) ||
+            (selectedOptions?.rightChest?.length === 2 &&
+                selectedOptions?.leftPocketInsignia?.length === 1)
+        ) {
+            if (
+                currentDresses?.keyName === "camoSSGN_seven" ||
+                currentDresses?.keyName === "camoSSGNWorking_nine" || 
+                currentDresses?.keyName === "camoPakMarines_six" ||
+                currentDresses?.keyName === "camoPakMarinesWorking_eight"
+                
+            ) {
+                return { cord_one: "9.9rem", cord_two: "6.9rem" };
+            } else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs" 
+                || currentDresses.keyName === "SSGNCamouflageWorkingCPOs"
+                || currentDresses.keyName === "SSGNCamouflageCombatCPOs"
+                || currentDresses.keyName === "PakMarineCeremonialCPOs"
+                || currentDresses.keyName === "PakMarineWorkingCPOs"
+                || currentDresses.keyName === "PakMarineCombatCPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCeremonialPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCombatPOs"
+                || currentDresses?.keyName === "SSGNCamouflageWorkingPOs"
+                || currentDresses?.keyName === "PakMarineWorkingPOs"
+                || currentDresses?.keyName === "PakMarineCeremonialPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCeremonialLDGSBelow"
+                || currentDresses?.keyName === "SSGNCamouflageWorkingLDGSBelow"
+                || currentDresses?.keyName === "SSGNCamouflageCombatLDGSBelow"
+                || currentDresses?.keyName === "PakMarineCeremonialLDGSBelow"
+                || currentDresses?.keyName === "PakMarineWorkingLDGSBelow"
+                || currentDresses?.keyName === "PakMarineCombatLDGSBelow"
+            ){
+                return { cord_one: "10rem", cord_two: "6.7rem" };
+            }
+            else {
+                return { cord_one: "9.6rem", cord_two: "7.15rem" };
+            }
+        } else if (
+            (selectedOptions?.rightChest?.length > 1 &&
+                selectedOptions?.leftPocketInsignia?.length < 2) ||
+            (selectedOptions?.rightChest?.length === 1 &&
+                selectedOptions?.leftPocketInsignia?.length === 3) ||
+            (selectedOptions?.rightChest?.length > 1 &&
+                selectedOptions?.leftPocketInsignia?.length === 3) ||
+            (selectedOptions?.rightChest?.length > 1 &&
+                selectedOptions?.leftPocketInsignia?.length === 2)
+        ) {
+            if (
+                currentDresses?.keyName === "camoSSGN_seven" ||
+                currentDresses?.keyName === "camoSSGNWorking_nine"
+            ) {
+                return { cord_one: "8.65rem", cord_two: "6.7rem" };
+            }else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs"||
+                currentDresses.keyName === "SSGNCamouflageCombatCPOs"||
+                currentDresses.keyName === "SSGNCamouflageWorkingCPOs"||
+                currentDresses.keyName === "PakMarineCeremonialCPOs"
+                || currentDresses.keyName === "PakMarineWorkingCPOs"
+                || currentDresses.keyName === "PakMarineCombatCPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCeremonialPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCombatPOs"
+                || currentDresses?.keyName === "SSGNCamouflageWorkingPOs"
+                || currentDresses?.keyName === "PakMarineWorkingPOs"
+                || currentDresses?.keyName === "PakMarineCeremonialPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCeremonialLDGSBelow"
+                || currentDresses?.keyName === "SSGNCamouflageWorkingLDGSBelow"
+                || currentDresses?.keyName === "SSGNCamouflageCombatLDGSBelow"
+                || currentDresses?.keyName === "PakMarineCeremonialLDGSBelow"
+                || currentDresses?.keyName === "PakMarineWorkingLDGSBelow"
+                || currentDresses?.keyName === "PakMarineCombatLDGSBelow"
+            ){
+                return { cord_one: "9.2rem", cord_two: "6.7rem" };
+            } 
+            else {
+                return { cord_one: "8.8rem", cord_two: "7.15rem" };
+            }
+        } else {
+            return { cord_one: "10.3rem", cord_two: "7.15rem" };
+        }
+    } else if (DressCheck?.dressCode === 4) {
+        if (
+            currentDresses?.keyName === "WorkingDressWhite" || 
+            currentDresses?.keyName === "InformalMessDressRedSeaRig"   || 
+            currentDresses?.keyName === "SSGNCamouflageWorkingCPOs" || 
+            currentDresses?.keyName === "PakMarineWorkingCPOs" || 
+            currentDresses?.keyName === "SSGNCamouflageWorkingPOs" || 
+            currentDresses?.keyName === "PakMarineWorkingPOs" || 
+            currentDresses?.keyName === "SSGNCamouflageWorkingLDGSBelow" || 
+            currentDresses?.keyName === "PakMarineWorkingLDGSBelow"   
+        ) {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "8.1rem", cord_two: "5.6rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "7.05rem", cord_two: "5.6rem" };
+            } else {
+                
+                return { cord_one: "9.2rem", cord_two: "5.6rem" };
+            }
+        } else if (
+            currentDresses?.keyName === "WorkingDressWhiteWinter" ||
+            currentDresses?.keyName === "WorkingWinterBlackModified"
+        ) {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.4rem", cord_two: "6.15rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "8.5rem", cord_two: "6.15rem" };
+            } else {
+                return { cord_one: "10.1rem", cord_two: "6.15rem" };
+            }
+        }else if (
+            currentDresses?.keyName === "WorkingDressWhiteWinterCPOsPOs" ||
+            currentDresses?.keyName === "WorkingDressWhiteWinterPOs" ||
+            currentDresses?.keyName === "WorkingDressWhiteWinterLDGSBelow" 
+        ) {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9rem", cord_two: "6.15rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "7.9rem", cord_two: "6.15rem" };
+            } else {
+                return { cord_one: "10.1rem", cord_two: "6.15rem" };
+            }
+        }
+        else if (
+            currentDresses?.keyName === "WinterWorkingCPOsPOs" || 
+            currentDresses?.keyName === "WinterWorkingPOs" ||
+            currentDresses?.keyName === "WinterWorkingLDGSBelow"
+        ) {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9rem", cord_two: "6.15rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "7.9rem", cord_two: "6.15rem" };
+            } else {
+                return { cord_one: "10.1rem", cord_two: "6.15rem" };
+            }
+        }
+        
+        else if (
+            currentDresses?.keyName === "femaleDressNo3WorkingDressWhiteSummer" ||
+            currentDresses?.keyName === "POfemaleDressNo3WorkingDressWhiteSummer" ||
+            currentDresses?.keyName === "LDGfemaleDressNo3WorkingDressWhiteSummer" 
+        ){
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.5rem", cord_two: "6.4rem" };
+            }
+                
+            else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.5rem", cord_two: "6.4rem" };
+            } else {
+                return { cord_one: "11.5rem", cord_two: "6.4rem" };
+            }
+        }else if (
+             currentDresses?.keyName === "femaleDressNo3AWorkingDressSummer" 
+        ){
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.8rem", cord_two: "6.4rem" };
+            }
+                
+            else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.9rem", cord_two: "6.4rem" };
+            } else {
+                return { cord_one: "12.1rem", cord_two: "6.4rem" };
+            }
+        }else if (
+            currentDresses?.keyName === "POfemaleDressNo3AWorkingDressSummer"  ||
+            currentDresses?.keyName === "LDGfemaleDressNo3AWorkingDressSummer"  
+       ){
+           if (
+               (selectedOptions?.rightChest?.length === 1 &&
+                   selectedOptions?.leftPocketInsignia?.length === 0) ||
+               (selectedOptions?.rightChest?.length === 1 &&
+                   selectedOptions?.leftPocketInsignia?.length < 3) ||
+               (selectedOptions?.rightChest?.length === 0 &&
+                   selectedOptions?.leftPocketInsignia?.length === 3)
+           ) {
+               return { cord_one: "10.9rem", cord_two: "6.4rem" };
+           }
+               
+           else if (
+               (selectedOptions?.rightChest?.length > 1 &&
+                   selectedOptions?.leftPocketInsignia?.length === 0) ||
+               (selectedOptions?.rightChest?.length > 1 &&
+                   selectedOptions?.leftPocketInsignia?.length < 3) ||
+               (selectedOptions?.rightChest?.length === 1 &&
+                   selectedOptions?.leftPocketInsignia?.length === 3) ||
+               (selectedOptions?.rightChest?.length > 1 &&
+                   selectedOptions?.leftPocketInsignia?.length === 3)
+           ) {
+               return { cord_one: "9.8rem", cord_two: "6.4rem" };
+           } else {
+               return { cord_one: "12rem", cord_two: "6.4rem" };
+           }
+       }
+       else if (
+            currentDresses?.keyName === "femaleDressNo8WinterWorking" ||
+            currentDresses?.keyName === "POfemaleDressNo8WinterWorking"  ||
+            currentDresses?.keyName === "LDGfemaleDressNo8WinterWorking"
+        ){
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.7rem", cord_two: "6.1rem" };
+            }
+                
+            else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.6rem", cord_two: "6.1rem" };
+            } else {
+                return { cord_one: "11.9rem", cord_two: "6.1rem" };
+            }
+        }
+        else if (currentDresses?.keyName === "WorkingDressWhiteSummerCPOsPOs" ||
+             currentDresses?.keyName === "WorkingDressWhiteSummerPOs" || 
+             currentDresses?.keyName === "WorkingDressWhiteSummerLDGSBelow") {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "8.2rem", cord_two: "5.7rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "7.1rem", cord_two: "5.7rem" };
+            } else {
+                return { cord_one: "9.3rem", cord_two: "5.7rem" };
+            }
+        }  else if (currentDresses?.keyName === "femaleWorkingDressWhiteSummer") {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.4rem", cord_two: "6.4rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.2rem", cord_two: "6.4rem" };
+            } else {
+                return { cord_one: "11.3rem", cord_two: "6.4rem" };
+            }
+        } else if (currentDresses?.keyName === "femaleWorkingDressWhiteSummerOptional") {
+            // dress
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "8.85rem", cord_two: "6.45rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "7.8rem", cord_two: "6.45rem" };
+            } else {
+                return { cord_one: "10.05rem", cord_two: "6.45rem" };
+            }
+        } else if (
+            currentDresses?.keyName === "femaleWorkingDress3AWinter" ||
+            currentDresses?.keyName === "femaleWorkingDressWinterBlackModified"
+        ) {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.8rem", cord_two: "6.7rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.7rem", cord_two: "6.7rem" };
+            } else {
+                return { cord_one: "11.8rem", cord_two: "6.7rem" };
+            }
+        } else if (
+            currentDresses?.keyName === "femaleWorkingDress3AWinterOptional" ||
+            currentDresses?.keyName === "femaleInformalMessDressRedSeaRig" ||
+            currentDresses?.keyName === "femaleInformalMessDressRedSeaRigAFNS" ||
+            currentDresses?.keyName === "femaleWorkingDressBlackOptional"
+        ) {
+            let isTrue =
+                currentDresses?.keyName === "femaleInformalMessDressRedSeaRig" ||
+                currentDresses?.keyName === "femaleInformalMessDressRedSeaRigAFNS" ||
+                currentDresses?.keyName === "femaleWorkingDressBlackOptional";
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return {
+                    cord_one: isTrue ? "9rem" : "8.9rem",
+                    cord_two: "6.45rem",
+                };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "8rem", cord_two: "6.45rem" };
+            } else {
+                
+                return {
+                    cord_one: isTrue ? "10.15rem" : "10.2rem",
+                    cord_two: "6.45rem",
+                };
+            }
+        } else if (currentDresses?.keyName === "femaleWorkingDress3WorkingSummer") {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10rem", cord_two: "6rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9rem", cord_two: "6rem" };
+            } else {
+                return {
+                    cord_one: "11.1rem",
+                    cord_two: "6rem",
+                };
+            }
+        } else if (currentDresses?.keyName === "femaleWhiteDress3AWorkingWinter") {
+            if (
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 0 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "10.6rem", cord_two: "6.45rem" };
+            } else if (
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 0) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length < 3) ||
+                (selectedOptions?.rightChest?.length === 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3) ||
+                (selectedOptions?.rightChest?.length > 1 &&
+                    selectedOptions?.leftPocketInsignia?.length === 3)
+            ) {
+                return { cord_one: "9.5rem", cord_two: "6.45rem" };
+            } else {
+                return {
+                    cord_one: "11.8rem",
+                    cord_two: "6.45rem",
+                };
+            }
+        }
+    } else if (DressCheck?.dressCode === 5) {
+        if (currentDresses?.keyName === "female_four" || currentDresses?.keyName === "female_four_AFNS" || currentDresses?.keyName === "femaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "POfemaleDressNo4DigitalCamouflageCombat" || currentDresses?.keyName === "LDGfemaleDressNo4DigitalCamouflageCombat") {
+            return { cord_one: "10.7rem", cord_two: "6.5rem" };
+        } else if (currentDresses?.keyName === "camoSSGNCombat") {
+            return { cord_one: "9.7rem", cord_two: "6.8rem" };
+        } else if (currentDresses?.keyName === "camoPakMarinesCombat") {
+            return { cord_one: "9.9rem", cord_two: "6.8rem" };
+        } else if (currentDresses?.keyName === "maleFour") {
+            return { cord_one: "9.6rem", cord_two: "6.8rem" };
+        } 
+        else {
+            if(currentDresses?.keyName === "PakMarineCombatPOs" || currentDresses?.keyName === "SSGNCamouflageCombatLDGSBelow"){
+                return { cord_one: "9.6rem", cord_two: "6.8rem" };
+            }
+            return { cord_one: "9.6rem", cord_two: "7.2rem" };
+        }
+    } else if (DressCheck?.dressCode === 6) {
+        if (
+            currentDresses?.keyName === "femaleMessDressSummerMessKit" ||
+            currentDresses?.keyName === "femaleMessDressSummerMessKitAFNS"
+        ) {
+            return { cord_one: "11.3rem", cord_two: "6.75rem" };
+        } else if (
+            currentDresses?.keyName === "femaleMessDressBlackWinterMessKit" ||
+            currentDresses?.keyName === "femaleMessDressBlackWinterMessKitAFNS"
+        ) {
+            return { cord_one: "10.4rem", cord_two: "6.95rem" };
+        } else {
+            return { cord_one: "9.13rem", cord_two: "6.9rem" };
+        }
+    } else if (DressCheck?.dressCode === 7) {
+        if (currentDresses?.dressGender === "female") {
+            if (currentDresses?.keyName === "femaleServiceDressBlackAFNS") {
+                return { cord_one: "11rem", cord_two: "6.1rem" };
+            } else if (currentDresses?.keyName === "femaleServiceDressBlackWithJerseyAFNS") {
+                return { cord_one: "11.8rem", cord_two: "6.6rem" };
+            } else if (
+                currentDresses?.keyName === "femaleFullBlackWinterCeremonialDressOptional" ||
+                currentDresses?.keyName === "femaleServiceBlackWinterCeremonialDressOptional" ||
+                currentDresses?.keyName === "femaleFullBlackWinterCeremonialDressAFNS"
+            ) {
+                return { cord_one: "8.7rem", cord_two: "5rem" };
+            }else if(
+                currentDresses?.keyName === "femaleDressNo7WinterCeremonial" ||
+                currentDresses?.keyName === "POfemaleDressNo7WinterCeremonial" ||
+                currentDresses?.keyName === "LDGfemaleDressNo7WinterCeremonial"
+            ){
+                return { cord_one: "11.8rem", cord_two: "6.1rem" };
+            }
+             else {
+                return { cord_one: "9.1rem", cord_two: "4.9rem" };
+            }
+        } else {
+            if (
+                currentDresses?.keyName === "WinterCeremonialCPOsPOs" ||
+                currentDresses?.keyName === "WinterCeremonialPOs" ||
+                currentDresses?.keyName === "WinterCeremonialLDGSBelow"
+            ) {
+                return { cord_one: "10.1rem", cord_two: "6.1rem" };
+            }
+            return { cord_one: "7.8rem", cord_two: "4.4rem" };
+        }
+    } else if (DressCheck?.dressCode === 0) {
+        if (selectedOptions?.rightChest?.length === 0) {
+            if (currentDresses?.dressGender === "female") {
+                if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" || currentDresses?.keyName === "LDGfemaleDressNo1FullWorkingDressWhiteSummer"){
+                    return { cord_one: "11.5rem", cord_two: "6.2rem" };
+                }
+                return { cord_one: "10.5rem", cord_two: "6.15rem" };
+            } else {
+                if(currentDresses?.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
+                    return { cord_one: "9.3rem", cord_two: "5.5rem" };
+                }
+                if(currentDresses?.keyName === "ServiceDressWhite"){
+                    return { cord_one: "9.95rem", cord_two: "6.2rem" };
+                }
+                return { cord_one: "10.13rem", cord_two: "6.2rem" };
+            }
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+            if (currentDresses?.dressGender === "female") {
+                if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" || currentDresses?.keyName === "LDGfemaleDressNo1FullWorkingDressWhiteSummer"){
+                    return { cord_one: "10.7rem", cord_two: "6.2rem" };
+                }
+                return { cord_one: "9.75rem", cord_two: "6.15rem" };
+            } else {
+                if(currentDresses?.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
+                    return { cord_one: "8.2rem", cord_two: "5.5rem" };
+                }
+                if(currentDresses?.keyName === "FullWhiteSummerCeremonial"){
+                    return { cord_one: "8.95rem", cord_two: "6.2rem" };
+                }
+                if(currentDresses?.keyName === "ServiceDressWhite"){
+                    return { cord_one: "8.85rem", cord_two: "6.2rem" };
+                }
+                return { cord_one: "9.35rem", cord_two: "6.2rem" };
+            }
+        } else {
+            return { cord_one: "9.8rem", cord_two: "6.2rem" };
+        }
+    } else if (currentDresses.keyName === "female_one" || currentDresses.keyName === "female_three"){
+        if (selectedOptions?.rightChest?.length === 0) {
+            return { cord_one: "11.2rem", cord_two: "6.2rem" };
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+           return { cord_one: "10rem", cord_two: "6.2rem" };
+        } else {
+            return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        }
+    } else if (currentDresses.keyName === "femaleFive" || currentDresses.keyName === "femaleSeven"){
+        if (selectedOptions?.rightChest?.length === 0) {
+            return { cord_one: "11.2rem", cord_two: "6.2rem" };
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+           return { cord_one: "10rem", cord_two: "6.2rem" };
+        } else {
+            return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        }
+    }  else if (currentDresses.keyName === "femaleMessDressSummerMessKit" || currentDresses.keyName === "femaleInformalMessDressRedSeaRig"){
+        if (selectedOptions?.rightChest?.length === 0) {
+            return { cord_one: "11.3rem", cord_two: "6.2rem" };
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+           return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        } else {
+            return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        }
+    } else if (currentDresses.keyName === "female_two" ){
+        if (selectedOptions?.rightChest?.length === 0) {
+            return { cord_one: "11.3rem", cord_two: "6.2rem" };
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+           return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        } else {
+            return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        }
+    } else if (currentDresses.keyName === "femaleSix" ){
+        if (selectedOptions?.rightChest?.length === 0) {
+            return { cord_one: "11.6rem", cord_two: "6.2rem" };
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+           return { cord_one: "10.7rem", cord_two: "6.2rem" };
+        } else {
+            return { cord_one: "10.5rem", cord_two: "6.2rem" };
+        }
+    }
+    else {
+        if (selectedOptions?.rightChest?.length === 0) {
+            if (currentDresses?.dressGender === "female") {
+                return { cord_one: "11.5rem", cord_two: "6.15rem" };// change position of name tally and Flag for CPOs etc
+            } else {
+                return { cord_one: "9.13rem", cord_two: "5.6rem" };// change position of name tally and Flag for CPOs etc
+            }
+        } else if (selectedOptions?.rightChest?.length !== 0) {
+            if (currentDresses?.dressGender === "female") {
+                return { cord_one: "9.75rem", cord_two: "6.15rem" };
+            } else {
+                return { cord_one: "9.35rem", cord_two: "6.2rem" };
+            }
+        } else {
+            return { cord_one: "9.8rem", cord_two: "6.2rem" };
         }
     }
 };

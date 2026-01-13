@@ -16,6 +16,13 @@ const RightChestContent = (props) => {
         currentBadgesState,
         selectedInsiginas,
     } = props;
+    
+    // Dresses with larger right chest insignia width (2rem)
+    const largeWidthDresses = ["WorkingDressWhite","male2A","male2B","MessDressBlackWinterMessKit","FullWhiteSummerCeremonial"];
+    const isLargeWidth = largeWidthDresses.includes(currentDresses?.keyName);
+    const largeHeightDresses = ["male2A"];
+    const isLargeHeight = largeHeightDresses.includes(currentDresses?.keyName);
+    
     const GetCurrentContent = () => {
         let DressCheck = GetCurrentDressChecks(currentDresses?.keyName);
         if (
@@ -28,8 +35,8 @@ const RightChestContent = (props) => {
                     <Box
                         sx={{
                             display: "flex",
-                            width: "1rem",
-                            height: ".7rem",
+                            width: isLargeWidth ? "2rem" : "2rem",
+                            height: isLargeHeight ? "1.2rem" : ".9rem",
                             transform: item?.sizeScale ? item?.sizeScale : "unset",
                         }}
                         onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
@@ -72,8 +79,8 @@ const RightChestContent = (props) => {
                         key={item?.id}
                         sx={{
                             display: "flex",
-                            width: "1rem",
-                            height: ".7rem",
+                            width: isLargeWidth ? "2rem" : "2rem",
+                            height: ".9rem",
                             transform: item?.sizeScale ? item?.sizeScale : "unset",
                         }}
                         onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
@@ -223,9 +230,10 @@ const RightChestContent = (props) => {
                             key={item?.id}
                             sx={{
                                 display: "flex",
-                                width: "1rem",
-                                height: ".7rem",
+                                width: "2rem",
+                                height: ".9rem",
                                 transform: item?.sizeScale ? item?.sizeScale : "unset",
+                                marginBottom: "1px",
                             }}
                             onMouseEnter={(e) => handleEnter(e, item?.badgeImage)}
                             onMouseLeave={(e) => handleLeave(e)}

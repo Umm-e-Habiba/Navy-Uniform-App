@@ -10,6 +10,15 @@ import { Box } from "@mui/material";
 
 const RightPocketContent = (props) => {
     const { selectedOptions, currentDresses, handleEnter, handleLeave } = props;
+    
+    // Check if current dress is one of the two mess dresses that need miniature insignia
+    const isMessDressMiniature = 
+        currentDresses?.keyName === "MessDressBlackWinterMessKit" || 
+        currentDresses?.keyName === "MessDressWhiteSummerMessKit";
+    
+    // Check if current dress needs larger height for insignia
+    const isLargeHeight = currentDresses?.keyName === "WorkingDressWhite";
+    
     let black_background=false;
     if( currentDresses.keyName=== "DigitalCamouflageCombatCPOsPOs" || 
         currentDresses.keyName === "SSGNCamouflageCeremonialCPOs"  ||
@@ -85,9 +94,13 @@ const RightPocketContent = (props) => {
                             <Box
                                 sx={{
                                     position: "relative",
-                                    width: DressCheck?.dressCode === 4 ? "0.5rem" : ".6rem",
+                                    width: isMessDressMiniature 
+                                        ? "0.45rem" 
+                                        : (DressCheck?.dressCode === 4 ? "0.5rem" : ".6rem"),
                                     marginTop:"2px",
-                                    height: ".9rem",
+                                    height: isLargeHeight 
+                                        ? "0.9rem" 
+                                        : (isMessDressMiniature ? "0.7rem" : ".9rem"),
                                     transform: item?.size ? item?.size : "unset",
                                     backgroundColor: black_background ? "black" : "rgba(0,0,0,0)",
                                 }}
@@ -128,7 +141,9 @@ const RightPocketContent = (props) => {
                                 top: itemCoordinates?.cord_one,
                                 left: itemCoordinates?.cord_two,
                                 marginTop:"2px",
-                                width: itemCoordinates?.size ? itemCoordinates?.size : ".5rem",
+                                width: isMessDressMiniature 
+                                    ? "0.4rem" 
+                                    : (itemCoordinates?.size ? itemCoordinates?.size : ".5rem"),
                                 transform: itemCoordinates?.size ? itemCoordinates?.size : "unset",
                                 backgroundColor:
                                     black_background
@@ -154,7 +169,9 @@ const RightPocketContent = (props) => {
                                 top: itemCoordinates?.cord_one,
                                 left: itemCoordinates?.cord_two,
                                 marginTop:"2px",
-                                width: itemCoordinates?.size ? itemCoordinates?.size : ".9rem",
+                                width: isMessDressMiniature 
+                                    ? "0.7rem" 
+                                    : (itemCoordinates?.size ? itemCoordinates?.size : ".9rem"),
                                 transform: itemCoordinates?.size ? itemCoordinates?.size : "unset",
                                 backgroundColor:
                                     black_background

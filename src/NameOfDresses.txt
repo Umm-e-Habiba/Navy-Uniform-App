@@ -8,11 +8,11 @@ WorkingDressWhite                                               DRESS NO. 3 – 
 WorkingDressWhiteWinter                                         DRESS NO. 3A – WORKING DRESS WHITE (WINTER)
 maleFour                                                        DRESS NO. 4 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
 MessDressWhiteSummerMessKit                                     DRESS NO. 5 – MESS DRESS WHITE (SUMMER MESS KIT)
-MessDressWhiteWinterMessKit                                     DRESS NO. 6 – MESS DRESS WHITE (WINTER MESS KIT)
+MessDressWhiteWinterMessKit       InformalMessDressRedSeaRig    DRESS NO. 6 – MESS DRESS WHITE (WINTER MESS KIT)
 FullBlackWinterCeremonialDress                                  DRESS NO. 7 – FULL BLACK (WINTER CEREMONIAL)
 ServiceBlackDressWinter                                         DRESS NO. 8 – DIGITAL CAMOUFLAGE DRESS (COMBAT)
 WorkingWinterBlackModified                                      DRESS NO. 8A
-MessDressBlackWinterMessKit                               Dreess 10
+MessDressBlackWinterMessKit                                     Dreess 10
 
 
 
@@ -118,7 +118,7 @@ femaleServiceDressBlackWithJerseyAFNS       Dress 8 Optional
 femaleMessDressBlackWinterMessKitAFNS       Dress 10
 
 
-************ CPO  
+************ CPO female 
 
 femaleDressNo1FullWhiteSummerCeremonials            Dress 1
 femaleDressNo3WorkingDressWhiteSummer               Dress 3
@@ -145,3 +145,42 @@ LDGfemaleDressNo3AWorkingDressSummer                Dress 3A
 LDGfemaleDressNo4DigitalCamouflageCombat            Dress 4
 LDGfemaleDressNo7WinterCeremonial                   Dress 7
 LDGfemaleDressNo8WinterWorking                      Dress 8
+
+
+let CurrentDressChecks = [
+    {
+        dressString: "FullWhiteSummerCeremonial ServiceDressWhite CeremonialSummerForCPOSANDPOS CeremonialSummerForPOS CeremonialSummerForLDGSAndBelow femaleDressNo1FullWhiteSummerCeremonials POfemaleDressNo1FullWorkingDressWhiteSummer LDGfemaleDressNo1FullWorkingDressWhiteSummer",
+        dressCode: 0,
+    },
+    {
+        dressString: "male2B male2A",
+        dressCode: 1,
+    },
+    {
+        dressString: "camoSSGN_seven camoPakMarines_six",
+        dressCode: 2,
+    },
+    {
+        dressString: "camoPakMarinesWorking_eight camoSSGNWorking_nine SSGNCamouflageCeremonialCPOs SSGNCamouflageCeremonialPOs SSGNCamouflageCeremonialLDGSBelow PakMarineCeremonialCPOs  PakMarineCeremonialPOs  PakMarineCeremonialLDGSBelow SSGNCamouflageWorkingLDGSBelow SSGNCamouflageWorkingPOs SSGNCamouflageWorkingCPOs PakMarineWorkingLDGSBelow  PakMarineWorkingPOs PakMarineWorkingCPOs",
+        dressCode: 3,
+    },
+    {
+        dressString:
+            " femaleDressNo3WorkingDressWhiteSummer femaleDressNo3AWorkingDressSummer femaleDressNo8WinterWorking POfemaleDressNo3WorkingDressWhiteSummer POfemaleDressNo3AWorkingDressSummer POfemaleDressNo8WinterWorking LDGfemaleDressNo3WorkingDressWhiteSummer LDGfemaleDressNo3AWorkingDressSummer LDGfemaleDressNo8WinterWorking  femaleInformalMessDressRedSeaRig femaleWorkingDressWinterBlackModified femaleWorkingDressBlackOptional femaleWorkingDress3WorkingSummer femaleWhiteDress3AWorkingWinter femaleInformalMessDressRedSeaRigAFNS WorkingDressWhite WorkingDressWhiteWinter InformalMessDressRedSeaRig WorkingWinterBlackModified femaleWorkingDressWhiteSummer femaleWorkingDressWhiteSummerOptional femaleWorkingDress3AWinter femaleWorkingDress3AWinterOptional WorkingDressWhiteSummerCPOsPOs WorkingDressWhiteWinterCPOsPOs WinterWorkingCPOsPOs WorkingDressWhiteSummerPOs WorkingDressWhiteWinterPOs WinterWorkingPOs WorkingDressWhiteSummerLDGSBelow WorkingDressWhiteWinterLDGSBelow WinterWorkingLDGSBelow ",
+        dressCode: 4,
+    },
+    {
+        dressString: "maleFour female_four camoSSGNCombat camoPakMarinesCombat DigitalCamouflageCombatCPOsPOs DigitalCamouflageCombatPOs DigitalCamouflageCombatLDGSBelow femaleDressNo4DigitalCamouflageCombat POfemaleDressNo4DigitalCamouflageCombat LDGfemaleDressNo4DigitalCamouflageCombat female_four_AFNS PakMarineCombatLDGSBelow SSGNCamouflageCombatLDGSBelow PakMarineCombatPOs SSGNCamouflageCombatPOs PakMarineCombatCPOs SSGNCamouflageCombatCPOs",
+        dressCode: 5,
+    },
+    {
+        dressString:
+            "femaleMessDressSummerMessKit femaleMessDressBlackWinterMessKit femaleMessDressSummerMessKitAFNS femaleMessDressBlackWinterMessKitAFNS MessDressWhiteSummerMessKit MessDressBlackWinterMessKit",
+        dressCode: 6,
+    },
+    {
+        dressString:
+            "WinterCeremonialCPOsPOs WinterCeremonialPOs WinterCeremonialLDGSBelow femaleDressNo7WinterCeremonial POfemaleDressNo7WinterCeremonial LDGfemaleDressNo7WinterCeremonial femaleServiceDressBlackAFNS femaleServiceDressBlackWithJerseyAFNS FullBlackWinterCeremonialDress ServiceBlackDressWinter femaleFullBlackWinterCeremonialDress femaleServiceBlackWinterCeremonialDress femaleFullBlackWinterCeremonialDressOptional femaleServiceBlackWinterCeremonialDressOptional femaleFullBlackWinterCeremonialDressAFNS",
+        dressCode: 7,
+    },
+];
