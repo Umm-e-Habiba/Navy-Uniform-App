@@ -1242,12 +1242,12 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
             } else {
                 return "10.7srem";
             }
-        }else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs" || 
-            currentDresses.keyName === "PakMarineCeremonialCPOs" ||
-            currentDresses.keyName === "SSGNCamouflageCeremonialPOs" ||
-            currentDresses.keyName === "SSGNCamouflageCeremonialLDGSBelow" ||
-            currentDresses.keyName === "PakMarineCeremonialPOs" ||
-            currentDresses.keyName === "PakMarineCeremonialLDGSBelow"
+        }else if(currentDresses?.keyName === "SSGNCamouflageCeremonialCPOs" || 
+            currentDresses?.keyName === "PakMarineCeremonialCPOs" ||
+            currentDresses?.keyName === "SSGNCamouflageCeremonialPOs" ||
+            currentDresses?.keyName === "SSGNCamouflageCeremonialLDGSBelow" ||
+            currentDresses?.keyName === "PakMarineCeremonialPOs" ||
+            currentDresses?.keyName === "PakMarineCeremonialLDGSBelow"
         ){
             if (medals?.length === 1) {
                 return "12.2rem";
@@ -1376,9 +1376,9 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
         }
     } else if (DressCheck?.dressCode === 7) {
         if (currentDresses?.dressGender === "female") {
-            if( currentDresses.keyName === "femaleDressNo7WinterCeremonial" ||
-                currentDresses.keyName === "POfemaleDressNo7WinterCeremonial" ||
-                currentDresses.keyName === "LDGfemaleDressNo7WinterCeremonial" 
+            if( currentDresses?.keyName === "femaleDressNo7WinterCeremonial" ||
+                currentDresses?.keyName === "POfemaleDressNo7WinterCeremonial" ||
+                currentDresses?.keyName === "LDGfemaleDressNo7WinterCeremonial" 
             ){
                 if (medals?.length === 1) {
                     return "13rem";
@@ -1412,7 +1412,7 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
                 return "12.8rem";
             }
         } else {
-            if(currentDresses.keyName === "WinterCeremonialCPOsPOs" || currentDresses.keyName === "WinterCeremonialPOs" || currentDresses.keyName === "WinterCeremonialLDGSBelow"){
+            if(currentDresses?.keyName === "WinterCeremonialCPOsPOs" || currentDresses?.keyName === "WinterCeremonialPOs" || currentDresses?.keyName === "WinterCeremonialLDGSBelow"){
                 if (medals?.length === 1) {
                     return "12.5rem";
                 } else if (medals?.length === 2) {
@@ -1464,7 +1464,7 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
             return "11.65rem";
         }
     } else if (DressCheck?.dressCode === 0) {
-        if(currentDresses.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
+        if(currentDresses?.keyName === "CeremonialSummerForCPOSANDPOS" || currentDresses?.keyName === "CeremonialSummerForPOS" || currentDresses?.keyName === "CeremonialSummerForLDGSAndBelow"){
             if (medals?.length === 1) {
                 return "12.8rem";
             } else if (medals?.length === 2) {
@@ -1498,7 +1498,7 @@ export const GetMedalsPositionCurrent = (medals, DressCheck, currentDresses) => 
             }
         }
     } 
-    else if(currentDresses.keyName === "WinterCeremonialCPOsPOs"){
+    else if(currentDresses?.keyName === "WinterCeremonialCPOsPOs"){
        
             if (medals?.length === 1) {
                 return "12.5rem";
@@ -1633,13 +1633,13 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
     } 
     else {
         if (currentDresses?.dressGender === "female") {
-            if(currentDresses.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" ){
+            if(currentDresses?.keyName === "femaleDressNo1FullWhiteSummerCeremonials" || currentDresses?.keyName === "POfemaleDressNo1FullWorkingDressWhiteSummer" ){
                 return {
                     cord_one: "11.52rem",
                     cord_two: updated_cord ? updated_cord : "11.4rem",
                 };
             }
-            else if( currentDresses.keyName === "femaleDressNo8WinterWorking" || currentDresses.keyName === "POfemaleDressNo8WinterWorking" || currentDresses.keyName === "LDGfemaleDressNo8WinterWorking"){
+            else if( currentDresses?.keyName === "femaleDressNo8WinterWorking" || currentDresses?.keyName === "POfemaleDressNo8WinterWorking" || currentDresses?.keyName === "LDGfemaleDressNo8WinterWorking"){
                 return {
                     cord_one: "12.7rem",
                     cord_two: updated_cord ? updated_cord : "12.7rem",
@@ -1658,13 +1658,13 @@ export const GetLeftChestCord = (currentDresses, medals, currentBadgesStateMedal
             }
             
         } else {
-            if(currentDresses.keyName === "WorkingDressWhiteWinterCPOsPOs" || currentDresses.keyName === "WorkingDressWhiteWinterPOs" || currentDresses.keyName === "WorkingDressWhiteWinterLDGSBelow" || currentDresses.keyName === "WinterWorkingPOs" || currentDresses.keyName === "WinterWorkingLDGSBelow"){
+            if(currentDresses?.keyName === "WorkingDressWhiteWinterCPOsPOs" || currentDresses?.keyName === "WorkingDressWhiteWinterPOs" || currentDresses?.keyName === "WorkingDressWhiteWinterLDGSBelow" || currentDresses?.keyName === "WinterWorkingPOs" || currentDresses?.keyName === "WinterWorkingLDGSBelow"){
                 return {
                     cord_one: "11rem",
                     cord_two: updated_cord ? updated_cord : "12.2rem",
                 };
             }
-            if(currentDresses.keyName === "WinterWorkingCPOsPOs"){
+            if(currentDresses?.keyName === "WinterWorkingCPOsPOs"){
                 return {
                     cord_one: "10.3rem",
                     cord_two: updated_cord ? updated_cord : "10.9rem",
@@ -3345,12 +3345,12 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
                 
             ) {
                 return { cord_one: "9.9rem", cord_two: "6.9rem" };
-            } else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs" 
-                || currentDresses.keyName === "SSGNCamouflageWorkingCPOs"
-                || currentDresses.keyName === "SSGNCamouflageCombatCPOs"
-                || currentDresses.keyName === "PakMarineCeremonialCPOs"
-                || currentDresses.keyName === "PakMarineWorkingCPOs"
-                || currentDresses.keyName === "PakMarineCombatCPOs"
+            } else if(currentDresses?.keyName === "SSGNCamouflageCeremonialCPOs" 
+                || currentDresses?.keyName === "SSGNCamouflageWorkingCPOs"
+                || currentDresses?.keyName === "SSGNCamouflageCombatCPOs"
+                || currentDresses?.keyName === "PakMarineCeremonialCPOs"
+                || currentDresses?.keyName === "PakMarineWorkingCPOs"
+                || currentDresses?.keyName === "PakMarineCombatCPOs"
                 || currentDresses?.keyName === "SSGNCamouflageCeremonialPOs"
                 || currentDresses?.keyName === "SSGNCamouflageCombatPOs"
                 || currentDresses?.keyName === "SSGNCamouflageWorkingPOs"
@@ -3383,12 +3383,12 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
                 currentDresses?.keyName === "camoSSGNWorking_nine"
             ) {
                 return { cord_one: "8.65rem", cord_two: "6.7rem" };
-            }else if(currentDresses.keyName === "SSGNCamouflageCeremonialCPOs"||
-                currentDresses.keyName === "SSGNCamouflageCombatCPOs"||
-                currentDresses.keyName === "SSGNCamouflageWorkingCPOs"||
-                currentDresses.keyName === "PakMarineCeremonialCPOs"
-                || currentDresses.keyName === "PakMarineWorkingCPOs"
-                || currentDresses.keyName === "PakMarineCombatCPOs"
+            }else if(currentDresses?.keyName === "SSGNCamouflageCeremonialCPOs"||
+                currentDresses?.keyName === "SSGNCamouflageCombatCPOs"||
+                currentDresses?.keyName === "SSGNCamouflageWorkingCPOs"||
+                currentDresses?.keyName === "PakMarineCeremonialCPOs"
+                || currentDresses?.keyName === "PakMarineWorkingCPOs"
+                || currentDresses?.keyName === "PakMarineCombatCPOs"
                 || currentDresses?.keyName === "SSGNCamouflageCeremonialPOs"
                 || currentDresses?.keyName === "SSGNCamouflageCombatPOs"
                 || currentDresses?.keyName === "SSGNCamouflageWorkingPOs"
@@ -3945,7 +3945,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
         } else {
             return { cord_one: "9.8rem", cord_two: "6.2rem" };
         }
-    } else if (currentDresses.keyName === "female_one" || currentDresses.keyName === "female_three"){
+    } else if (currentDresses?.keyName === "female_one" || currentDresses?.keyName === "female_three"){
         if (selectedOptions?.rightChest?.length === 0) {
             return { cord_one: "11.2rem", cord_two: "6.2rem" };
         } else if (selectedOptions?.rightChest?.length !== 0) {
@@ -3953,7 +3953,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
         } else {
             return { cord_one: "10.5rem", cord_two: "6.2rem" };
         }
-    } else if (currentDresses.keyName === "femaleFive" || currentDresses.keyName === "femaleSeven"){
+    } else if (currentDresses?.keyName === "femaleFive" || currentDresses?.keyName === "femaleSeven"){
         if (selectedOptions?.rightChest?.length === 0) {
             return { cord_one: "11.2rem", cord_two: "6.2rem" };
         } else if (selectedOptions?.rightChest?.length !== 0) {
@@ -3961,7 +3961,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
         } else {
             return { cord_one: "10.5rem", cord_two: "6.2rem" };
         }
-    }  else if (currentDresses.keyName === "femaleMessDressSummerMessKit" || currentDresses.keyName === "femaleInformalMessDressRedSeaRig"){
+    }  else if (currentDresses?.keyName === "femaleMessDressSummerMessKit" || currentDresses?.keyName === "femaleInformalMessDressRedSeaRig"){
         if (selectedOptions?.rightChest?.length === 0) {
             return { cord_one: "11.3rem", cord_two: "6.2rem" };
         } else if (selectedOptions?.rightChest?.length !== 0) {
@@ -3969,7 +3969,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
         } else {
             return { cord_one: "10.5rem", cord_two: "6.2rem" };
         }
-    } else if (currentDresses.keyName === "female_two" ){
+    } else if (currentDresses?.keyName === "female_two" ){
         if (selectedOptions?.rightChest?.length === 0) {
             return { cord_one: "11.3rem", cord_two: "6.2rem" };
         } else if (selectedOptions?.rightChest?.length !== 0) {
@@ -3977,7 +3977,7 @@ export const GetRightBoxCord = (currentDresses, selectedOptions) => {
         } else {
             return { cord_one: "10.5rem", cord_two: "6.2rem" };
         }
-    } else if (currentDresses.keyName === "femaleSix" ){
+    } else if (currentDresses?.keyName === "femaleSix" ){
         if (selectedOptions?.rightChest?.length === 0) {
             return { cord_one: "11.6rem", cord_two: "6.2rem" };
         } else if (selectedOptions?.rightChest?.length !== 0) {

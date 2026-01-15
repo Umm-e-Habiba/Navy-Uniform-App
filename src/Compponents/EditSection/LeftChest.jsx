@@ -14,7 +14,7 @@ const LeftChestContent = (props) => {
 
     // Check if current dress needs black background for left chest insignia
     let needsBlackBackground = false;
-    if( currentDresses.keyName === "DigitalCamouflageCombatCPOsPOs" || 
+    if( currentDresses && (currentDresses.keyName === "DigitalCamouflageCombatCPOsPOs" || 
         currentDresses.keyName === "SSGNCamouflageCeremonialCPOs"  ||
         currentDresses.keyName === "SSGNCamouflageWorkingCPOs"  ||
         currentDresses.keyName === "SSGNCamouflageCombatCPOs"  ||
@@ -51,7 +51,7 @@ const LeftChestContent = (props) => {
         currentDresses.keyName === "camoSSGNCombat"  ||
 
         currentDresses.keyName === "female_four"  ||
-        currentDresses.keyName === "female_four_AFNS"  
+        currentDresses.keyName === "female_four_AFNS")  
     ){
         needsBlackBackground = true;
     }
